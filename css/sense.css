@@ -1,0 +1,113 @@
+@font-face {
+	font-family: sensefont;
+	src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+body.sense{
+	font-family: sensefont;
+}
+.sense{
+	font-size: 14px;
+}
+.sense .login-page{
+	background: url(../images/7sense-login-background.jpg) no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.sense .login-page-fader{
+	background: rgba(0,0,0,0.15);
+}
+
+.sense .login-page-logo-img{
+	background: url(../images/Logo7Sense.png) no-repeat;
+	background-size:200px 108px;
+	width:200px;
+	height: 108px;
+}
+
+.sense .login-page-logo-text{
+	color:#00C0D5;
+	font-size: 12px;
+}
+
+.sense .login-page-box{
+	width: 470px;
+	padding: 5px 76px 10px;
+	border: 2px solid #00C0D5;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.9);
+}
+
+.sense .login-page-form-input{
+	width:100%;
+	background: none;
+	border:none;
+	border-bottom: 2px solid #ccc;
+	margin-top: 10px;
+	padding: 0px 3px;
+}
+
+.sense .login-page-form-input:focus{
+	border-bottom: 2px solid #00C0D5;
+}
+
+.sense .login-page-form-title{
+	color:#00C0D5;
+	font-size: 18px;
+	margin:15px 0px 5px;
+}
+
+.sense .login-page-form-footer{
+	font-size: 12px;
+	margin: 30px 0px 15px;
+}
+
+.sense .login-page-form-footer-link span{
+	color: #00C0D5;
+	cursor: pointer;
+	margin-left: 6px;
+	font-size: 12px;
+}
+
+.sense .login-page-form-footer-link span:hover{
+	text-decoration: underline;
+}
+
+.sense .login-page-form-footer-submit{
+	color:white;
+	background: #00C0D5;
+	outline: none;
+	border:none;
+	padding: 5px 20px 3px;
+	line-height: 1;
+	border-radius: 10px/8px;
+}
+
+.sense .password-form .login-page-form-footer-submit{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px){
+	.sense .login-page{
+		background: none;
+	}
+	.sense .login-page-box{
+		width:100%;
+		padding:0px 10px;
+		border:none;
+		background: #fff
+		border-radius:0px;
+	}
+	.sense .login-page-fader{
+		background: none;
+	}
+	.sense .login-page-form-footer{
+		flex-direction: column;
+		margin-top: 15px;
+	}
+	.sense .login-page-form-footer-link{
+		order:2;
+		margin-top: 12px;
+	}
+}

@@ -1,0 +1,41 @@
+.login-page{
+	width: 100%;
+	min-height: 100vh;
+	background-size:100%;
+}
+.login-page-fader{
+	width: 100%;
+	min-height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login-page-logo{
+	text-align: center;
+}
+
+.login-page-logo .login-page-logo-img{
+	display: inline-block;
+}
+
+.login-page-form{
+	text-align: center;
+}
+
+.login-page-form-footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.password-form{
+	display: none;
+}
