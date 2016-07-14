@@ -1,11 +1,11 @@
-function initFilter(){
+function initFilter(filter_input, filter_table){
 	var LightTableFilter = (function(Arr) {
 		var _input;
 		function _onInputEvent(e) {
 			_input = e.target;
-			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			var tables = document.getElementsByClassName(filter_table);
 			Arr.forEach.call(tables, function(table) {
-				Arr.forEach.call($(".campaings-list-element"), function(tbody) {
+				Arr.forEach.call($(table).find(".campaings-list-element"), function(tbody) {
 					_filter($(tbody).find(".campaigns-list-id, .campaigns-list-name"));
 				});
 			});
@@ -28,7 +28,7 @@ function initFilter(){
 		}
 		return {
 			init: function() {
-				var inputs = document.getElementsByClassName('light-table-filter');
+				var inputs = document.getElementsByClassName(filter_input);
 				Arr.forEach.call(inputs, function(input) {
 					input.oninput = _onInputEvent;
 				});

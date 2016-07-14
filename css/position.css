@@ -78,28 +78,13 @@
 	width:1200px;
 }
 
+.companies-list{
+	margin:auto;
+	width:1200px;
+}
+
 .campaigns-list-top, .campaings-list-element{
 	display: flex;
-}
-
-
-.campaigns-list-id{
-	width:15%;
-}
-
-.campaigns-list-name{
-	width:52%;
-}
-
-.campaigns-list-switcher{
-	width:9%;
-}
-
-.campaigns-list-qr{
-	width:9%;
-}
-.campaigns-list-editor{
-	width:15%;
 }
 
 .tooltip{
@@ -127,5 +112,9 @@
 }
 
 .campaigns-report{
+	display: none;
+}
+
+.companies-block{
 	display: none;
 }

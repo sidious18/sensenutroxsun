@@ -15,17 +15,25 @@ $(document).ready(function(){
 	$(".campaigns-link").click(function(){
 		$(".marketing-pills div").removeClass("active");
 		$(this).addClass('active');
-		$(".campaigns-list").show();
-		$(".campaigns-report").hide()
-		$(".marketing-search").show();
+		$('.companies-block').hide();
+		$(".campaigns-report").hide();
+		$(".campaigns-block").show();
 	});
 	
 	$(".reports-link").click(function(){
 		$(".marketing-pills div").removeClass("active");
 		$(this).addClass('active');
+		$('.companies-block').hide();
+		$(".campaigns-block").hide();
 		$(".campaigns-report").show();
-		$(".campaigns-list").hide();
-		$(".marketing-search").hide();
+	});
+
+	$('.companies-link').click(function(){
+		$(".marketing-pills div").removeClass("active");
+		$(this).addClass('active');
+		$(".campaigns-report").hide();
+		$(".campaigns-block").hide();
+		$('.companies-block').show();
 	});
 
 	$(".campaigns-list-switcher-button").click(function(){
@@ -58,6 +66,8 @@ $(document).ready(function(){
         	var sortByID = $.sortFunc(["$(this).find('.campaigns-list-id').text()::reverse"]);
         }
         sortedByID = !sortedByID;
+        console.log($(this).closest('.campaigns-list-holder').next('.campaings-list-elements-box'));
+        
         $(this).closest('.campaigns-list-holder').next('.campaings-list-elements-box').sortChildren(sortByID);
     })
 
@@ -83,5 +93,9 @@ $(document).ready(function(){
         $(this).closest('.campaigns-list-holder').next('.campaings-list-elements-box').sortChildren(sortByStatus);
     })
 
-    initFilter();
+
+    initFilter('campaigns-filter', 'campaigns-list');
+
+    initFilter('companies-filter', 'companies-list');
+
 });

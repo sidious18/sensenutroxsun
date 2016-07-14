@@ -228,6 +228,10 @@ body.nutroxsun{
 	border:1px solid #ccc;
 }
 
+.nutroxsun .companies-list{
+	border:1px solid #ccc;
+}
+
 .nutroxsun .campaigns-list-holder{
 	border-bottom: 1px solid #ccc;
 }
@@ -241,6 +245,58 @@ body.nutroxsun{
 
 .nutroxsun .campaigns-list-top div:last-child{
 	border-right: none;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-id{
+	width: 15%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-name{
+	width: 52%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-switcher{
+	width: 9%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-qr{
+	width: 9%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .companies-block .campaigns-list-id{
+	width: 17%;
+}
+
+.nutroxsun .companies-block .campaigns-list-name{
+	width: 61%;
+}
+
+.nutroxsun .companies-block .campaigns-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun  .companies-block .campaings-list-elements-box .campaigns-list-editor{
+	width: 12%;
+}
+
+.nutroxsun .companies-block .campaings-list-elements-box .campaigns-list-id{
+	width: 15%;
+}
+
+.nutroxsun .companies-block .campaings-list-elements-box .campaigns-list-name{
+	width: 61%;
+}
+
+.nutroxsun .companies-block .campaings-list-elements-box .campaigns-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun .companies-block .campaings-list-elements-box .campaigns-list-editor{
+	width: 10%;
 }
 
 .nutroxsun .campaigns-list-top .campaigns-list-id{
@@ -328,7 +384,10 @@ body.nutroxsun{
 .nutroxsun .campaings-list-element .campaigns-list-id{
 	color: #696969;
 	padding-left: 8px;
-	text-transform: uppercase;
+	text-transform: uppercase;	
+}
+
+.nutroxsun .campaigns-block .campaings-list-element .campaigns-list-id{
 	width: 14%;
 }
 
@@ -434,10 +493,13 @@ body.nutroxsun{
 	background-color: #DBD4CF;
 }
 
+.nutroxsun .campaigns-block .campaings-list-element .campaigns-list-editor{
+	width: 14%;
+}
+
 .nutroxsun .campaings-list-element .campaigns-list-editor{
 	text-align: center;
 	padding: 10px 0px 0px;
-	width: 14%;
 }
 
 .nutroxsun .campaings-list-element .campaigns-list-editor > div{
