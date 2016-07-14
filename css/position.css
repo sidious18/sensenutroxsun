@@ -39,3 +39,93 @@
 .password-form{
 	display: none;
 }
+
+.login-page-form-footer-submit{
+	cursor: pointer;
+}
+
+.main-header{
+	width:100%;
+}
+
+.main-header-box{
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin:auto;
+}
+
+.marketing-header{
+	display: flex;
+	width: 1200px;
+	margin:auto;
+	justify-content: space-between;
+}
+
+.marketing-pills{
+	display: flex;
+}
+
+.marketing-search{
+	display: flex;
+	width: 1200px;
+	margin:auto;
+	justify-content: space-between;
+}
+
+.campaigns-list{
+	margin:auto;
+	width:1200px;
+}
+
+.campaigns-list-top, .campaings-list-element{
+	display: flex;
+}
+
+
+.campaigns-list-id{
+	width:15%;
+}
+
+.campaigns-list-name{
+	width:52%;
+}
+
+.campaigns-list-switcher{
+	width:9%;
+}
+
+.campaigns-list-qr{
+	width:9%;
+}
+.campaigns-list-editor{
+	width:15%;
+}
+
+.tooltip{
+	position: absolute;
+	top:-40px;
+	height: 25px;
+	border-radius: 4px;
+	white-space: nowrap;
+	display: none;
+}
+.tooltip:after, .tooltip:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip:after {
+	border-width: 8px;
+	margin-left: -8px;
+}
+
+.campaigns-report{
+	display: none;
+}

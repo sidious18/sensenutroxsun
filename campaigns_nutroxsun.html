@@ -7,10 +7,477 @@
 	<link rel="stylesheet" href="css/position.css">
 	<link rel="stylesheet" href="css/nutroxsun.css">
 	<script src="js/jquery.min.js"></script>
+	<script src="js/sortchildren.min.js"></script>
 	<script src="js/ui-script.js"></script>
+	<script src="js/table-sort.js"></script>
 </head>
 
 <body class="nutroxsun">
+	<nav class="main-header">
+		<div class="main-header-box">
+			<div class="main-header-logo">
+				
+			</div>
+			<div class="main-header-link-box">
+				Logged as: <a href="#" class="main-header-profile">John Smith</a> <a href="#" class="main-header-logout">(Log out)</a>
+			</div>
+		</div>
+	</nav>
+	<div class="content">
+		<header class="marketing-header">
+			<h3 class="marketing-title">MARKETING CAMPAIGNS</h3>
+			<div class="marketing-pills">
+				<div class="campaigns-link active">
+					CAMPAIGNS
+				</div>
+				<div class="reports-link">
+					REPORTS
+				</div>
+			</div>
+		</header>
 
+		<div class="marketing-search">
+			<div class="marketing-search-input-box">
+				<input type="text" placeholder="SEARCH" class="marketing-search-input light-table-filter" data-table="campaigns-list">
+			</div>
+			<a href="#" class="marketing-search-add">NEW CAMPAIGN</a>
+		</div>
+
+		<div class="campaigns-list">
+			<div class="campaigns-list-holder">
+				<div class="campaigns-list-top">
+					<div class="campaigns-list-id">
+						ID
+					</div>
+						
+					<div class="campaigns-list-name">
+						NAME
+					</div>
+						
+					<div class="campaigns-list-switcher">
+						ON/OFF
+					</div>
+
+					<div class="campaigns-list-qr">
+						
+					</div>
+
+					<div class="campaigns-list-editor">
+						
+					</div>
+				</div>
+			</div>
+			<div class="campaings-list-elements-box">
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC1
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - Tokio
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC5
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - Germany
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC2
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - USA
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+				<div class="campaings-list-element enabled">
+					<div class="campaigns-list-id">
+						BP1-MC3
+					</div>
+						
+					<div class="campaigns-list-name">
+						SUMMER 2016 - ITALY
+					</div>
+				
+					<div class="campaigns-list-switcher">
+						<div class="campaigns-list-switcher-button">
+							<div class="on">
+								ON
+							</div>
+							<div class="off">
+								OFF
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-qr">
+						<div class="campaigns-list-qr-button">
+							QR
+							<div class="tooltip">Generate QR code</div>
+						</div>
+					</div>
+					<div class="campaigns-list-editor">
+						<div class="campaigns-list-editor-reports">
+							<div class="tooltip">Reports</div>
+						</div>
+						<div class="campaigns-list-editor-edit">
+							<div class="tooltip">Edit</div>
+						</div>
+						<div class="campaigns-list-editor-duplicate">
+							<div class="tooltip">Duplicate Campaign</div>
+						</div>
+						<div class="campaigns-list-editor-delete">
+							<div class="tooltip">Delete Campaign</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="campaigns-report">
+			
+		</div>
+	</div>
+	<footer class="main-footer">
+		
+	</footer>
 </body>
 </html>
