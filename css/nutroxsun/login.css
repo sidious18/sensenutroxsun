@@ -1,0 +1,160 @@
+.nutroxsun .login-page{
+	background: url(../../images/nutroxsun-login-background.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.nutroxsun .login-page-logo-img{
+	background: url(../../images/LogoNutroxsun.png) no-repeat;
+	background-size:293px 65px;
+	width:293px;
+	height: 65px;
+}
+
+.nutroxsun .login-page-box{
+	width: 400px;
+	margin-top: -40px;
+}
+
+.nutroxsun .login-page-logo-text{
+	color:#C54F32;
+}
+
+.nutroxsun .login-page-form{
+	background: rgba(255,255,255,0.1);
+	padding: 25px 20px;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.nutroxsun .login-page-form-title{
+	color:#C54F32;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+.nutroxsun .login-page-form-input{
+	background-color: #fff;
+	padding: 12px 10px 12px 52px;
+	border:1px solid #C54F32;
+	width: 100%;
+	margin-top: 15px;
+	background-repeat: no-repeat;
+	background-position: 4px center;
+}
+
+.nutroxsun .login-page-form-input.email{
+	background-image: url(../../icons/nutroxsun-user-icon.png);
+}
+
+.nutroxsun .login-page-form-input.password{
+	background-image: url(../../icons/nutroxsun-key-icon.png);
+}
+
+.nutroxsun .login-page-form-input-box{
+	position: relative;
+}
+
+.nutroxsun .login-page-form-input-box:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 1px;
+	height: 25px;
+	background-color: #ccc;
+	z-index: 1;
+	left: 43px;
+	top: 24px;
+}
+
+.nutroxsun .login-page-form-footer{
+	margin-top: 20px;
+	color:#85796A;
+}
+
+.nutroxsun .login-page-form-footer-submit{
+	background: #C04C30;
+	border:0px;
+	outline: 0px;
+	color:white;
+	border-radius: 2px;
+	padding: 5px 20px;
+	font-weight: bold;
+}
+
+.nutroxsun .login-page-form-footer-link span{
+	color: #C54F32;
+	cursor: pointer;
+}
+
+.nutroxsun .login-page-form-footer-link span:hover{
+	text-decoration: underline;
+}
+
+.nutroxsun .password-form .login-page-form-footer-submit{
+	margin:13px 0px;
+}
+
+@media only screen and (max-width: 767px){
+	.nutroxsun .login-page{
+		background: none;
+	}
+	.nutroxsun .login-page-box{
+		width:100%;
+		padding:0px 10px;
+		border:none;
+		background: #fff
+		border-radius:0px;
+	}
+	.nutroxsun .login-page-fader{
+		background: none;
+	}
+	.nutroxsun .login-page-form-footer{
+		flex-direction: column;
+		margin-top: 15px;
+	}
+	.nutroxsun .login-page-form-footer-link{
+		order:2;
+		margin-top: 12px;
+	}
+
+	.nutroxsun .login-page-box{
+		margin-top: 0px;
+	}
+
+	.nutroxsun .login-page-form{
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.nutroxsun .login-page{
+		background: none;
+	}
+	.nutroxsun .login-page-box{
+		width:100%;
+		padding:0px 10px;
+		border:none;
+		background: #fff
+		border-radius:0px;
+	}
+	.nutroxsun .login-page-fader{
+		background: none;
+	}
+	.nutroxsun .login-page-form-footer{
+		flex-direction: column;
+		margin-top: 15px;
+	}
+	.nutroxsun .login-page-form-footer-link{
+		order:2;
+		margin-top: 12px;
+	}
+
+	.nutroxsun .login-page-box{
+		margin-top: 0px;
+	}
+
+	.nutroxsun .login-page-form{
+		margin-top: 10px;
+	}
+}

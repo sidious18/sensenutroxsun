@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Login page</title>
+	<title>NutroxSun</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/position.css">
-	<link rel="stylesheet" href="css/nutroxsun.css">
+	<link rel="stylesheet" href="css/nutroxsun/main.css">
+	<link rel="stylesheet" href="css/nutroxsun/login.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/campaigns-list.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/companies-list.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/marketing-menu.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/sortchildren.min.js"></script>
 	<script src="js/ui-script.js"></script>
@@ -14,7 +18,7 @@
 
 <body class="nutroxsun">
 	<nav class="main-header">
-		<div class="main-header-box">
+		<div class="main-header-box cont">
 			<div class="main-header-logo">
 				
 			</div>
@@ -24,7 +28,7 @@
 		</div>
 	</nav>
 	<div class="content">
-		<header class="marketing-header">
+		<header class="marketing-header cont">
 			<h3 class="marketing-title">MARKETING CAMPAIGNS</h3>
 			<div class="marketing-pills">
 				<div class="companies-link">
@@ -41,44 +45,44 @@
 
 		<div class="companies-block">
 		
-			<div class="marketing-search">
+			<div class="marketing-search cont">
 				<div class="marketing-search-input-box">
 					<input type="text" placeholder="SEARCH" class="marketing-search-input companies-filter">
 				</div>
 				<a href="#" class="marketing-search-add">NEW COMPANY</a>
 			</div>
-			<div class="companies-list">
-				<div class="campaigns-list-holder">
-					<div class="campaigns-list-top">
-						<div class="campaigns-list-id">
+			<div class="companies-list cont">
+				<div class="companies-list-holder">
+					<div class="companies-list-top">
+						<div class="companies-list-id">
 							ID
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="companies-list-name">
 							NAME
 						</div>
 							
-						<div class="campaigns-list-switcher">
+						<div class="companies-list-switcher">
 							ON/OFF
 						</div>
 
-						<div class="campaigns-list-editor">
+						<div class="companies-list-editor">
 							
 						</div>
 					</div>
 				</div>
-				<div class="campaings-list-elements-box">
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+				<div class="companies-list-elements-box">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC1
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="companies-list-name">
 							SUMMER 2016 - Tokio
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -87,26 +91,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC1
 						</div>
 							
-						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+						<div class="companies-list-name">
+							SUMMER 2016 - USA
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -115,26 +119,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC16
 						</div>
 							
-						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+						<div class="companies-list-name">
+							WINTER 2016 - Germany
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -143,26 +147,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC12
 						</div>
 							
-						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+						<div class="companies-list-name">
+							WINTER 2016 - France
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -171,26 +175,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC8
 						</div>
 							
-						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+						<div class="companies-list-name">
+							Event 12352
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -199,26 +203,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC2
 						</div>
 							
-						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+						<div class="companies-list-name">
+							Superevent 32145345
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -227,26 +231,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="companies-list-element enabled">
+						<div class="companies-list-id">
 							BP1-MC4
 						</div>
 							
-						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+						<div class="companies-list-name">
+							Megaevent 435235
 						</div>
 					
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
+						<div class="companies-list-switcher">
+							<div class="companies-list-switcher-button">
 								<div class="on">
 									ON
 								</div>
@@ -255,11 +259,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="companies-list-editor">
+							<div class="companies-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="companies-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
@@ -271,13 +275,13 @@
 
 		<div class="campaigns-block">
 
-			<div class="marketing-search">
+			<div class="marketing-search cont">
 				<div class="marketing-search-input-box">
 					<input type="text" placeholder="SEARCH" class="marketing-search-input campaigns-filter">
 				</div>
 				<a href="#" class="marketing-search-add">NEW CAMPAIGN</a>
 			</div>
-			<div class="campaigns-list">
+			<div class="campaigns-list cont">
 				<div class="campaigns-list-holder">
 					<div class="campaigns-list-top">
 						<div class="campaigns-list-id">
@@ -301,14 +305,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="campaings-list-elements-box">
-					<div class="campaings-list-element enabled">
+				<div class="campaigns-list-elements-box">
+					<div class="campaigns-list-element enabled">
 						<div class="campaigns-list-id">
 							BP1-MC122
 						</div>
 							
 						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+							Megaevent 435235
 						</div>
 					
 						<div class="campaigns-list-switcher">
@@ -342,13 +346,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
+					<div class="campaigns-list-element enabled">
 						<div class="campaigns-list-id">
 							BP1-MC15
 						</div>
 							
 						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+							SUMMER 2016 - Germany
 						</div>
 					
 						<div class="campaigns-list-switcher">
@@ -382,13 +386,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
+					<div class="campaigns-list-element enabled">
 						<div class="campaigns-list-id">
 							BP1-MC13
 						</div>
 							
 						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+							SUMMER 2016 - Italy
 						</div>
 					
 						<div class="campaigns-list-switcher">
@@ -422,13 +426,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
+					<div class="campaigns-list-element enabled">
 						<div class="campaigns-list-id">
 							BP1-MC144
 						</div>
 							
 						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+							Winter 2016 - Tokio
 						</div>
 					
 						<div class="campaigns-list-switcher">
@@ -462,13 +466,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="campaings-list-element enabled">
+					<div class="campaigns-list-element enabled">
 						<div class="campaigns-list-id">
 							BP1-MC15
 						</div>
 							
 						<div class="campaigns-list-name">
-							SUMMER 2016 - Tokio
+							Autumn 2016 - Tokio
 						</div>
 					
 						<div class="campaigns-list-switcher">

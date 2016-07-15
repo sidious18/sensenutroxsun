@@ -1,0 +1,453 @@
+.nutroxsun .companies-list{
+	border:1px solid #ccc;
+}
+
+.nutroxsun .companies-list-holder{
+	border-bottom: 1px solid #ccc;
+}
+
+.nutroxsun .companies-list-top div{
+	padding:16px 14px 14px;
+	color:#534741;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+}
+
+.nutroxsun .companies-list-top div:last-child{
+	border-right: none;
+}
+
+.nutroxsun .companies-block .companies-list-id{
+	width: 15%;
+}
+
+.nutroxsun .companies-block .companies-list-name{
+	width: 60%;
+}
+
+.nutroxsun .companies-block .companies-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun .companies-block .companies-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .companies-block .companies-list-elements-box .companies-list-id{
+	width: 14%;
+}
+
+.nutroxsun .companies-block .companies-list-elements-box .companies-list-name{
+	width: 60%;
+}
+
+.nutroxsun .companies-block .companies-list-elements-box .companies-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun .companies-block .companies-list-elements-box .companies-list-editor{
+	width: 14%;
+}
+
+.nutroxsun .companies-list-top .companies-list-id{
+	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background-position: 18px center;
+	padding-left: 35px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .companies-list-top .companies-list-id:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .companies-list-top .companies-list-name{
+	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .companies-list-top .companies-list-name:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .companies-list-top .companies-list-switcher{
+	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .companies-list-top .companies-list-switcher:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .companies-list-top .companies-list-editor{
+	border-right: none;
+}
+
+.nutroxsun .companies-list-element{
+	width:100%;
+	margin-top:-1px;
+	justify-content: center;
+}
+
+.nutroxsun .companies-list-element > div{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid transparent;
+	padding: 16px;
+}
+
+.nutroxsun .companies-list-elements-box > .companies-list-element:last-child >div{
+	border-bottom: none;
+}
+
+.nutroxsun .companies-list-element > div:first-child{
+	border-left:1px solid transparent;
+}
+
+.nutroxsun .companies-list-element > div:last-child{
+	border-right:1px solid transparent;
+}
+
+.nutroxsun .companies-list-element:hover > div, .nutroxsun .companies-list-element.active > div{
+	background:  #F5DEB3;
+	border-bottom:1px solid #F7931E;
+	border-top:1px solid #F7931E;
+}
+
+.nutroxsun .companies-list-element:hover >div:first-child, .nutroxsun .companies-list-element.active > div:first-child{
+	border-left:1px solid #F7931E;
+}
+
+.nutroxsun .companies-list-element:hover >div:last-child, .nutroxsun .companies-list-element.active > div:last-child{
+	border-right:1px solid #F7931E;
+}
+
+.nutroxsun .companies-list-element .companies-list-id{
+	color: #696969;
+	padding-left: 8px;
+	text-transform: uppercase;	
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-id{
+	color:#DBD4CF;
+}
+
+.nutroxsun .companies-list-element .companies-list-name{
+	color: #696969;
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-name{
+	color:#DBD4CF;
+}
+
+.nutroxsun .companies-list-element .companies-list-switcher{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.nutroxsun .companies-list-switcher-button{
+	width: 80%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.nutroxsun .companies-list-switcher-button > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 6px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	transition: 0.1s left linear;
+}
+
+.nutroxsun .companies-list-switcher-button .on{
+	background-color:#F7931E;
+	text-align: left;
+	left: 0px;
+}
+
+.nutroxsun .companies-list-switcher-button .on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.nutroxsun .companies-list-switcher-button .off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.nutroxsun .companies-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.nutroxsun .companies-list-element .companies-list-qr{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.nutroxsun .companies-list-qr-button{
+	background: url(../../../icons/nutroxsuncloud.png) no-repeat;
+	background-size: 20px;
+	background-position: 85% center;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	background-color:#F7931E;
+	border-radius: 10px;
+	padding: 6px;
+	color: #fff;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-qr-button:hover .tooltip{
+	display: block;
+	left: -37px;
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-qr-button{
+	background-color: #DBD4CF;
+}
+
+.nutroxsun .companies-list-element .companies-list-editor{
+	text-align: center;
+	padding: 10px 0px 0px;
+}
+
+.nutroxsun .companies-list-element .companies-list-editor > div{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 25px !important;
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-reports{
+	background: url(../../../icons/nutroxsunreports.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-reports:hover .tooltip{
+	display: block;
+	left: -22px
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-edit{
+	background: url(../../../icons/nutroxsunedit.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -11px
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-duplicate{
+	background: url(../../../icons/nutroxsundublicate.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -62px
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-delete{
+	background: url(../../../icons/nutroxsundelete.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.enabled .companies-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -53px
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-editor-reports{
+	background: url(../../../icons/nutroxsun-reports-disabled.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-editor-edit{
+	background: url(../../../icons/nutroxsun-edit-disabled.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-editor-duplicate{
+	background: url(../../../icons/nutroxsun-dublicate-disabled.png) no-repeat;
+}
+
+.nutroxsun .companies-list-element.disabled .companies-list-editor-delete{
+	background: url(../../../icons/nutroxsun-delete-disabled.png) no-repeat;
+}
+
+@media only screen and (max-width: 1040px){
+	.nutroxsun .companies-block .companies-list-id{
+		width: 15%;
+	}
+
+	.nutroxsun .companies-block .companies-list-name{
+		width: 55%;
+	}
+
+	.nutroxsun .companies-block .companies-list-switcher{
+		width: 15%;
+	}
+
+	.nutroxsun .companies-block .companies-list-editor{
+		width: 15%;
+	}
+
+	.nutroxsun .companies-block .companies-list-elements-box .companies-list-id{
+		width: 14%;
+	}
+
+	.nutroxsun .companies-block .companies-list-elements-box .companies-list-name{
+		width: 55%;
+	}
+
+	.nutroxsun .companies-block .companies-list-elements-box .companies-list-switcher{
+		width: 15%;
+	}
+
+	.nutroxsun .companies-block .companies-list-elements-box .companies-list-editor{
+		width: 14%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .companies-list{
+		border: none;
+	}
+
+	.nutroxsun .companies-list-top{
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+	}
+
+	.nutroxsun .companies-list-top .companies-list-id{
+		width: 25%;
+		text-align: center;
+	}
+
+	.nutroxsun .companies-list-top .companies-list-name{
+		width: 35%;
+		text-align: center;
+		background-position: 15px center;
+	}
+
+	.nutroxsun .companies-list-top .companies-list-switcher{
+		width: 40%;
+		text-align: center;
+		background-position: 16px center;
+	}
+
+	.nutroxsun .companies-list-top .companies-list-editor{
+		display: none;
+	}
+
+	.nutroxsun .companies-list-holder{
+		max-width: 600px;
+		margin: 20px auto 0px;
+	}
+
+	.nutroxsun .companies-list-element{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		background: #F5DEB3;
+		padding: 10px;
+	}
+
+	.nutroxsun .companies-list-element > div{
+		border:none;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+
+	.nutroxsun .companies-list-element > div:first-child{
+		border-left:none;
+	}
+
+	.nutroxsun .companies-list-element > div:last-child{
+		border-right:none;
+	}
+
+	.nutroxsun .companies-list-element:hover > div, .nutroxsun .companies-list-element.active > div{
+		background: none;
+		border-bottom:none;
+		border-top:none;
+	}
+
+	.nutroxsun .companies-list-element:hover >div:first-child, .nutroxsun .companies-list-element.active > div:first-child{
+		border-left:none;
+	}
+
+	.nutroxsun .companies-list-element:hover >div:last-child, .nutroxsun .companies-list-element.active > div:last-child{
+		border-right:none;
+	}
+
+	.nutroxsun .companies-block .companies-list-element .companies-list-id{
+		display: block;
+		order: 1;
+		align-self: center;
+		flex-grow: 1;
+	}
+
+	.nutroxsun .companies-block .companies-list-element .companies-list-name{
+		display: block;
+		width: 100%;
+		order: 3;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
+
+	.nutroxsun .companies-block .companies-list-element .companies-list-switcher{
+		display: block;
+		width: 70px;
+		order: 2;
+		padding: 0px;
+	}
+
+	.nutroxsun .companies-block .companies-list-element .companies-list-editor{
+		display: block;
+		width: 100%;
+		order: 4;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	.nutroxsun .companies-list-switcher-button{
+		width: 90%;
+	}
+}

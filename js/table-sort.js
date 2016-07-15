@@ -1,12 +1,12 @@
-function initFilter(filter_input, filter_table){
+function initFilter(filter_input, filter_table, elementFilter, filterList){
 	var LightTableFilter = (function(Arr) {
 		var _input;
 		function _onInputEvent(e) {
 			_input = e.target;
 			var tables = document.getElementsByClassName(filter_table);
 			Arr.forEach.call(tables, function(table) {
-				Arr.forEach.call($(table).find(".campaings-list-element"), function(tbody) {
-					_filter($(tbody).find(".campaigns-list-id, .campaigns-list-name"));
+				Arr.forEach.call($(table).find(elementFilter), function(tbody) {
+					_filter($(tbody).find(filterList));
 				});
 			});
 		}
@@ -15,15 +15,10 @@ function initFilter(filter_input, filter_table){
 			console.log(text);
 			var val = _input.value.toLowerCase();
 			if(text.indexOf(val) === -1){
-				$(block).parent().removeClass('active');
+				$(block).parent().hide();
 			}
 			else{
-				if (val !=""){
-					$(block).parent().addClass('active');
-				}
-				else{
-					$(block).parent().removeClass('active');
-				}
+				$(block).parent().show();
 			}
 		}
 		return {

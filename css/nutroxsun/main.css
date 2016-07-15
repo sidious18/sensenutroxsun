@@ -1,0 +1,101 @@
+@font-face {
+	font-family: sensefont;
+	src: url(../../fonts/AvenirLTStd-Roman.otf);
+}
+body.nutroxsun{
+	font-family: sensefont;
+	font-size: 14px;
+	min-height: 100vh;
+	position: relative;
+}
+
+.nutroxsun .main-header{
+	padding: 25px 0px 20px;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.10);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.10);
+	box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.10);
+}
+
+.nutroxsun .main-header-logo{
+	background: url(../../images/LogoNutroxsun.png);
+	background-size: 225px 50px;
+	width: 225px;
+	height: 50px;	
+}
+
+.nutroxsun .main-header-link-box{
+	color:#C54F32;
+	align-self: center;
+}
+
+.nutroxsun .main-header-profile{
+	color:#C54F32;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nutroxsun .main-header-profile:hover{
+	text-decoration: underline;
+}
+
+.nutroxsun .main-header-logout{
+	color:#C54F32;
+	text-decoration: none;
+}
+
+.nutroxsun .main-header-logout:hover{
+	text-decoration: underline;
+}
+
+.nutroxsun .content{
+	padding-bottom: 80px;
+}
+
+.nutroxsun .main-footer{
+	position: absolute;
+	bottom:0px;
+	width: 100%;
+	height: 40px;
+	background: #C54F32;
+}
+
+.nutroxsun .marketing-header{
+	border-bottom: 2px solid #C54F32;
+}
+
+.nutroxsun .marketing-header{
+	margin-top: 40px;
+}
+
+.nutroxsun .tooltip{
+	background-color: #F7931E;
+	color:#fff;
+	padding: 6px 10px 4px;
+}
+
+.nutroxsun .tooltip:after{
+	border-top-color:#F7931E;
+}
+
+
+@media only screen and (max-width: 768px){
+	.nutroxsun .main-header-box{
+		padding:0px 20px;
+	}
+
+	.nutroxsun .main-header-logo{
+		background-size: 112px 25px;
+		width: 112px;
+		height: 25px;
+	}
+	.nutroxsun .main-header-logo{
+		align-self: center;
+	}
+	.nutroxsun .main-header-profile{
+		display: block;
+		margin: 4px 0px;
+	}
+	.nutroxsun .main-header-logout{
+		display: block;
+	}
+}

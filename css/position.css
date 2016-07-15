@@ -1,3 +1,7 @@
+.cont{
+	width: 1200px;
+}
+
 .login-page{
 	width: 100%;
 	min-height: 100vh;
@@ -51,39 +55,38 @@
 .main-header-box{
 	display: flex;
 	justify-content: space-between;
-	width: 1200px;
 	margin:auto;
 }
 
 .marketing-header{
 	display: flex;
-	width: 1200px;
 	margin:auto;
 	justify-content: space-between;
 }
 
-.marketing-pills{
-	display: flex;
-}
-
 .marketing-search{
 	display: flex;
-	width: 1200px;
 	margin:auto;
 	justify-content: space-between;
 }
 
 .campaigns-list{
 	margin:auto;
-	width:1200px;
 }
 
 .companies-list{
 	margin:auto;
-	width:1200px;
 }
 
-.campaigns-list-top, .campaings-list-element{
+.marketing-pills{
+	display: flex;
+}
+
+.campaigns-list-top, .campaigns-list-element{
+	display: flex;
+}
+
+.companies-list-top, .companies-list-element{
 	display: flex;
 }
 
@@ -117,4 +120,26 @@
 
 .companies-block{
 	display: none;
+}
+
+@media only screen and (max-width: 1220px){
+	.cont{
+		width: 996px;
+	}
+}
+
+@media only screen and (max-width: 1040px){
+	.cont{
+		width: 760px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.content{
+		padding:0px 10px;
+	}
+
+	.cont{
+		width: 100%;
+	}
 }

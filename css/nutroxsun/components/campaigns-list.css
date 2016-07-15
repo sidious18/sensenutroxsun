@@ -1,0 +1,494 @@
+.nutroxsun .campaigns-list{
+	border:1px solid #ccc;
+}
+
+.nutroxsun .campaigns-list-holder{
+	border-bottom: 1px solid #ccc;
+}
+
+.nutroxsun .campaigns-list-top div{
+	padding:16px 14px 14px;
+	color:#534741;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+}
+
+.nutroxsun .campaigns-list-top div:last-child{
+	border-right: none;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-id{
+	width: 15%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-name{
+	width: 52%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-switcher{
+	width: 9%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-qr{
+	width: 9%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-id{
+	width: 14%;
+}
+
+.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-editor{
+	width: 14%;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-id{
+	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background-position: 18px center;
+	padding-left: 35px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-id:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-name{
+	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-name:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-switcher{
+	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-switcher:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-editor{
+	border-right: none;
+}
+
+.nutroxsun .campaigns-list-element{
+	width:100%;
+	margin-top:-1px;
+	justify-content: center;
+}
+
+.nutroxsun .campaigns-list-element > div{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid transparent;
+	padding: 16px;
+}
+
+.nutroxsun .campaigns-list-elements-box > .campaigns-list-element:last-child >div{
+	border-bottom: none;
+}
+
+.nutroxsun .campaigns-list-element > div:first-child{
+	border-left:1px solid transparent;
+}
+
+.nutroxsun .campaigns-list-element > div:last-child{
+	border-right:1px solid transparent;
+}
+
+.nutroxsun .campaigns-list-element:hover > div, .nutroxsun .campaigns-list-element.active > div{
+	background:  #F5DEB3;
+	border-bottom:1px solid #F7931E;
+	border-top:1px solid #F7931E;
+}
+
+.nutroxsun .campaigns-list-element:hover >div:first-child, .nutroxsun .campaigns-list-element.active > div:first-child{
+	border-left:1px solid #F7931E;
+}
+
+.nutroxsun .campaigns-list-element:hover >div:last-child, .nutroxsun .campaigns-list-element.active > div:last-child{
+	border-right:1px solid #F7931E;
+}
+
+.nutroxsun .campaigns-list-element .campaigns-list-id{
+	color: #696969;
+	padding-left: 8px;
+	text-transform: uppercase;	
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-id{
+	color:#DBD4CF;
+}
+
+.nutroxsun .campaigns-list-element .campaigns-list-name{
+	color: #696969;
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-name{
+	color:#DBD4CF;
+}
+
+.nutroxsun .campaigns-list-element .campaigns-list-switcher{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.nutroxsun .campaigns-list-switcher-button{
+	width: 80%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.nutroxsun .campaigns-list-switcher-button > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 6px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	transition: 0.1s left linear;
+}
+
+.nutroxsun .campaigns-list-switcher-button .on{
+	background-color:#F7931E;
+	text-align: left;
+	left: 0px;
+}
+
+.nutroxsun .campaigns-list-switcher-button .on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.nutroxsun .campaigns-list-switcher-button .off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.nutroxsun .campaigns-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.nutroxsun .campaigns-list-element .campaigns-list-qr{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.nutroxsun .campaigns-list-qr-button{
+	background: url(../../../icons/nutroxsuncloud.png) no-repeat;
+	background-size: 20px;
+	background-position: 85% center;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	background-color:#F7931E;
+	border-radius: 10px;
+	padding: 6px;
+	color: #fff;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-qr-button:hover .tooltip{
+	display: block;
+	left: -37px;
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-qr-button{
+	background-color: #DBD4CF;
+}
+
+.nutroxsun .campaigns-list-element .campaigns-list-editor{
+	text-align: center;
+	padding: 10px 0px 0px;
+}
+
+.nutroxsun .campaigns-list-element .campaigns-list-editor > div{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 25px !important;
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-reports{
+	background: url(../../../icons/nutroxsunreports.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-reports:hover .tooltip{
+	display: block;
+	left: -22px
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-edit{
+	background: url(../../../icons/nutroxsunedit.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -11px
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-duplicate{
+	background: url(../../../icons/nutroxsundublicate.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -62px
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-delete{
+	background: url(../../../icons/nutroxsundelete.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.enabled .campaigns-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -53px
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-editor-reports{
+	background: url(../../../icons/nutroxsun-reports-disabled.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-editor-edit{
+	background: url(../../../icons/nutroxsun-edit-disabled.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-editor-duplicate{
+	background: url(../../../icons/nutroxsun-dublicate-disabled.png) no-repeat;
+}
+
+.nutroxsun .campaigns-list-element.disabled .campaigns-list-editor-delete{
+	background: url(../../../icons/nutroxsun-delete-disabled.png) no-repeat;
+}
+
+@media only screen and (max-width: 1220px){
+	.nutroxsun .campaigns-block .campaigns-list-id{
+		width: 17%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-name{
+		width: 46%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-switcher{
+		width: 10%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-qr{
+		width: 10%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-editor{
+		width: 17%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-id{
+		width: 16%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-editor{
+		width: 16%;
+	}
+}
+
+@media only screen and (max-width: 1040px){
+	.nutroxsun .campaigns-block .campaigns-list-id{
+		width: 23%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-name{
+		width: 28%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-switcher{
+		width: 13%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-qr{
+		width: 13%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-editor{
+		width: 23%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-id{
+		width: 21%;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-editor{
+		width: 21%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .campaigns-list{
+		border: none;
+	}
+
+	.nutroxsun .campaigns-list-top{
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+	}
+
+	.nutroxsun .campaigns-list-top .campaigns-list-id{
+		width: 25%;
+		text-align: center;
+	}
+
+	.nutroxsun .campaigns-list-top .campaigns-list-name{
+		width: 35%;
+		text-align: center;
+		background-position: 15px center;
+	}
+
+	.nutroxsun .campaigns-list-top .campaigns-list-switcher{
+		width: 40%;
+		text-align: center;
+		background-position: 16px center;
+	}
+
+	.nutroxsun .campaigns-list-top .campaigns-list-qr{
+		display: none;
+	}
+
+	.nutroxsun .campaigns-list-top .campaigns-list-editor{
+		display: none;
+	}
+
+	.nutroxsun .campaigns-list-qr{
+		border:none;
+	}
+
+	.nutroxsun .campaigns-list-holder{
+		max-width: 600px;
+		margin: 20px auto 0px;
+	}
+
+	.nutroxsun .campaigns-list-element{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		background: #F5DEB3;
+		padding: 10px;
+	}
+
+	.nutroxsun .campaigns-list-element > div{
+		border:none;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+
+	.nutroxsun .campaigns-list-element > div:first-child{
+		border-left:none;
+	}
+
+	.nutroxsun .campaigns-list-element > div:last-child{
+		border-right:none;
+	}
+
+	.nutroxsun .campaigns-list-element:hover > div, .nutroxsun .campaigns-list-element.active > div{
+		background: none;
+		border-bottom:none;
+		border-top:none;
+	}
+
+	.nutroxsun .campaigns-list-element:hover >div:first-child, .nutroxsun .campaigns-list-element.active > div:first-child{
+		border-left:none;
+	}
+
+	.nutroxsun .campaigns-list-element:hover >div:last-child, .nutroxsun .campaigns-list-element.active > div:last-child{
+		border-right:none;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-id{
+		display: block;
+		order: 1;
+		align-self: center;
+		flex-grow: 1;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-name{
+		display: block;
+		width: 100%;
+		order: 4;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-switcher{
+		display: block;
+		width: 70px;
+		order: 3;
+		padding: 0px;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-qr {
+	    width: 70px;
+		order: 2;
+		padding: 0px;
+	}
+
+	.nutroxsun .campaigns-block .campaigns-list-element .campaigns-list-editor{
+		display: block;
+		width: 100%;
+		order: 5;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	.nutroxsun .campaigns-list-switcher-button{
+		width: 90%;
+	}
+
+	.nutroxsun .campaigns-list-qr-button{
+		width: 90%;
+	}
+
+}
