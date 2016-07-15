@@ -1,5 +1,6 @@
 .nutroxsun .campaigns-list{
 	border:1px solid #ccc;
+	background: #fff;
 }
 
 .nutroxsun .campaigns-list-holder{
@@ -366,6 +367,7 @@
 
 	.nutroxsun .campaigns-list{
 		border: none;
+		background: transparent;
 	}
 
 	.nutroxsun .campaigns-list-top{
@@ -376,18 +378,21 @@
 	.nutroxsun .campaigns-list-top .campaigns-list-id{
 		width: 25%;
 		text-align: center;
+		background-color: #fff;
 	}
 
 	.nutroxsun .campaigns-list-top .campaigns-list-name{
 		width: 35%;
 		text-align: center;
-		background-position: 15px center;
+		background-position: 18% center;
+		background-color: #fff;
 	}
 
 	.nutroxsun .campaigns-list-top .campaigns-list-switcher{
 		width: 40%;
 		text-align: center;
-		background-position: 16px center;
+		background-position: 18% center;
+		background-color: #fff;
 	}
 
 	.nutroxsun .campaigns-list-top .campaigns-list-qr{
@@ -414,7 +419,7 @@
 		max-width: 600px;
 		margin: auto;
 		margin-top: 10px;
-		background: #F5DEB3;
+		background-color: #fff;
 		padding: 10px;
 	}
 

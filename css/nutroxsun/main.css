@@ -14,6 +14,8 @@ body.nutroxsun{
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.10);
 	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.10);
 	box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.10);
+	z-index: 2;
+	position: relative;
 }
 
 .nutroxsun .main-header-logo{
@@ -49,6 +51,8 @@ body.nutroxsun{
 
 .nutroxsun .content{
 	padding-bottom: 80px;
+	background: #FFFACD;
+	min-height: 100vh;
 }
 
 .nutroxsun .main-footer{
@@ -57,14 +61,6 @@ body.nutroxsun{
 	width: 100%;
 	height: 40px;
 	background: #C54F32;
-}
-
-.nutroxsun .marketing-header{
-	border-bottom: 2px solid #C54F32;
-}
-
-.nutroxsun .marketing-header{
-	margin-top: 40px;
 }
 
 .nutroxsun .tooltip{
@@ -77,6 +73,13 @@ body.nutroxsun{
 	border-top-color:#F7931E;
 }
 
+.nutroxsun .pagename-block{
+	font-size: 34px;
+	color:white;
+	text-align: center;
+	background: #F7931E;
+	padding:20px 20px 16px;
+}
 
 @media only screen and (max-width: 768px){
 	.nutroxsun .main-header-box{

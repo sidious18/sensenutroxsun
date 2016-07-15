@@ -1,5 +1,6 @@
 .nutroxsun .companies-list{
 	border:1px solid #ccc;
+	background: #fff
 }
 
 .nutroxsun .companies-list-holder{
@@ -344,6 +345,7 @@
 
 	.nutroxsun .companies-list{
 		border: none;
+		background: transparent;
 	}
 
 	.nutroxsun .companies-list-top{
@@ -354,18 +356,22 @@
 	.nutroxsun .companies-list-top .companies-list-id{
 		width: 25%;
 		text-align: center;
+		background-position: 35% center;
+		background-color: #fff;
 	}
 
 	.nutroxsun .companies-list-top .companies-list-name{
 		width: 35%;
 		text-align: center;
-		background-position: 15px center;
+		background-position: 25% center;
+		background-color: #fff;
 	}
 
 	.nutroxsun .companies-list-top .companies-list-switcher{
 		width: 40%;
 		text-align: center;
-		background-position: 16px center;
+		background-position: 22% center;
+		background-color: #fff;
 	}
 
 	.nutroxsun .companies-list-top .companies-list-editor{
@@ -386,6 +392,7 @@
 		margin-top: 10px;
 		background: #F5DEB3;
 		padding: 10px;
+		background-color: #fff;
 	}
 
 	.nutroxsun .companies-list-element > div{

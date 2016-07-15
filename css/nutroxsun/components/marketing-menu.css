@@ -3,7 +3,7 @@
 }
 
 .nutroxsun .marketing-header{
-	margin-top: 40px;
+	padding-top: 40px;
 }
 
 .nutroxsun .marketing-title{
@@ -11,6 +11,11 @@
 	color: #C54F32;
 	font-weight: bold;
 	align-self: center;
+}
+
+.nutroxsun .marketing-title.single-title{
+	padding-bottom: 6px;
+	display: block;
 }
 
 .nutroxsun .marketing-pills div{
@@ -25,7 +30,7 @@
 	padding:8px 8px 5px;
 	top:2px;
 	border:2px solid #C54F32;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #FFFACD;
 	border-radius: 2px;
 
 }

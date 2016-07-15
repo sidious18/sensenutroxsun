@@ -1,0 +1,168 @@
+.nutroxsun .profile-box{
+	margin-top: 20px;
+	display: flex;
+	background: #fff;
+	padding: 2% 0;
+}
+
+.nutroxsun .profile-name-box{
+	width: 50%;
+	padding:10px 3%;
+	border-right: 1px solid #ccc;
+}
+
+.nutroxsun .profile-reset-box{
+	width:50%;
+	padding:10px 3%;
+	position: relative;
+}
+
+.nutroxsun .profile-box-field{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.nutroxsun .profile-box-field.stick:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 1px;
+	height: 25px;
+	background-color: #ccc;
+	z-index: 1;
+	left: 43px;
+	top: 6px;
+}
+
+.nutroxsun .profile-box-field.email input{
+	background-color: inherit;
+	background-color: rgba(69,69,69, 0.1);
+}
+
+.nutroxsun .profile-box-field.email:before{
+	position: absolute;
+    content: "@";
+    display: block;
+    z-index: 1;
+    left: 12px;
+    top: 6px;
+    font-size: 26px;
+    color: #696969;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    padding-top: 4px;
+    height: 22px;
+}
+
+.nutroxsun .profile-box-field.reset-password{
+	position: absolute;
+	bottom: 0px;
+	right: 6%;
+	left: 6%;
+	padding: 11px 10px 7px;
+	cursor: pointer;
+	color:#C69C6D;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	border:1px solid #F7941E;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(198,156,109,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(198,156,109,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(198,156,109,0.75);
+}
+
+.nutroxsun .profile-box-field.name input{
+	background-image: url(../../../icons/nutroxsun-user-icon.png);
+}
+
+.nutroxsun .profile-box-input-text{
+	background-color: rgb(255, 255, 255);
+	padding: 9px 8px 9px 52px;
+	border: 0px none;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+	font-size: 16px;
+}
+
+.profile-box-select{
+	padding: 2px 18px 2px 7px;
+	width: 100%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+	font-size: 16px;
+}
+
+.profile-box-field-label{
+	margin: 5px 0px 8px;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.nutroxsun .profile-name-box-menu{
+	margin-top: 8%;
+	text-align: center;
+}
+
+.nutroxsun .profile-name-box-menu-cancel{
+	background: #B3B3B3;
+	border: 2px solid #808080;
+	padding: 8px 8px 4px;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	width: 90px;
+	text-align: center;
+	display: inline-block;	
+}
+
+.nutroxsun .profile-name-box-menu-ok{
+	background: #C04C30;
+	padding: 10px 10px 6px;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	width: 90px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 3%; 
+}
+
+@media only screen and (max-width: 768px){
+	.nutroxsun .profile-box{
+		flex-wrap: wrap;
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.nutroxsun .profile-name-box{
+		width: 100%;
+		padding-bottom: 0px;
+	}
+
+	.nutroxsun .profile-reset-box{
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	.nutroxsun .profile-reset-box{
+		position:static;
+	}
+
+	.nutroxsun .profile-box-field.reset-password{
+		position: static;
+	}
+
+	.nutroxsun .profile-name-box-menu{
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+	}
+
+}
