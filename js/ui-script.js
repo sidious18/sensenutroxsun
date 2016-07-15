@@ -67,7 +67,7 @@ function initCampaignsListFunctions(){
 	var nameSortButton = ".campaigns-list-top .campaigns-list-name";
 	var switcherSortButton = ".campaigns-list-top .campaigns-list-switcher";
 	var campaignsListTextFilterID = "$(this).find('.campaigns-list-id').text()";
-	var campaignsListTextFilterID = "$(this).find('.campaigns-list-name').text()";
+	var campaignsListTextFilterName = "$(this).find('.campaigns-list-name').text()";
 	var campaignsListFitlerSwitcher = "$(this).hasClass('enabled')";
 	var campaignsListHolder = '.campaigns-list-holder';
 	var campaignsElementBox = '.campaigns-list-elements-box';
@@ -107,10 +107,10 @@ function initCampaignsListFunctions(){
 
     $(nameSortButton).click(function(){
     	if(sortedByName){
-	    	var	sortByName = $.sortFunc([campaignsListTextFilterID]);
+	    	var	sortByName = $.sortFunc([campaignsListTextFilterName]);
 	    }
 	    else{
-	    	var	sortByName = $.sortFunc([campaignsListTextFilterID+"::reverse"]);
+	    	var	sortByName = $.sortFunc([campaignsListTextFilterName+"::reverse"]);
 	    }
 	    sortedByName = !sortedByName;
         $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByName);
@@ -138,7 +138,7 @@ function initCompaniesListFunctions(){
 	var nameSortButton = ".companies-list-top .companies-list-name";
 	var switcherSortButton = ".companies-list-top .companies-list-switcher";
 	var companiesListTextFilterID = "$(this).find('.companies-list-id').text()";
-	var companiesListTextFilterID = "$(this).find('.companies-list-name').text()";
+	var companiesListTextFilterName = "$(this).find('.companies-list-name').text()";
 	var companiesListFitlerSwitcher = "$(this).hasClass('enabled')";
 	var companiesListHolder = '.companies-list-holder';
 	var companiesElementBox = '.companies-list-elements-box';
@@ -165,6 +165,7 @@ function initCompaniesListFunctions(){
 
 
 	$(idSortButton).click(function(){
+		console.log(companiesListTextFilterID);
     	if(sortedByID){
 	    	var sortByID = $.sortFunc([companiesListTextFilterID]);
         }
@@ -178,10 +179,10 @@ function initCompaniesListFunctions(){
 
     $(nameSortButton).click(function(){
     	if(sortedByName){
-	    	var	sortByName = $.sortFunc([companiesListTextFilterID]);
+	    	var	sortByName = $.sortFunc([companiesListTextFilterName]);
 	    }
 	    else{
-	    	var	sortByName = $.sortFunc([companiesListTextFilterID+"::reverse"]);
+	    	var	sortByName = $.sortFunc([companiesListTextFilterName+"::reverse"]);
 	    }
 	    sortedByName = !sortedByName;
         $(this).closest(companiesListHolder).next(companiesElementBox).sortChildren(sortByName);
@@ -199,6 +200,84 @@ function initCompaniesListFunctions(){
     })
 }
 
+function initCompanyFunctions(){
+
+	var switcherButton = ".company-list-switcher-button";
+	var companyElement = ".company-list-element";
+	var enabled = "enabled";
+	var disabled = 'disabled';
+	var idSortButton = ".company-list-top .company-list-id";
+	var nameSortButton = ".company-list-top .company-list-name";
+	var switcherSortButton = ".company-list-top .company-list-switcher";
+
+	var companyListTextFilterName = "$(this).find('.company-list-name').text()";
+	var companyListFitlerSwitcher = "$(this).hasClass('enabled')";
+
+	var companyListHolder = '.company-list-holder';
+	var companyElementBox = '.company-list-elements-box';
+
+	var sortedByName = true;
+	var sortedByStatus = true;
+
+	var userButton = ".user-list-switcher-button";
+
+    $(nameSortButton).click(function(){
+    	if(sortedByName){
+	    	var	sortByName = $.sortFunc([companyListTextFilterName]);
+	    }
+	    else{
+	    	var	sortByName = $.sortFunc([companyListTextFilterName+"::reverse"]);
+	    }
+	    sortedByName = !sortedByName;
+        $(this).closest(companyListHolder).next(companyElementBox).sortChildren(sortByName);
+    })
+
+    $(switcherSortButton).click(function(){
+    	if(sortedByStatus){
+    		var	sortByStatus = $.sortFunc([companyListFitlerSwitcher+"::reverse"]);
+    	}
+    	else{
+    		var	sortByStatus = $.sortFunc([companyListFitlerSwitcher]);
+    	}
+    	sortedByStatus = !sortedByStatus;
+        $(this).closest(companyListHolder).next(companyElementBox).sortChildren(sortByStatus);
+    })
+
+
+	$(userButton).click(function(){
+		var switcherButtonTrigger = !$(this).hasClass(disabled);
+		if(switcherButtonTrigger){
+			$(this).find('.on').css("left","-100%");
+			$(this).find('.off').css("left","0");
+			$(this).addClass(disabled);
+		}
+		else{
+			$(this).find('.on').css("left","0");
+			$(this).find('.off').css("left","100%");
+			$(this).removeClass(disabled);
+		}
+	});
+
+	$(switcherButton).click(function(){
+		var switcherButtonTrigger = $(this).closest(companyElement).hasClass(enabled);
+		if(switcherButtonTrigger){
+			$(this).find('.on').css("left","-100%");
+			$(this).find('.off').css("left","0");
+			$(this).closest(companyElement).addClass(disabled);
+			$(this).closest(companyElement).removeClass(enabled);
+		}
+		else{
+			$(this).find('.on').css("left","0");
+			$(this).find('.off').css("left","100%");
+			$(this).closest(companyElement).addClass(enabled);
+			$(this).closest(companyElement).removeClass(disabled);
+		}
+	});
+
+    
+
+}
+
 
 $(document).ready(function(){
 
@@ -207,6 +286,7 @@ $(document).ready(function(){
 
 	initCampaignsListFunctions();
 	initCompaniesListFunctions();
+	initCompanyFunctions();
 
 	initFilter('campaigns-filter', 'campaigns-list', ".campaigns-list-element", ".campaigns-list-id, .campaigns-list-name");
     initFilter('companies-filter', 'companies-list', ".companies-list-element", ".companies-list-id, .companies-list-name");

@@ -1,5 +1,6 @@
 .cont{
 	width: 1200px;
+	margin:auto;
 }
 
 .login-page{
@@ -78,6 +79,10 @@
 	margin:auto;
 }
 
+.company-list{
+	margin:auto;
+}
+
 .marketing-pills{
 	display: flex;
 }
@@ -87,6 +92,10 @@
 }
 
 .companies-list-top, .companies-list-element{
+	display: flex;
+}
+
+.company-list-top, .company-list-element{
 	display: flex;
 }
 
