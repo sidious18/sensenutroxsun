@@ -28,11 +28,11 @@
   width: 400px;
   background: #fff;
   padding: 15px 30px;
-  -webkit-box-shadow: 0 0 10px rgba(198,156,109,0.75);
-  -moz-box-shadow: 0 0 10px rgba(198,156,109,0.75);
-  -o-box-shadow: 0 0 10px rgba(198,156,109,0.75);
-  -ms-box-shadow: 0 0 10px rgba(198,156,109,0.75);
-  box-shadow: 0 0 10px rgba(198,156,109,0.75);
+  -webkit-box-shadow: 0 0 10px rgba(109, 126, 198, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(109, 126, 198, 0.8);
+  -o-box-shadow: 0 0 10px rgba(109, 126, 198, 0.8);
+  -ms-box-shadow: 0 0 10px rgba(109, 126, 198, 0.8);
+  box-shadow: 0 0 10px rgba(109, 126, 198, 0.8);
   text-align: left;
 }
 

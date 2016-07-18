@@ -11,6 +11,21 @@
 	display: block;
 }
 
+.sense .marketing-header.main-title{
+	padding:0px;
+	border-bottom: none;
+	width: 100%;
+}
+
+.sense .marketing-header.main-title .marketing-title{
+	padding: 20px 0px 13px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: #3C3346;
+	font-size: 30px;
+}
+
 .sense .marketing-title{
 	font-size: 16px;
 	color: #33B0C4;
@@ -89,6 +104,10 @@
 		display: block;
 	}
 
+	.sense .marketing-title.single-title{
+		display: block;
+	}
+
 	.sense .marketing-pills{
 		margin:auto;
 	}
@@ -107,5 +126,9 @@
 	}
 	.sense .marketing-pills div.active{
 		padding: 8px 6px 5px;
+	}
+	.sense .marketing-header.main-title{
+		width: calc(100% + 20px);
+		margin-left: -10px
 	}
 }

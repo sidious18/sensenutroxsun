@@ -34,11 +34,6 @@
 	top: 6px;
 }
 
-.sense .profile-box-field.email input{
-	background-color: inherit;
-	background-color: rgba(69,69,69, 0.1);
-}
-
 .sense .profile-box-field.email:before{
 	position: absolute;
     content: "@";

@@ -59,7 +59,7 @@
 }
 
 .sense .companies-list-top .companies-list-id:hover{
-	background-color:  #F6FF9F;
+	background-color: rgba(50, 191, 211, 0.2);
 	box-shadow: 0 0 0 1px #33B0C4;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .sense .companies-list-top .companies-list-name:hover{
-	background-color:  #F6FF9F;
+	background-color: rgba(50, 191, 211, 0.2);
 	box-shadow: 0 0 0 1px #33B0C4;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .sense .companies-list-top .companies-list-switcher:hover{
-	background-color:  #F6FF9F;
+	background-color: rgba(50, 191, 211, 0.2);
 	box-shadow: 0 0 0 1px #33B0C4;
 }
 
@@ -119,17 +119,17 @@
 }
 
 .sense .companies-list-element:hover > div, .sense .companies-list-element.active > div{
-	background:  #F6FF9F;
+	background:  rgba(50, 191, 211, 0.2);
 	border-bottom:1px solid #33B0C4;
 	border-top:1px solid #33B0C4;
 }
 
 .sense .companies-list-element:hover >div:first-child, .sense .companies-list-element.active > div:first-child{
-	border-left:1px solid #F7931E;
+	border-left:1px solid #33B0C4;
 }
 
 .sense .companies-list-element:hover >div:last-child, .sense .companies-list-element.active > div:last-child{
-	border-right:1px solid #F7931E;
+	border-right:1px solid #33B0C4;
 }
 
 .sense .companies-list-element .companies-list-id{

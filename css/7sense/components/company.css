@@ -177,7 +177,7 @@
 }
 
 .sense .company-list-top .company-list-name:hover{
-	background-color:  #F6FF9F;
+	background-color: rgba(50, 191, 211, 0.2);
 	box-shadow: 0 0 0 1px #33B0C4;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .sense .company-list-top .company-list-switcher:hover{
-	background-color:  #F6FF9F;
+	background-color: rgba(50, 191, 211, 0.2);
 	box-shadow: 0 0 0 1px #33B0C4;
 }
 
@@ -224,17 +224,17 @@
 }
 
 .sense .company-list-element:hover > div, .sense .company-list-element.active > div{
-	background:  #F6FF9F;
+	background:  rgba(50, 191, 211, 0.2);
 	border-bottom:1px solid #33B0C4;
 	border-top:1px solid #33B0C4;
 }
 
 .sense .company-list-element:hover >div:first-child, .sense .company-list-element.active > div:first-child{
-	border-left:1px solid #F7931E;
+	border-left:1px solid #33B0C4;
 }
 
 .sense .company-list-element:hover >div:last-child, .sense .company-list-element.active > div:last-child{
-	border-right:1px solid #F7931E;
+	border-right:1px solid #33B0C4;
 }
 
 .sense .company-list-element .company-list-name{
