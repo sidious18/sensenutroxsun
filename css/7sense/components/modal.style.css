@@ -103,19 +103,20 @@
 .sense .modal-password-box-cancel{
   background: #241F21;
   border: 2px solid #241F21;
-	padding: 4px 8px 4px;
-	color: white;
-	cursor: pointer;
-	text-decoration: none;
-	width: 90px;
-	text-align: center;
-	display: inline-block;
+  padding: 8px 8px 5px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  width: 90px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .sense .modal-password-box-save{
   background: #33B0C4;
   padding: 6px 10px 6px;
-  border:none;
+  border: none;
   color: white;
   cursor: pointer;
   text-decoration: none;
@@ -123,6 +124,7 @@
   text-align: center;
   display: inline-block;
   margin-left: 3%;
+  vertical-align: top;
 }
 
 @media(max-width: 768px){
