@@ -51,7 +51,7 @@
 }
 
 .nutroxsun .companies-list-top .companies-list-id{
-	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
 	background-position: 18px center;
 	padding-left: 35px;
 	background-size: 10px;
@@ -64,7 +64,7 @@
 }
 
 .nutroxsun .companies-list-top .companies-list-name{
-	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
 	background-position: 10px center;
 	padding-left: 28px;
 	background-size: 10px;
@@ -77,7 +77,7 @@
 }
 
 .nutroxsun .companies-list-top .companies-list-switcher{
-	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
 	background-position: 10px center;
 	padding-left: 28px;
 	background-size: 10px;
@@ -215,7 +215,7 @@
 }
 
 .nutroxsun .companies-list-qr-button{
-	background: url(../../../icons/nutroxsuncloud.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsuncloud.png) no-repeat;
 	background-size: 20px;
 	background-position: 85% center;
 	width: 80%;
@@ -256,7 +256,7 @@
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-reports{
-	background: url(../../../icons/nutroxsunreports.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsunreports.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-reports:hover .tooltip{
@@ -265,7 +265,7 @@
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-edit{
-	background: url(../../../icons/nutroxsunedit.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsunedit.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-edit:hover .tooltip{
@@ -274,7 +274,7 @@
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-duplicate{
-	background: url(../../../icons/nutroxsundublicate.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsundublicate.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-duplicate:hover .tooltip{
@@ -283,7 +283,7 @@
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-delete{
-	background: url(../../../icons/nutroxsundelete.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsundelete.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.enabled .companies-list-editor-delete:hover .tooltip{
@@ -292,19 +292,19 @@
 }
 
 .nutroxsun .companies-list-element.disabled .companies-list-editor-reports{
-	background: url(../../../icons/nutroxsun-reports-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-reports-disabled.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.disabled .companies-list-editor-edit{
-	background: url(../../../icons/nutroxsun-edit-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-edit-disabled.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.disabled .companies-list-editor-duplicate{
-	background: url(../../../icons/nutroxsun-dublicate-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-dublicate-disabled.png) no-repeat;
 }
 
 .nutroxsun .companies-list-element.disabled .companies-list-editor-delete{
-	background: url(../../../icons/nutroxsun-delete-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-delete-disabled.png) no-repeat;
 }
 
 @media only screen and (max-width: 1040px){

@@ -12,10 +12,12 @@
 	<link rel="stylesheet" href="css/nutroxsun/components/marketing-menu.css">
 	<link rel="stylesheet" href="css/nutroxsun/components/company.css">
 	<link rel="stylesheet" href="css/nutroxsun/components/profile-block.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/modal.style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/sortchildren.min.js"></script>
-	<script src="js/ui-script.js"></script>
 	<script src="js/table-sort.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
+	<script src="js/ui-script.js"></script>
 </head>
 
 <body class="nutroxsun">
@@ -24,14 +26,17 @@
 			<div class="main-header-logo">
 				
 			</div>
+			<h2 class="main-header-title">
+				Real Time Personalized Contextual Marketing
+			</h2>
 			<div class="main-header-link-box">
 				Logged as: <a href="#" class="main-header-profile">John Smith</a> <a href="#" class="main-header-logout">(Log out)</a>
 			</div>
 		</div>
 	</nav>
 	<div class="content">
-		<header class="marketing-header cont">
-			<h3 class="marketing-title single-title">USER PROFILE</h3>
+		<header class="marketing-header single-title cont">
+			<h3 class="marketing-title">USER PROFILE</h3>
 		</header>
 	
 	<form class="profile-box cont">
@@ -43,7 +48,7 @@
 			</div>
 			<span class="profile-box-field-label">Email:</span>
 			<div class="profile-box-field email">
-				<input type="text" class="profile-box-input-text" disabled>
+				<input type="text" class="profile-box-input-text" value="john@smith.com">
 			</div>
 			<span class="profile-box-field-label">Language:</span>
 			<div class="profile-box-field">
@@ -75,11 +80,11 @@
 					<option>Administrator</option>
 				</select>
 			</div>
-			<div class="profile-box-field reset-password">
+			<a class="profile-box-field reset-password">
 				<div class="profile-box-reset-password">
 					Reset Password
 				</div>
-			</div>
+			</a>
 		</div>
 
 	</form>
@@ -88,5 +93,18 @@
 	<footer class="main-footer">
 		
 	</footer>
+
+	<form id="modal-password-box" class="modal" style="display:none;">
+		<h3 class="modal-password-box-title">Reset password</h3>
+		<span class="modal-password-box-label">New password</span>
+		<input class="modal-password-box-input" type="password">
+		<span class="modal-password-box-label">Confirm password</span>
+		<input class="modal-password-box-input" type="password">
+		<div class="modal-password-box-bottom">
+			<input type="reset" class="modal-password-box-cancel" value="CANCEL">
+			<input type="submit" class="modal-password-box-save"  value="SAVE">
+		</div>
+	</form>
+
 </body>
 </html>

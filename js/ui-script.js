@@ -83,12 +83,14 @@ function initCampaignsListFunctions(){
 			$(this).find('.off').css("left","0");
 			$(this).closest(campaignElement).addClass(disabled);
 			$(this).closest(campaignElement).removeClass(enabled);
+			$(this).parent().attr("data-content", "Off");
 		}
 		else{
 			$(this).find('.on').css("left","0");
 			$(this).find('.off').css("left","100%");
 			$(this).closest(campaignElement).addClass(enabled);
 			$(this).closest(campaignElement).removeClass(disabled);
+			$(this).parent().attr("data-content", "On");
 		}
 	});
 
@@ -154,12 +156,14 @@ function initCompaniesListFunctions(){
 			$(this).find('.off').css("left","0");
 			$(this).closest(companyElement).addClass(disabled);
 			$(this).closest(companyElement).removeClass(enabled);
+			$(this).parent().attr("data-content", "Off");
 		}
 		else{
 			$(this).find('.on').css("left","0");
 			$(this).find('.off').css("left","100%");
 			$(this).closest(companyElement).addClass(enabled);
 			$(this).closest(companyElement).removeClass(disabled);
+			$(this).parent().attr("data-content", "On");
 		}
 	});
 
@@ -250,11 +254,13 @@ function initCompanyFunctions(){
 			$(this).find('.on').css("left","-100%");
 			$(this).find('.off').css("left","0");
 			$(this).addClass(disabled);
+			$(this).parent().attr("data-content", "Off");
 		}
 		else{
 			$(this).find('.on').css("left","0");
 			$(this).find('.off').css("left","100%");
 			$(this).removeClass(disabled);
+			$(this).parent().attr("data-content", "On");
 		}
 	});
 
@@ -265,17 +271,16 @@ function initCompanyFunctions(){
 			$(this).find('.off').css("left","0");
 			$(this).closest(companyElement).addClass(disabled);
 			$(this).closest(companyElement).removeClass(enabled);
+			$(this).parent().attr("data-content", "Off");
 		}
 		else{
 			$(this).find('.on').css("left","0");
 			$(this).find('.off').css("left","100%");
 			$(this).closest(companyElement).addClass(enabled);
 			$(this).closest(companyElement).removeClass(disabled);
+			$(this).parent().attr("data-content", "On");
 		}
 	});
-
-    
-
 }
 
 
@@ -290,5 +295,11 @@ $(document).ready(function(){
 
 	initFilter('campaigns-filter', 'campaigns-list', ".campaigns-list-element", ".campaigns-list-id, .campaigns-list-name");
     initFilter('companies-filter', 'companies-list', ".companies-list-element", ".companies-list-id, .companies-list-name");
+
+	$(".profile-box-field.reset-password").click(function(){
+		$("#modal-password-box").modal({
+		  fadeDuration: 300
+		});
+	});
 
 });

@@ -1,0 +1,111 @@
+.sense .marketing-header{
+	border-bottom: 2px solid #33B0C4;
+}
+
+.sense .marketing-header{
+	padding-top: 40px;
+}
+
+.sense .marketing-header.single-title .marketing-title{
+	padding-bottom: 6px;
+	display: block;
+}
+
+.sense .marketing-title{
+	font-size: 16px;
+	color: #33B0C4;
+	font-weight: bold;
+	align-self: center;
+}
+
+.sense .marketing-title.company-title{
+	padding-bottom: 6px;
+}
+
+.sense .marketing-pills div{
+	padding:12px 10px 5px;
+	color:#33B0C4;
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+
+.sense .marketing-pills div.active{
+	padding:8px 8px 5px;
+	top:2px;
+	border:2px solid #33B0C4;
+	border-bottom: 2px solid #fff;
+	border-radius: 2px;
+
+}
+
+.sense .marketing-search{
+	margin:20px auto 25px;
+}
+
+.sense .marketing-search-input-box{
+	background: url(../../..//icons/7sense/sense-search-icon.png) no-repeat;
+	padding-left: 30px;
+	background-size: 20px;
+	background-position: 0px center;
+	width: 30%;
+}
+
+.sense .marketing-search input{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px;
+	width: 100%;
+}
+
+.sense .marketing-search-add{
+	background: #33B0C4;
+	padding: 6px 12px 6px 6px;
+	color:white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.sense .marketing-search-add:before{
+	content: "+";
+	margin-right: 10px;
+	font-size: 20px;
+	position: relative;
+	top:2px;
+}
+
+@media only screen and (max-width: 768px){
+
+	.sense .main-header-box{
+		max-width: 600px;
+	}
+
+	.sense .marketing-title{
+		display: none;
+	}
+	
+	.sense .marketing-title.company-title{
+		display: block;
+	}
+
+	.sense .marketing-pills{
+		margin:auto;
+	}
+
+	.sense .marketing-search{
+		max-width: 600px;
+		flex-wrap: wrap;
+	}
+	.sense .marketing-search-input-box{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.sense .marketing-pills div{
+		padding: 12px 8px 5px;
+		font-size: 13px;
+	}
+	.sense .marketing-pills div.active{
+		padding: 8px 6px 5px;
+	}
+}

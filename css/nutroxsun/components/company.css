@@ -157,7 +157,7 @@
 }
 
 .nutroxsun .company-list-top .company-list-name{
-	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
 	background-position: 10px center;
 	padding-left: 28px;
 	background-size: 10px;
@@ -170,7 +170,7 @@
 }
 
 .nutroxsun .company-list-top .company-list-switcher{
-	background: url(../../../icons/nutroxsun-arrows.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
 	background-position: 10px center;
 	padding-left: 28px;
 	background-size: 10px;
@@ -308,7 +308,7 @@
 }
 
 .nutroxsun .company-list-element.enabled .company-list-editor-edit{
-	background: url(../../../icons/nutroxsunedit.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsunedit.png) no-repeat;
 }
 
 .nutroxsun .company-list-element.enabled .company-list-editor-edit:hover .tooltip{
@@ -317,7 +317,7 @@
 }
 
 .nutroxsun .company-list-element.enabled .company-list-editor-duplicate{
-	background: url(../../../icons/nutroxsundublicate.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsundublicate.png) no-repeat;
 }
 
 .nutroxsun .company-list-element.enabled .company-list-editor-duplicate:hover .tooltip{
@@ -326,7 +326,7 @@
 }
 
 .nutroxsun .company-list-element.enabled .company-list-editor-delete{
-	background: url(../../../icons/nutroxsundelete.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsundelete.png) no-repeat;
 }
 
 .nutroxsun .company-list-element.enabled .company-list-editor-delete:hover .tooltip{
@@ -335,15 +335,15 @@
 }
 
 .nutroxsun .company-list-element.disabled .company-list-editor-edit{
-	background: url(../../../icons/nutroxsun-edit-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-edit-disabled.png) no-repeat;
 }
 
 .nutroxsun .company-list-element.disabled .company-list-editor-duplicate{
-	background: url(../../../icons/nutroxsun-dublicate-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-dublicate-disabled.png) no-repeat;
 }
 
 .nutroxsun .company-list-element.disabled .company-list-editor-delete{
-	background: url(../../../icons/nutroxsun-delete-disabled.png) no-repeat;
+	background: url(../../../icons/nutroxsun/nutroxsun-delete-disabled.png) no-repeat;
 }
 
 .nutroxsun .company-bottom-menu{

@@ -1,0 +1,475 @@
+.sense .companies-list{
+	border:1px solid #ccc;
+	background: #fff
+}
+
+.sense .companies-list-holder{
+	border-bottom: 1px solid #ccc;
+}
+
+.sense .companies-list-top div{
+	padding:16px 14px 14px;
+	color:#534741;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+}
+
+.sense .companies-list-top div:last-child{
+	border-right: none;
+}
+
+.sense .companies-block .companies-list-id{
+	width: 15%;
+}
+
+.sense .companies-block .companies-list-name{
+	width: 60%;
+}
+
+.sense .companies-block .companies-list-switcher{
+	width: 10%;
+}
+
+.sense .companies-block .companies-list-editor{
+	width: 15%;
+}
+
+.sense .companies-block .companies-list-elements-box .companies-list-id{
+	width: 14%;
+}
+
+.sense .companies-block .companies-list-elements-box .companies-list-name{
+	width: 60%;
+}
+
+.sense .companies-block .companies-list-elements-box .companies-list-switcher{
+	width: 10%;
+}
+
+.sense .companies-block .companies-list-elements-box .companies-list-editor{
+	width: 14%;
+}
+
+.sense .companies-list-top .companies-list-id{
+	background: url(../../..//icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 18px center;
+	padding-left: 35px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.sense .companies-list-top .companies-list-id:hover{
+	background-color:  #F6FF9F;
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+.sense .companies-list-top .companies-list-name{
+	background: url(../../..//icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.sense .companies-list-top .companies-list-name:hover{
+	background-color:  #F6FF9F;
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+.sense .companies-list-top .companies-list-switcher{
+	background: url(../../..//icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.sense .companies-list-top .companies-list-switcher:hover{
+	background-color:  #F6FF9F;
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+.sense .companies-list-top .companies-list-editor{
+	border-right: none;
+}
+
+.sense .companies-list-element{
+	width:100%;
+	margin-top:-1px;
+	justify-content: center;
+}
+
+.sense .companies-list-element > div{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid transparent;
+	padding: 16px;
+}
+
+.sense .companies-list-elements-box > .companies-list-element:last-child >div{
+	border-bottom: none;
+}
+
+.sense .companies-list-element > div:first-child{
+	border-left:1px solid transparent;
+}
+
+.sense .companies-list-element > div:last-child{
+	border-right:1px solid transparent;
+}
+
+.sense .companies-list-element:hover > div, .sense .companies-list-element.active > div{
+	background:  #F6FF9F;
+	border-bottom:1px solid #33B0C4;
+	border-top:1px solid #33B0C4;
+}
+
+.sense .companies-list-element:hover >div:first-child, .sense .companies-list-element.active > div:first-child{
+	border-left:1px solid #F7931E;
+}
+
+.sense .companies-list-element:hover >div:last-child, .sense .companies-list-element.active > div:last-child{
+	border-right:1px solid #F7931E;
+}
+
+.sense .companies-list-element .companies-list-id{
+	color: #696969;
+	padding-left: 8px;
+	text-transform: uppercase;	
+}
+
+.sense .companies-list-element.disabled .companies-list-id{
+	color:#DBD4CF;
+}
+
+.sense .companies-list-element .companies-list-name{
+	color: #696969;
+}
+
+.sense .companies-list-element.disabled .companies-list-name{
+	color:#DBD4CF;
+}
+
+.sense .companies-list-element .companies-list-switcher{
+	text-align: right;
+	padding: 11px 10px 5px;
+	position: relative;
+}
+
+
+.sense .companies-list-element .companies-list-switcher:before{
+	content: attr(data-content);
+	color: #696969;
+	position: absolute;
+	left: 15px;
+	top: 17px;
+}
+
+.sense .companies-list-switcher-button{
+	width: 60%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.sense .companies-list-switcher-button > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 6px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	font-size: 0px;
+	transition: 0.1s left linear;
+}
+
+.sense .companies-list-switcher-button .on{
+	background-color:#33B0C4;
+	text-align: left;
+	left: 0px;
+}
+
+.sense .companies-list-switcher-button .on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .companies-list-switcher-button .off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .companies-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.sense .companies-list-element .companies-list-qr{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.sense .companies-list-qr-button{
+	background: url(../../..//icons/7sense/sensecloud.png) no-repeat;
+	background-size: 20px;
+	background-position: 85% center;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	background-color:#F7931E;
+	border-radius: 10px;
+	padding: 6px;
+	color: #fff;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.sense .companies-list-element.enabled .companies-list-qr-button:hover .tooltip{
+	display: block;
+	left: -37px;
+}
+
+.sense .companies-list-element.disabled .companies-list-qr-button{
+	background-color: #DBD4CF;
+}
+
+.sense .companies-list-element .companies-list-editor{
+	text-align: center;
+	padding: 10px 0px 0px;
+}
+
+.sense .companies-list-element .companies-list-editor > div{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 25px !important;
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-reports{
+	background: url(../../..//icons/7sense/sensereports.png) no-repeat;
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-reports:hover .tooltip{
+	display: block;
+	left: -22px
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-edit{
+	background: url(../../..//icons/7sense/senseedit.png) no-repeat;
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -11px
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-duplicate{
+	background: url(../../..//icons/7sense/sensedublicate.png) no-repeat;
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -62px
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-delete{
+	background: url(../../..//icons/7sense/sensedelete.png) no-repeat;
+}
+
+.sense .companies-list-element.enabled .companies-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -53px
+}
+
+.sense .companies-list-element.disabled .companies-list-editor-reports{
+	background: url(../../..//icons/7sense/sense-reports-disabled.png) no-repeat;
+}
+
+.sense .companies-list-element.disabled .companies-list-editor-edit{
+	background: url(../../..//icons/7sense/sense-edit-disabled.png) no-repeat;
+}
+
+.sense .companies-list-element.disabled .companies-list-editor-duplicate{
+	background: url(../../..//icons/7sense/sense-dublicate-disabled.png) no-repeat;
+}
+
+.sense .companies-list-element.disabled .companies-list-editor-delete{
+	background: url(../../..//icons/7sense/sense-delete-disabled.png) no-repeat;
+}
+
+@media only screen and (max-width: 1040px){
+	.sense .companies-block .companies-list-id{
+		width: 15%;
+	}
+
+	.sense .companies-block .companies-list-name{
+		width: 55%;
+	}
+
+	.sense .companies-block .companies-list-switcher{
+		width: 15%;
+	}
+
+	.sense .companies-block .companies-list-editor{
+		width: 15%;
+	}
+
+	.sense .companies-block .companies-list-elements-box .companies-list-id{
+		width: 14%;
+	}
+
+	.sense .companies-block .companies-list-elements-box .companies-list-name{
+		width: 55%;
+	}
+
+	.sense .companies-block .companies-list-elements-box .companies-list-switcher{
+		width: 15%;
+	}
+
+	.sense .companies-block .companies-list-elements-box .companies-list-editor{
+		width: 14%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.sense .companies-list{
+		border: none;
+		background: transparent;
+	}
+
+	.sense .companies-list-top{
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+	}
+
+	.sense .companies-list-top .companies-list-id{
+		width: 25%;
+		text-align: center;
+		background-position: 35% center;
+		background-color: #fff;
+	}
+
+	.sense .companies-list-top .companies-list-name{
+		width: 35%;
+		text-align: center;
+		background-position: 25% center;
+		background-color: #fff;
+	}
+
+	.sense .companies-list-top .companies-list-switcher{
+		width: 40%;
+		text-align: center;
+		background-position: 22% center;
+		background-color: #fff;
+	}
+
+	.sense .companies-list-top .companies-list-editor{
+		display: none;
+	}
+
+	.sense .companies-list-holder{
+		max-width: 600px;
+		margin: 20px auto 0px;
+	}
+
+	.sense .companies-list-element{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		border:1px solid #33B0C4;
+		padding: 10px;
+		background-color: #fff;
+	}
+
+	.sense .companies-list-element > div{
+		border:none;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+
+	.sense .companies-list-element > div:first-child{
+		border-left:none;
+	}
+
+	.sense .companies-list-element > div:last-child{
+		border-right:none;
+	}
+
+	.sense .companies-list-element:hover > div, .sense .companies-list-element.active > div{
+		background: none;
+		border-bottom:none;
+		border-top:none;
+	}
+
+	.sense .companies-list-element:hover >div:first-child, .sense .companies-list-element.active > div:first-child{
+		border-left:none;
+	}
+
+	.sense .companies-list-element:hover >div:last-child, .sense .companies-list-element.active > div:last-child{
+		border-right:none;
+	}
+
+	.sense .companies-block .companies-list-element .companies-list-id{
+		display: block;
+		order: 1;
+		align-self: center;
+		flex-grow: 1;
+	}
+
+	.sense .companies-block .companies-list-element .companies-list-name{
+		display: block;
+		width: 100%;
+		order: 3;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
+
+	.sense .companies-block .companies-list-element .companies-list-switcher{
+		display: block;
+		width: 70px;
+		order: 2;
+		padding: 0px;
+	}
+
+	.sense .companies-block .companies-list-element .companies-list-editor{
+		display: block;
+		width: 100%;
+		order: 4;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	.sense .companies-list-switcher-button{
+		width: 90%;
+	}
+	.sense .companies-list-element .companies-list-switcher:before{
+		left: -20px;
+		top: 7px;
+	}
+}

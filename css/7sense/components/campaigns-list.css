@@ -1,0 +1,520 @@
+.sense .campaigns-list{
+	border:1px solid #ccc;
+	background: #fff;
+}
+
+.sense .campaigns-list-holder{
+	border-bottom: 1px solid #ccc;
+}
+
+.sense .campaigns-list-top div{
+	padding:16px 14px 14px;
+	color:#534741;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+}
+
+.sense .campaigns-list-top div:last-child{
+	border-right: none;
+}
+
+.sense .campaigns-block .campaigns-list-id{
+	width: 15%;
+}
+
+.sense .campaigns-block .campaigns-list-name{
+	width: 52%;
+}
+
+.sense .campaigns-block .campaigns-list-switcher{
+	width: 9%;
+}
+
+.sense .campaigns-block .campaigns-list-qr{
+	width: 9%;
+}
+
+.sense .campaigns-block .campaigns-list-editor{
+	width: 15%;
+}
+
+.sense .campaigns-block .campaigns-list-element .campaigns-list-id{
+	width: 14%;
+}
+
+.sense .campaigns-block .campaigns-list-element .campaigns-list-editor{
+	width: 14%;
+}
+
+.sense .campaigns-list-top .campaigns-list-id{
+	background: url(../../..//icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 18px center;
+	padding-left: 35px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.sense .campaigns-list-top .campaigns-list-id:hover{
+	background-color:  #F6FF9F;
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+.sense .campaigns-list-top .campaigns-list-name{
+	background: url(../../..//icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.sense .campaigns-list-top .campaigns-list-name:hover{
+	background-color:  #F6FF9F;
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+.sense .campaigns-list-top .campaigns-list-switcher{
+	background: url(../../..//icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.sense .campaigns-list-top .campaigns-list-switcher:before{
+	content:none;
+}
+
+.sense .campaigns-list-top .campaigns-list-switcher:hover{
+	background-color:  #F6FF9F;
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+.sense .campaigns-list-top .campaigns-list-editor{
+	border-right: none;
+}
+
+.sense .campaigns-list-element{
+	width:100%;
+	margin-top:-1px;
+	justify-content: center;
+}
+
+.sense .campaigns-list-element > div{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid transparent;
+	padding: 16px;
+}
+
+.sense .campaigns-list-elements-box > .campaigns-list-element:last-child >div{
+	border-bottom: none;
+}
+
+.sense .campaigns-list-element > div:first-child{
+	border-left:1px solid transparent;
+}
+
+.sense .campaigns-list-element > div:last-child{
+	border-right:1px solid transparent;
+}
+
+.sense .campaigns-list-element:hover > div, .sense .campaigns-list-element.active > div{
+	background:  #F6FF9F;
+	border-bottom:1px solid #33B0C4;
+	border-top:1px solid #33B0C4;
+}
+
+.sense .campaigns-list-element:hover >div:first-child, .sense .campaigns-list-element.active > div:first-child{
+	border-left:1px solid #33B0C4;
+}
+
+.sense .campaigns-list-element:hover >div:last-child, .sense .campaigns-list-element.active > div:last-child{
+	border-right:1px solid #F7931E;
+}
+
+.sense .campaigns-list-element .campaigns-list-id{
+	color: #696969;
+	padding-left: 8px;
+	text-transform: uppercase;	
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-id{
+	color:#DBD4CF;
+}
+
+.sense .campaigns-list-element .campaigns-list-name{
+	color: #696969;
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-name{
+	color:#DBD4CF;
+}
+
+.sense .campaigns-list-element .campaigns-list-switcher{
+	text-align: right;
+	padding: 11px 10px 5px;
+	position: relative;
+}
+
+.sense .campaigns-list-element .campaigns-list-switcher:before{
+	content: attr(data-content);
+	color: #696969;
+	position: absolute;
+	left: 15px;
+	top: 17px;
+}
+
+.sense .campaigns-list-switcher-button{
+	width: 60%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.sense .campaigns-list-switcher-button > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 6px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	font-size: 0px;
+	transition: 0.1s left linear;
+}
+
+.sense .campaigns-list-switcher-button .on{
+	background-color:#33B0C4;
+	text-align: left;
+	left: 0px;
+}
+
+.sense .campaigns-list-switcher-button .on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .campaigns-list-switcher-button .off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .campaigns-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.sense .campaigns-list-element .campaigns-list-qr{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.sense .campaigns-list-qr-button{
+	background: url(../../..//icons/7sense/sensecloud.png) no-repeat;
+	background-size: 20px;
+	background-position: 85% center;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	background-color:#33B0C4;
+	border-radius: 10px;
+	padding: 6px;
+	color: #fff;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-qr-button:hover .tooltip{
+	display: block;
+	left: -37px;
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-qr-button{
+	background-color: #DBD4CF;
+}
+
+.sense .campaigns-list-element .campaigns-list-editor{
+	text-align: center;
+	padding: 10px 0px 0px;
+}
+
+.sense .campaigns-list-element .campaigns-list-editor > div{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 25px !important;
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-reports{
+	background: url(../../..//icons/7sense/sensereports.png) no-repeat;
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-reports:hover .tooltip{
+	display: block;
+	left: -22px
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-edit{
+	background: url(../../..//icons/7sense/senseedit.png) no-repeat;
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -11px
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-duplicate{
+	background: url(../../..//icons/7sense/sensedublicate.png) no-repeat;
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -62px
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-delete{
+	background: url(../../..//icons/7sense/sensedelete.png) no-repeat;
+}
+
+.sense .campaigns-list-element.enabled .campaigns-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -53px
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-editor-reports{
+	background: url(../../..//icons/7sense/sense-reports-disabled.png) no-repeat;
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-editor-edit{
+	background: url(../../..//icons/7sense/sense-edit-disabled.png) no-repeat;
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-editor-duplicate{
+	background: url(../../..//icons/7sense/sense-dublicate-disabled.png) no-repeat;
+}
+
+.sense .campaigns-list-element.disabled .campaigns-list-editor-delete{
+	background: url(../../..//icons/7sense/sense-delete-disabled.png) no-repeat;
+}
+
+@media only screen and (max-width: 1220px){
+	.sense .campaigns-block .campaigns-list-id{
+		width: 17%;
+	}
+
+	.sense .campaigns-block .campaigns-list-name{
+		width: 46%;
+	}
+
+	.sense .campaigns-block .campaigns-list-switcher{
+		width: 10%;
+	}
+
+	.sense .campaigns-block .campaigns-list-qr{
+		width: 10%;
+	}
+
+	.sense .campaigns-block .campaigns-list-editor{
+		width: 17%;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-id{
+		width: 16%;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-editor{
+		width: 16%;
+	}
+}
+
+@media only screen and (max-width: 1040px){
+	.sense .campaigns-block .campaigns-list-id{
+		width: 23%;
+	}
+
+	.sense .campaigns-block .campaigns-list-name{
+		width: 28%;
+	}
+
+	.sense .campaigns-block .campaigns-list-switcher{
+		width: 13%;
+	}
+
+	.sense .campaigns-block .campaigns-list-qr{
+		width: 13%;
+	}
+
+	.sense .campaigns-block .campaigns-list-editor{
+		width: 23%;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-id{
+		width: 21%;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-editor{
+		width: 21%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.sense .campaigns-list{
+		border: none;
+		background: transparent;
+	}
+
+	.sense .campaigns-list-top{
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+	}
+
+	.sense .campaigns-list-top .campaigns-list-id{
+		width: 25%;
+		text-align: center;
+		background-color: #fff;
+	}
+
+	.sense .campaigns-list-top .campaigns-list-name{
+		width: 35%;
+		text-align: center;
+		background-position: 18% center;
+		background-color: #fff;
+	}
+
+	.sense .campaigns-list-top .campaigns-list-switcher{
+		width: 40%;
+		text-align: center;
+		background-position: 18% center;
+		background-color: #fff;
+	}
+
+	.sense .campaigns-list-top .campaigns-list-qr{
+		display: none;
+	}
+
+	.sense .campaigns-list-top .campaigns-list-editor{
+		display: none;
+	}
+
+	.sense .campaigns-list-qr{
+		border:none;
+	}
+
+	.sense .campaigns-list-holder{
+		max-width: 600px;
+		margin: 20px auto 0px;
+	}
+
+	.sense .campaigns-list-element{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		border:1px solid #33B0C4;
+		padding: 10px;
+	}
+
+	.sense .campaigns-list-element > div{
+		border:none;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+
+	.sense .campaigns-list-element > div:first-child{
+		border-left:none;
+	}
+
+	.sense .campaigns-list-element > div:last-child{
+		border-right:none;
+	}
+
+	.sense .campaigns-list-element:hover > div, .sense .campaigns-list-element.active > div{
+		background: none;
+		border-bottom:none;
+		border-top:none;
+	}
+
+	.sense .campaigns-list-element:hover >div:first-child, .sense .campaigns-list-element.active > div:first-child{
+		border-left:none;
+	}
+
+	.sense .campaigns-list-element:hover >div:last-child, .sense .campaigns-list-element.active > div:last-child{
+		border-right:none;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-id{
+		display: block;
+		order: 1;
+		align-self: center;
+		flex-grow: 1;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-name{
+		display: block;
+		width: 100%;
+		order: 4;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-switcher{
+		display: block;
+		width: 70px;
+		order: 3;
+		padding: 0px;
+	}
+
+	.sense .campaigns-block .campaigns-list-qr {
+	    width: 70px;
+		order: 2;
+		padding: 0px;
+	}
+
+	.sense .campaigns-block .campaigns-list-element .campaigns-list-editor{
+		display: block;
+		width: 100%;
+		order: 5;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	.sense .campaigns-list-switcher-button{
+		width: 90%;
+	}
+
+	.sense .campaigns-list-qr-button{
+		width: 90%;
+	}
+
+	.sense .campaigns-list-element .campaigns-list-switcher{
+		margin-left: 30px;
+	}
+
+	.sense .campaigns-list-element .campaigns-list-switcher:before{
+		left: -20px;
+		top: 7px;
+	}
+}

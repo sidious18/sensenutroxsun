@@ -1,11 +1,11 @@
 .nutroxsun .login-page{
-	background: url(../../images/nutroxsun-login-background.png) no-repeat;
+	background: url(../../images/nutroxsun/nutroxsun-login-background.png) no-repeat;
 	background-size: 100%;
 	background-position: center;
 }
 
 .nutroxsun .login-page-logo-img{
-	background: url(../../images/LogoNutroxsun.png) no-repeat;
+	background: url(../../images/nutroxsun/LogoNutroxsun.png) no-repeat;
 	background-size:293px 65px;
 	width:293px;
 	height: 65px;
@@ -44,11 +44,11 @@
 }
 
 .nutroxsun .login-page-form-input.email{
-	background-image: url(../../icons/nutroxsun-user-icon.png);
+	background-image: url(../../icons/nutroxsun/nutroxsun-user-icon.png);
 }
 
 .nutroxsun .login-page-form-input.password{
-	background-image: url(../../icons/nutroxsun-key-icon.png);
+	background-image: url(../../icons/nutroxsun/nutroxsun-key-icon.png);
 }
 
 .nutroxsun .login-page-form-input-box{
