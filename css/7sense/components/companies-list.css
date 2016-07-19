@@ -277,6 +277,7 @@
 
 .sense .companies-list-element.enabled .companies-list-editor-edit{
 	background: url(../../..//icons/7sense/senseedit.png) no-repeat;
+	background-position: 1px 0px;
 }
 
 .sense .companies-list-element.enabled .companies-list-editor-edit:hover .tooltip{

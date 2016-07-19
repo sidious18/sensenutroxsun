@@ -276,6 +276,7 @@
 
 .sense .campaigns-list-element.enabled .campaigns-list-editor-edit{
 	background: url(../../..//icons/7sense/senseedit.png) no-repeat;
+	background-position: 1px 0px;
 }
 
 .sense .campaigns-list-element.enabled .campaigns-list-editor-edit:hover .tooltip{
