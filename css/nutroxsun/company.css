@@ -1,0 +1,94 @@
+.nutroxsun .company-header{
+	border-bottom: 2px solid #C54F32;
+}
+
+.nutroxsun .company-header{
+	margin-top: 40px;
+}
+
+.nutroxsun .company-search{
+	margin:20px auto 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nutroxsun .company-search.name-search{
+	margin-bottom: 70px;
+}
+
+.nutroxsun .company-search.id-search{
+	padding-top: 70px;
+	margin-top:0px;
+}
+
+.nutroxsun .company-search-input-box{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px 8px 5px;
+	width: 100%;
+}
+
+.nutroxsun .company-search-name{
+	align-self: center;
+	color:#696969;
+	text-transform: uppercase;
+	margin-right: 5%;
+}
+
+.nutroxsun .company-list-switcher {
+    width: 80px;
+    text-align: right;
+}
+
+.nutroxsun .company-list-switcher-button{
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.nutroxsun .company-search-title{
+	color:#696969;
+	font-size: 16px;
+	align-self: center;
+}
+
+.nutroxsun .company-footer{
+	text-align: right;
+	margin-top:20px;
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .company-header{
+		max-width: 600px;
+	}
+
+	.nutroxsun .company-search{
+		max-width: 600px;
+		flex-wrap: wrap;
+	}
+	.nutroxsun .company-search-input-box{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.nutroxsun .company-search-name{
+		margin-bottom: 8px;
+	}
+
+	.nutroxsun .company-search.id-search{
+		padding-top: 20px;
+	}
+	
+	.nutroxsun .company-search.name-search{
+		margin-bottom: 15px;
+	}
+
+	.nutroxsun .company-footer{
+		text-align: center;
+	}
+}

@@ -1,0 +1,241 @@
+.nutroxsun .campaign-name{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+.nutroxsun .campaign-name-input{
+	flex-grow: 1;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 5px 8px 3px;
+	font-size:16px;
+}
+
+.nutroxsun .campaign-menu{
+	margin:20px auto 25px;
+}
+
+.nutroxsun .campaign-name-label{
+	color:#696969;
+	font-size: 16px;
+	padding: 7px 20px 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+}
+
+.nutroxsun .campaign-menu-datepicker{
+	width: 33.3333%;
+	padding: 5px 25px;
+	border-right: 1px solid #ccc;
+}
+
+.nutroxsun .campaign-menu-datepicker-label{
+	width: 80px;
+	text-align: right;
+	padding: 0px 15px;
+	color:#696969;
+	font-weight: bold;
+	min-width: 80px;
+	display: block;
+}
+
+.nutroxsun .campaign-menu-datepicker-from, .campaign-menu-datepicker-to{
+	align-items: center;
+	margin-top: 10px;
+}
+
+.nutroxsun .campaign-menu-datepicker-input{
+	flex-grow: 1;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(192,76,48,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(192,76,48,1);
+	box-shadow: 0px 0px 5px 0px rgba(192,76,48,1);
+	border:none;
+	border-radius: 2px;
+	color:#C04C30;
+	padding: 5px 8px;
+	width: 0px;
+}
+
+.nutroxsun .campaign-menu-qa{
+	width: 33.3333%;
+	border-right:1px solid #ccc;
+	text-align: center;
+	padding: 0px 5%;
+	align-self: flex-end;
+}
+
+.nutroxsun .campaign-menu-qa-img{
+	width: 29%;
+	border:1px solid #ccc;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+.nutroxsun .campaign-menu-pdf{
+	width: 33.3333%;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding: 0px 5%;
+	position: relative;
+	align-self: flex-end;
+}
+
+.nutroxsun .campaign-menu-pdf-title{
+	color: #696969;
+}
+
+.nutroxsun .campaign-search-title{
+	color:#696969;
+	font-size: 16px;
+	align-self: center;
+}
+.nutroxsun .campaign-header{
+	border-bottom: 2px solid #C54F32;
+}
+
+.nutroxsun .campaign-header{
+	margin-top: 40px;
+}
+
+.nutroxsun .campaign-search{
+	margin:20px auto 15px;
+	display: flex;
+	justify-content: space-between;
+	border-top:1px solid #ccc;
+	padding-top: 10px;
+}
+
+.nutroxsun .campaign-search.id-campaign{
+	border-top:0px;
+}
+
+.nutroxsun .campaign-search.name-search{
+	margin-bottom: 70px;
+}
+
+.nutroxsun .campaign-search-input-box{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px 8px 5px;
+	width: 100%;
+}
+
+.nutroxsun .campaign-search-name{
+	align-self: center;
+	color:#696969;
+	text-transform: uppercase;
+	margin-right: 5%;
+}
+
+.nutroxsun .campaign-list-switcher {
+    width: 70px;
+}
+
+.nutroxsun .campaign-search-title{
+	color:#000;
+	font-size: 16px;
+	align-self: center;
+	font-weight: bold;
+}
+
+.nutroxsun .content-table-list-qr.priority{
+	text-align: center;	
+	width: 12%;
+}
+
+.nutroxsun .content-table-list-qr.priority input{
+	width: 100%;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 4px 5px;
+	text-align: center;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-qr.priority{
+	cursor: pointer;	
+}	
+
+.nutroxsun .campaign-bottom-menu{
+	text-align: right;
+	margin-top:20px;
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .campaign-search{
+		border-top:0px;
+		max-width: 600px;
+	}
+
+	.nutroxsun .campaign-menu{
+		flex-wrap: wrap;
+		max-width: 600px;
+	}
+
+	.nutroxsun .campaign-name{
+		max-width: 600px;
+	}
+
+	.nutroxsun .campaign-menu-datepicker{
+		width: 100%;
+		padding:5px 0px;
+	}
+
+	.nutroxsun .campaign-menu-qa{
+		width: 100%;
+		margin-top:20px;
+	}
+	
+	.nutroxsun .campaign-menu-pdf{
+		width: 100%;
+		margin-top:20px;
+	}
+
+	.nutroxsun .campaign-menu-qa-download{
+		max-width: 200px;
+		display: block;
+		margin:auto;
+	}
+
+	.nutroxsun .campaign-menu-pdf-generate{
+		max-width: 200px;
+		display: block;
+		margin:10px auto 10px;
+	}
+
+	.nutroxsun .campaign-menu-datepicker{
+		border-right: 0px;
+	}
+
+	.nutroxsun .campaign-menu-qa{
+		border-right: 0px;
+	}
+
+	.nutroxsun .campaign-name-input{
+		width: 0px;
+	}
+
+	.nutroxsun .campaign-list-switcher{
+		text-align: right;
+	}
+
+	.nutroxsun .campaign-menu-qa{
+		padding:0px;
+	}
+
+	.nutroxsun .campaign-menu-pdf{
+		padding: 0px;
+	}
+
+	.nutroxsun .campaign-bottom-menu{
+		max-width: 600px;
+	}
+}

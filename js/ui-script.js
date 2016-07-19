@@ -22,12 +22,12 @@ function initMarketingTabs(){
 	var campaignsLink = ".campaigns-link";
 	var reportsLink = ".reports-link";
 	var companiesLink = ".companies-link";
-	var marketingPillsAll = ".marketing-pills div";
+	var marketingPillsAll = ".navigation-pills div";
 	var marketingActiveTab = "active";
 	var companiesBlock = '.companies-block';
 	var campaignsBlock = ".campaigns-block";
 	var campaignsReport = ".campaigns-report";
-	var marketingTitle = ".marketing-title";
+	var marketingTitle = ".navigation-title";
 
 	$(campaignsLink).click(function(){
 		$(marketingPillsAll).removeClass(marketingActiveTab);
@@ -57,287 +57,110 @@ function initMarketingTabs(){
 	});
 }
 
-function initCampaignsListFunctions(){
+function initContentFilters(){
 
-	var switcherButton = ".campaigns-list-switcher-button";
+	var switcherButton = ".button-switcher";
 	var listSwitcherButton = ".campaign-list-switcher-button";
-	var campaignElement = ".campaigns-list-element";
+	var contentTableElement = ".content-table-list-element";
 	var enabled = "enabled";
 	var disabled = 'disabled';
-	var idSortButton = ".campaigns-list-top .campaigns-list-id";
-	var nameSortButton = ".campaigns-list-top .campaigns-list-name";
-	var priorityButton = ".campaigns-list-qr.priority";
-
-	var switcherSortButton = ".campaigns-list-top .campaigns-list-switcher";
-	var campaignsListTextFilterID = "$(this).find('.campaigns-list-id').text()";
-
-	var campaignsListTextFilterName = "$(this).find('.campaigns-list-name').text()";
-
-	var campaignsListTextFilterPriority = "$(this).find('.campaigns-list-qr.priority input').val()";
-
-	var campaignsListTextFilterName = "$(this).find('.campaigns-list-name').text()";
-
-	var campaignsListFitlerSwitcher = "$(this).hasClass('enabled')";
-
-	var campaignsListHolder = '.campaigns-list-holder';
-	var campaignsElementBox = '.campaigns-list-elements-box';
+	var idSortButton = ".content-table-list-top .content-table-list-id";
+	var nameSortButton = ".content-table-list-top .content-table-list-name";
+	var priorityButton = ".content-table-list-qr.priority";
+	var switcherSortButton = ".content-table-list-top .content-table-list-switcher";
+	var contentTableListTextFilterID = "$(this).find('.content-table-list-id').text()";
+	var contentTableListTextFilterName = "$(this).find('.content-table-list-name').text()";
+	var contentTableListTextFilterPriority = "$(this).find('.content-table-list-qr.priority input').val()";
+	var contentTableListTextFilterName = "$(this).find('.content-table-list-name').text()";
+	var contentTableListFitlerSwitcher = "$(this).hasClass('enabled')";
+	var contentTableListHolder = '.content-table-list-holder';
+	var contentTableElementBox = '.content-table-list-elements-box';
 	var sortedByID = true;
 	var sortedByName = true;
 	var sortedByStatus = true;
-	var sortedByPriority = true
-	var listSwitcherBool = true;
+	var sortedByPriority = true;
 
 	$(switcherButton).click(function(){
-		var switcherButtonTrigger = $(this).closest(campaignElement).hasClass(enabled);
-		if(switcherButtonTrigger){
-			$(this).find('.on').css("left","-100%");
-			$(this).find('.off').css("left","0");
-			$(this).closest(campaignElement).addClass(disabled);
-			$(this).closest(campaignElement).removeClass(enabled);
+
+		var switcherButtonTrigger = $(this).hasClass('button-disabled');
+
+		if(!switcherButtonTrigger){
+			$(this).find('.button-switcher-on').css("left","-100%");
+			$(this).find('.button-switcher-off').css("left","0");
+			$(this).closest(contentTableElement).addClass(disabled);
+			$(this).closest(contentTableElement).removeClass(enabled);
 			$(this).parent().attr("data-content", "Off");
+			$(this).addClass("button-disabled");
 		}
 		else{
-			$(this).find('.on').css("left","0");
-			$(this).find('.off').css("left","100%");
-			$(this).closest(campaignElement).addClass(enabled);
-			$(this).closest(campaignElement).removeClass(disabled);
+			$(this).find('.button-switcher-on').css("left","0");
+			$(this).find('.button-switcher-off').css("left","100%");
+			$(this).closest(contentTableElement).addClass(enabled);
+			$(this).closest(contentTableElement).removeClass(disabled);
 			$(this).parent().attr("data-content", "On");
+			$(this).removeClass("button-disabled");
 		}
-	});
-
-	$(listSwitcherButton).click(function(){
-
-		if(listSwitcherBool){
-			$(this).find('.on').css("left","-100%");
-			$(this).find('.off').css("left","0");
-			$(this).closest(campaignElement).addClass(disabled);
-			$(this).closest(campaignElement).removeClass(enabled);
-			$(this).parent().attr("data-content", "Off");
-		}
-		else{
-			$(this).find('.on').css("left","0");
-			$(this).find('.off').css("left","100%");
-			$(this).closest(campaignElement).addClass(enabled);
-			$(this).closest(campaignElement).removeClass(disabled);
-			$(this).parent().attr("data-content", "On");
-		}
-		listSwitcherBool = !listSwitcherBool;
 	});
 
 
 	$(idSortButton).click(function(){
     	if(sortedByID){
-	    	var sortByID = $.sortFunc([campaignsListTextFilterID]);
+	    	var sortByID = $.sortFunc([contentTableListTextFilterID]);
         }
         else{
-        	var sortByID = $.sortFunc([campaignsListTextFilterID+"::reverse"]);
+        	var sortByID = $.sortFunc([contentTableListTextFilterID+"::reverse"]);
         }
         sortedByID = !sortedByID;
         
-        $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByID);
+        $(this).closest(contentTableListHolder).next(contentTableElementBox).sortChildren(sortByID);
     })
 
     $(nameSortButton).click(function(){
     	if(sortedByName){
-	    	var	sortByName = $.sortFunc([campaignsListTextFilterName]);
+	    	var	sortByName = $.sortFunc([contentTableListTextFilterName]);
 	    }
 	    else{
-	    	var	sortByName = $.sortFunc([campaignsListTextFilterName+"::reverse"]);
+	    	var	sortByName = $.sortFunc([contentTableListTextFilterName+"::reverse"]);
 	    }
 	    sortedByName = !sortedByName;
-        $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByName);
+        $(this).closest(contentTableListHolder).next(contentTableElementBox).sortChildren(sortByName);
     })
 
     $(switcherSortButton).click(function(){
     	if(sortedByStatus){
-    		var	sortByStatus = $.sortFunc([campaignsListFitlerSwitcher+"::reverse"]);
+    		var	sortByStatus = $.sortFunc([contentTableListFitlerSwitcher+"::reverse"]);
     	}
     	else{
-    		var	sortByStatus = $.sortFunc([campaignsListFitlerSwitcher]);
+    		var	sortByStatus = $.sortFunc([contentTableListFitlerSwitcher]);
     	}
     	sortedByStatus = !sortedByStatus;
-        $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByStatus);
+        $(this).closest(contentTableListHolder).next(contentTableElementBox).sortChildren(sortByStatus);
     })
 
     $(priorityButton).click(function(){
     	if(sortedByPriority){
-    		var	sortByPriority = $.sortFunc([campaignsListTextFilterPriority]);
+    		var	sortByPriority = $.sortFunc([contentTableListTextFilterPriority]);
     	}
     	else{
-    		var	sortByPriority = $.sortFunc([campaignsListTextFilterPriority+"::reverse"]);
+    		var	sortByPriority = $.sortFunc([contentTableListTextFilterPriority+"::reverse"]);
     	}
-        $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByPriority);
+        $(this).closest(contentTableListHolder).next(contentTableElementBox).sortChildren(sortByPriority);
         sortedByPriority = !sortedByPriority;
     });
 
     $( ".campaign-menu-datepicker-input" ).datepicker();
 }
 
-function initCompaniesListFunctions(){
-
-	var switcherButton = ".companies-list-switcher-button";
-	var companyElement = ".companies-list-element";
-	var enabled = "enabled";
-	var disabled = 'disabled';
-	var idSortButton = ".companies-list-top .companies-list-id";
-	var nameSortButton = ".companies-list-top .companies-list-name";
-	var switcherSortButton = ".companies-list-top .companies-list-switcher";
-	var companiesListTextFilterID = "$(this).find('.companies-list-id').text()";
-	var companiesListTextFilterName = "$(this).find('.companies-list-name').text()";
-	var companiesListFitlerSwitcher = "$(this).hasClass('enabled')";
-	var companiesListHolder = '.companies-list-holder';
-	var companiesElementBox = '.companies-list-elements-box';
-	var sortedByID = true;
-	var sortedByName = true;
-	var sortedByStatus = true;
-
-
-	$(switcherButton).click(function(){
-		var switcherButtonTrigger = $(this).closest(companyElement).hasClass(enabled);
-		if(switcherButtonTrigger){
-			$(this).find('.on').css("left","-100%");
-			$(this).find('.off').css("left","0");
-			$(this).closest(companyElement).addClass(disabled);
-			$(this).closest(companyElement).removeClass(enabled);
-			$(this).parent().attr("data-content", "Off");
-		}
-		else{
-			$(this).find('.on').css("left","0");
-			$(this).find('.off').css("left","100%");
-			$(this).closest(companyElement).addClass(enabled);
-			$(this).closest(companyElement).removeClass(disabled);
-			$(this).parent().attr("data-content", "On");
-		}
-	});
-
-
-	$(idSortButton).click(function(){
-		console.log(companiesListTextFilterID);
-    	if(sortedByID){
-	    	var sortByID = $.sortFunc([companiesListTextFilterID]);
-        }
-        else{
-        	var sortByID = $.sortFunc([companiesListTextFilterID+"::reverse"]);
-        }
-        sortedByID = !sortedByID;
-        
-        $(this).closest(companiesListHolder).next(companiesElementBox).sortChildren(sortByID);
-    })
-
-    $(nameSortButton).click(function(){
-    	if(sortedByName){
-	    	var	sortByName = $.sortFunc([companiesListTextFilterName]);
-	    }
-	    else{
-	    	var	sortByName = $.sortFunc([companiesListTextFilterName+"::reverse"]);
-	    }
-	    sortedByName = !sortedByName;
-        $(this).closest(companiesListHolder).next(companiesElementBox).sortChildren(sortByName);
-    })
-
-    $(switcherSortButton).click(function(){
-    	if(sortedByStatus){
-    		var	sortByStatus = $.sortFunc([companiesListFitlerSwitcher+"::reverse"]);
-    	}
-    	else{
-    		var	sortByStatus = $.sortFunc([companiesListFitlerSwitcher]);
-    	}
-    	sortedByStatus = !sortedByStatus;
-        $(this).closest(companiesListHolder).next(companiesElementBox).sortChildren(sortByStatus);
-    })
-}
-
-function initCompanyFunctions(){
-
-	var switcherButton = ".company-list-switcher-button";
-	var companyElement = ".company-list-element";
-	var enabled = "enabled";
-	var disabled = 'disabled';
-	var idSortButton = ".company-list-top .company-list-id";
-	var nameSortButton = ".company-list-top .company-list-name";
-	var switcherSortButton = ".company-list-top .company-list-switcher";
-
-	var companyListTextFilterName = "$(this).find('.company-list-name').text()";
-	var companyListFitlerSwitcher = "$(this).hasClass('enabled')";
-
-	var companyListHolder = '.company-list-holder';
-	var companyElementBox = '.company-list-elements-box';
-
-	var sortedByName = true;
-	var sortedByStatus = true;
-
-	var userButton = ".user-list-switcher-button";
-
-    $(nameSortButton).click(function(){
-    	if(sortedByName){
-	    	var	sortByName = $.sortFunc([companyListTextFilterName]);
-	    }
-	    else{
-	    	var	sortByName = $.sortFunc([companyListTextFilterName+"::reverse"]);
-	    }
-	    sortedByName = !sortedByName;
-        $(this).closest(companyListHolder).next(companyElementBox).sortChildren(sortByName);
-    })
-
-    $(switcherSortButton).click(function(){
-    	if(sortedByStatus){
-    		var	sortByStatus = $.sortFunc([companyListFitlerSwitcher+"::reverse"]);
-    	}
-    	else{
-    		var	sortByStatus = $.sortFunc([companyListFitlerSwitcher]);
-    	}
-    	sortedByStatus = !sortedByStatus;
-        $(this).closest(companyListHolder).next(companyElementBox).sortChildren(sortByStatus);
-    })
-
-
-	$(userButton).click(function(){
-		var switcherButtonTrigger = !$(this).hasClass(disabled);
-		if(switcherButtonTrigger){
-			$(this).find('.on').css("left","-100%");
-			$(this).find('.off').css("left","0");
-			$(this).addClass(disabled);
-			$(this).parent().attr("data-content", "Off");
-		}
-		else{
-			$(this).find('.on').css("left","0");
-			$(this).find('.off').css("left","100%");
-			$(this).removeClass(disabled);
-			$(this).parent().attr("data-content", "On");
-		}
-	});
-
-	$(switcherButton).click(function(){
-		var switcherButtonTrigger = $(this).closest(companyElement).hasClass(enabled);
-		if(switcherButtonTrigger){
-			$(this).find('.on').css("left","-100%");
-			$(this).find('.off').css("left","0");
-			$(this).closest(companyElement).addClass(disabled);
-			$(this).closest(companyElement).removeClass(enabled);
-			$(this).parent().attr("data-content", "Off");
-		}
-		else{
-			$(this).find('.on').css("left","0");
-			$(this).find('.off').css("left","100%");
-			$(this).closest(companyElement).addClass(enabled);
-			$(this).closest(companyElement).removeClass(disabled);
-			$(this).parent().attr("data-content", "On");
-		}
-	});
-}
-
-
 $(document).ready(function(){
 
 	initLoginPage();
+
 	initMarketingTabs();
 
-	initCampaignsListFunctions();
-	initCompaniesListFunctions();
-	initCompanyFunctions();
+	initContentFilters();
 
-	initFilter('campaigns-filter', 'campaigns-list', ".campaigns-list-element", ".campaigns-list-id, .campaigns-list-name");
-    initFilter('companies-filter', 'companies-list', ".companies-list-element", ".companies-list-id, .companies-list-name");
+	initFilter('companies-filter', '.companies-block .content-table-list', ".content-table-list-element", ".content-table-list-id, .content-table-list-name");
+    initFilter('campaigns-filter', '.campaigns-block .content-table-list', ".content-table-list-element", ".content-table-list-id, .content-table-list-name");
 
 	$(".profile-box-field.reset-password").click(function(){
 		$("#modal-password-box").modal({

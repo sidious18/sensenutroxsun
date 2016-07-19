@@ -1,0 +1,446 @@
+.nutroxsun .content-table-list{
+	border:1px solid #ccc;
+	background: #fff;
+}
+
+.nutroxsun .content-table-list-holder{
+	border-bottom: 1px solid #ccc;
+}
+
+.nutroxsun .content-table-list-top div{
+	padding:16px 14px 14px;
+	color:#534741;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+}
+
+.nutroxsun .content-table-list-top div:last-child{
+	border-right: none;
+}
+
+.nutroxsun .content-table-block .content-table-list-id{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block .content-table-list-name{
+	width: 52%;
+}
+
+.nutroxsun .content-table-block .content-table-list-switcher{
+	width: 9%;
+}
+
+.nutroxsun .content-table-block .content-table-list-qr{
+	width: 9%;
+}
+
+.nutroxsun .content-table-block .content-table-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block .content-table-list-element .content-table-list-id{
+	width: 14%;
+}
+
+.nutroxsun .content-table-block .content-table-list-element .content-table-list-editor{
+	width: 14%;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-id{
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
+	background-position: 18px center;
+	padding-left: 35px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-id:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-name{
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-name:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-switcher{
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-switcher:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .content-table-list-top .content-table-list-editor{
+	border-right: none;
+}
+
+.nutroxsun .content-table-list-element{
+	width:100%;
+	margin-top:-1px;
+	justify-content: center;
+}
+
+.nutroxsun .content-table-list-element > div{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid transparent;
+	padding: 16px;
+}
+
+.nutroxsun .content-table-list-elements-box > .content-table-list-element:last-child >div{
+	border-bottom: none;
+}
+
+.nutroxsun .content-table-list-element > div:first-child{
+	border-left:1px solid transparent;
+}
+
+.nutroxsun .content-table-list-element > div:last-child{
+	border-right:1px solid transparent;
+}
+
+.nutroxsun .content-table-list-element:hover > div, .nutroxsun .content-table-list-element.active > div{
+	background:  #F5DEB3;
+	border-bottom:1px solid #F7931E;
+	border-top:1px solid #F7931E;
+}
+
+.nutroxsun .content-table-list-element:hover >div:first-child, .nutroxsun .content-table-list-element.active > div:first-child{
+	border-left:1px solid #F7931E;
+}
+
+.nutroxsun .content-table-list-element:hover >div:last-child, .nutroxsun .content-table-list-element.active > div:last-child{
+	border-right:1px solid #F7931E;
+}
+
+.nutroxsun .content-table-list-element .content-table-list-id{
+	color: #696969;
+	padding-left: 8px;
+	text-transform: uppercase;	
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-id{
+	color:#DBD4CF;
+}
+
+.nutroxsun .content-table-list-element .content-table-list-name{
+	color: #696969;
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-name{
+	color:#DBD4CF;
+}
+
+.nutroxsun .content-table-list-element .content-table-list-switcher{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.nutroxsun .content-table-list-element .content-table-list-qr{
+	text-align: center;
+	padding: 11px 10px 5px;
+}
+
+.nutroxsun .content-table-list-qr-button{
+	background: url(../../../icons/nutroxsun/nutroxsuncloud.png) no-repeat;
+	background-size: 20px;
+	background-position: 85% center;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	background-color:#F7931E;
+	border-radius: 10px;
+	padding: 6px;
+	color: #fff;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-qr-button:hover .tooltip{
+	display: block;
+	left: -37px;
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-qr-button{
+	background-color: #DBD4CF;
+}
+
+.nutroxsun .content-table-list-element .content-table-list-editor{
+	text-align: center;
+	padding: 10px 0px 0px;
+}
+
+.nutroxsun .content-table-list-element .content-table-list-editor > div{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 25px !important;
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-reports{
+	background: url(../../../icons/nutroxsun/nutroxsunreports.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-reports:hover .tooltip{
+	display: block;
+	left: -22px
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-edit{
+	background: url(../../../icons/nutroxsun/nutroxsunedit.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -11px
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-duplicate{
+	background: url(../../../icons/nutroxsun/nutroxsundublicate.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -62px
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-delete{
+	background: url(../../../icons/nutroxsun/nutroxsundelete.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.enabled .content-table-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -53px
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-editor-reports{
+	background: url(../../../icons/nutroxsun/nutroxsun-reports-disabled.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-editor-edit{
+	background: url(../../../icons/nutroxsun/nutroxsun-edit-disabled.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-editor-duplicate{
+	background: url(../../../icons/nutroxsun/nutroxsun-dublicate-disabled.png) no-repeat;
+}
+
+.nutroxsun .content-table-list-element.disabled .content-table-list-editor-delete{
+	background: url(../../../icons/nutroxsun/nutroxsun-delete-disabled.png) no-repeat;
+}
+
+@media only screen and (max-width: 1220px){
+	.nutroxsun .content-table-block .content-table-list-id{
+		width: 17%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-name{
+		width: 46%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-switcher{
+		width: 10%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-qr{
+		width: 10%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-editor{
+		width: 17%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-id{
+		width: 16%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-editor{
+		width: 16%;
+	}
+}
+
+@media only screen and (max-width: 1040px){
+	.nutroxsun .content-table-block .content-table-list-id{
+		width: 23%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-name{
+		width: 28%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-switcher{
+		width: 13%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-qr{
+		width: 13%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-editor{
+		width: 23%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-id{
+		width: 21%;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-editor{
+		width: 21%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .content-table-list{
+		border: none;
+		background: transparent;
+	}
+
+	.nutroxsun .content-table-list-top{
+		border-top:1px solid #ccc;
+		border-left:1px solid #ccc;
+	}
+
+	.nutroxsun .content-table-list-top .content-table-list-id{
+		width: 25%;
+		text-align: center;
+		background-color: #fff;
+	}
+
+	.nutroxsun .content-table-list-top .content-table-list-name{
+		width: 35%;
+		text-align: center;
+		background-position: 18% center;
+		background-color: #fff;
+	}
+
+	.nutroxsun .content-table-list-top .content-table-list-switcher{
+		width: 40%;
+		text-align: center;
+		background-position: 18% center;
+		background-color: #fff;
+	}
+
+	.nutroxsun .content-table-list-top .content-table-list-qr{
+		display: none;
+	}
+
+	.nutroxsun .content-table-list-top .content-table-list-editor{
+		display: none;
+	}
+
+	.nutroxsun .content-table-list-qr{
+		border:none;
+	}
+
+	.nutroxsun .content-table-list-holder{
+		max-width: 600px;
+		margin: 20px auto 0px;
+	}
+
+	.nutroxsun .content-table-list-element{
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		background-color: #fff;
+		padding: 10px;
+	}
+
+	.nutroxsun .content-table-list-element > div{
+		border:none;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+
+	.nutroxsun .content-table-list-element > div:first-child{
+		border-left:none;
+	}
+
+	.nutroxsun .content-table-list-element > div:last-child{
+		border-right:none;
+	}
+
+	.nutroxsun .content-table-list-element:hover > div, .nutroxsun .content-table-list-element.active > div{
+		background: none;
+		border-bottom:none;
+		border-top:none;
+	}
+
+	.nutroxsun .content-table-list-element:hover >div:first-child, .nutroxsun .content-table-list-element.active > div:first-child{
+		border-left:none;
+	}
+
+	.nutroxsun .content-table-list-element:hover >div:last-child, .nutroxsun .content-table-list-element.active > div:last-child{
+		border-right:none;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-id{
+		display: block;
+		order: 1;
+		align-self: center;
+		flex-grow: 1;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-name{
+		display: block;
+		width: 100%;
+		order: 4;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-switcher{
+		display: block;
+		width: 80px;
+		order: 3;
+		padding: 0px;
+		text-align: right;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-qr {
+	    width: 70px;
+		order: 2;
+		padding: 0px;
+	}
+
+	.nutroxsun .content-table-block .content-table-list-element .content-table-list-editor{
+		display: block;
+		width: 100%;
+		order: 5;
+		padding: 0px;
+		margin-bottom: 0px;
+	}
+
+	.nutroxsun .content-table-list-switcher-button{
+		width: 90%;
+	}
+
+	.nutroxsun .content-table-list-qr-button{
+		width: 90%;
+	}
+
+}

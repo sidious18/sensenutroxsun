@@ -1,0 +1,94 @@
+.sense .company-header{
+	border-bottom: 2px solid #33B0C4;
+}
+
+.sense .company-header{
+	margin-top: 40px;
+}
+
+.sense .company-search{
+	margin:20px auto 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sense .company-search.name-search{
+	margin-bottom: 70px;
+}
+
+.sense .company-search.id-search{
+	padding-top: 70px;
+	margin-top:0px;
+}
+
+.sense .company-search-input-box{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px 8px 5px;
+	width: 100%;
+}
+
+.sense .company-search-name{
+	align-self: center;
+	color:#696969;
+	text-transform: uppercase;
+	margin-right: 5%;
+}
+
+.sense .company-list-switcher {
+    width: 80px;
+    text-align: right;
+}
+
+.sense .company-list-switcher-button{
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.sense .company-search-title{
+	color:#696969;
+	font-size: 16px;
+	align-self: center;
+}
+
+.sense .company-footer{
+	text-align: right;
+	margin-top:20px;
+}
+
+@media only screen and (max-width: 768px){
+
+	.sense .company-header{
+		max-width: 600px;
+	}
+
+	.sense .company-search{
+		max-width: 600px;
+		flex-wrap: wrap;
+	}
+	.sense .company-search-input-box{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.sense .company-search-name{
+		margin-bottom: 8px;
+	}
+
+	.sense .company-search.id-search{
+		padding-top: 20px;
+	}
+	
+	.sense .company-search.name-search{
+		margin-bottom: 15px;
+	}
+
+	.sense .company-footer{
+		text-align: center;
+	}
+}

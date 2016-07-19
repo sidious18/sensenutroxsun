@@ -1,0 +1,116 @@
+.nutroxsun .content-table-block.company-block .content-table-list-name{
+	width: 75%;
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-name{
+	width: 74%;
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-editor{
+	width: 14%;
+}
+
+.nutroxsun .company-list-top .company-list-name{
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	padding-left: 28px;
+	background-size: 10px;
+	cursor: pointer;
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-element.enabled .content-table-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -12px
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-element.enabled .content-table-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -44px
+}
+
+.nutroxsun .content-table-block.company-block .content-table-list-element.enabled .content-table-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -34px
+}
+
+@media only screen and (max-width: 1040px){
+	
+	.nutroxsun .content-table-block.company-block .content-table-list-name{
+		width: 68%;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-switcher{
+		width: 13%;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-editor{
+		width: 19%;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-name{
+		width: 67%;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-editor{
+		width: 18%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .content-table-block.company-block .content-table-list-name{
+		width: 50%;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-switcher{
+		width: 50%;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-switcher{
+		width: 80px;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-name{
+		order: 1;
+		flex-grow: 1;
+		margin-top: 0px;
+		text-align: left;
+	}
+
+	.nutroxsun .content-table-block.company-block .content-table-list-element .content-table-list-editor{
+		width: 100%;
+	}
+
+	.nutroxsun .user-header{
+		max-width: 600px;
+	}
+
+	.nutroxsun .user-search{
+		max-width: 600px;
+		flex-wrap: wrap;
+	}
+	.nutroxsun .user-search-input-box{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.nutroxsun .user-search-name{
+		margin-bottom: 8px;
+	}
+
+	.nutroxsun .user-search.id-search{
+		padding-top: 20px;
+	}
+	
+	.nutroxsun .user-search.name-search{
+		margin-bottom: 15px;
+	}
+}

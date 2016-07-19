@@ -1,0 +1,247 @@
+.sense .campaign-name{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+.sense .campaign-name-input{
+	flex-grow: 1;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 5px 8px 3px;
+	font-size:16px;
+}
+
+.sense .campaign-menu{
+	margin:20px auto 25px;
+}
+
+.sense .campaign-name-label{
+	color:#696969;
+	font-size: 16px;
+	padding: 7px 20px 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+}
+
+.sense .campaign-menu-datepicker{
+	width: 33.3333%;
+	padding: 5px 25px;
+	border-right: 1px solid #ccc;
+}
+
+.sense .campaign-menu-datepicker-label{
+	width: 80px;
+	text-align: right;
+	padding: 0px 15px;
+	color:#696969;
+	font-weight: bold;
+	min-width: 80px;
+	display: block;
+}
+
+.sense .campaign-menu-datepicker-from, .campaign-menu-datepicker-to{
+	align-items: center;
+	margin-top: 10px;
+}
+
+.sense .campaign-menu-datepicker-input{
+	flex-grow: 1;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(51,176,196,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(51,176,196,1);
+	box-shadow: 0px 0px 5px 0px rgba(51,176,196,1);
+	border:none;
+	border-radius: 2px;
+	color:#33B0C4;
+	padding: 5px 8px;
+	width: 0px;
+}
+
+.sense .campaign-menu-qa{
+	width: 33.3333%;
+	border-right:1px solid #ccc;
+	text-align: center;
+	padding: 0px 5%;
+	align-self: flex-end;
+}
+
+.sense .campaign-menu-qa-img{
+	width: 29%;
+	border:1px solid #ccc;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+.sense .campaign-menu-pdf{
+	width: 33.3333%;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding: 0px 5%;
+	position: relative;
+	align-self: flex-end;
+}
+
+.sense .campaign-menu-pdf-title{
+	color: #696969;
+}
+
+.sense .campaign-search-title{
+	color:#696969;
+	font-size: 16px;
+	align-self: center;
+}
+.sense .campaign-header{
+	border-bottom: 2px solid #33B0C4;
+}
+
+.sense .campaign-header{
+	margin-top: 40px;
+}
+
+.sense .campaign-search{
+	margin:20px auto 15px;
+	display: flex;
+	justify-content: space-between;
+	border-top:1px solid #ccc;
+	padding-top: 10px;
+}
+
+.sense .campaign-search.id-campaign{
+	border-top:0px;
+}
+
+.sense .campaign-search.name-search{
+	margin-bottom: 70px;
+}
+
+.sense .campaign-search-input-box{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px 8px 5px;
+	width: 100%;
+}
+
+.sense .campaign-search-name{
+	align-self: center;
+	color:#696969;
+	text-transform: uppercase;
+	margin-right: 5%;
+}
+
+.sense .campaign-list-switcher {
+    width: 70px;
+    text-align: right;
+}
+
+.sense .campaign-list-switcher .button-switcher-box:before{
+	left: 0px;
+}
+
+.sense .campaign-search-title{
+	color:#000;
+	font-size: 16px;
+	align-self: center;
+	font-weight: bold;
+}
+
+.sense .content-table-list-qr.priority{
+	text-align: center;	
+	width: 12%;
+}
+
+.sense .content-table-list-qr.priority input{
+	width: 100%;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 4px 5px;
+	text-align: center;
+}
+
+.sense .content-table-list-top .content-table-list-qr.priority{
+	cursor: pointer;	
+}	
+
+.sense .campaign-bottom-menu{
+	text-align: right;
+	margin-top:20px;
+}
+
+@media only screen and (max-width: 768px){
+
+	.sense .campaign-search{
+		border-top:0px;
+		max-width: 600px;
+	}
+
+	.sense .campaign-menu{
+		flex-wrap: wrap;
+		max-width: 600px;
+	}
+
+	.sense .campaign-name{
+		max-width: 600px;
+	}
+
+	.sense .campaign-menu-datepicker{
+		width: 100%;
+		padding:5px 0px;
+	}
+
+	.sense .campaign-menu-qa{
+		width: 100%;
+		margin-top:20px;
+	}
+	
+	.sense .campaign-menu-pdf{
+		width: 100%;
+		margin-top:20px;
+	}
+
+	.sense .campaign-menu-qa-download{
+		max-width: 200px;
+		display: block;
+		margin:auto;
+	}
+
+	.sense .campaign-menu-pdf-generate{
+		max-width: 200px;
+		display: block;
+		margin:10px auto 10px;
+	}
+
+	.sense .campaign-menu-datepicker{
+		border-right: 0px;
+	}
+
+	.sense .campaign-menu-qa{
+		border-right: 0px;
+	}
+
+	.sense .campaign-name-input{
+		width: 0px;
+	}
+
+	.sense .campaign-list-switcher{
+		text-align: right;
+	}
+
+	.sense .campaign-menu-qa{
+		padding:0px;
+	}
+
+	.sense .campaign-menu-pdf{
+		padding: 0px;
+	}
+
+	.sense .campaign-bottom-menu{
+		max-width: 600px;
+	}
+
+}

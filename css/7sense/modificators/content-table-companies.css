@@ -1,0 +1,110 @@
+.sense .content-table-block.companies-block .content-table-list-id{
+	width: 15%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-name{
+	width: 60%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-switcher{
+	width: 10%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-editor{
+	width: 15%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-id{
+	width: 14%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-name{
+	width: 60%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-switcher{
+	width: 10%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-editor{
+	width: 14%;
+}
+
+.sense .content-table-block.companies-block .content-table-list-element.enabled .content-table-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -12px
+}
+
+.sense .content-table-block.companies-block .content-table-list-element.enabled .content-table-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -50px
+}
+
+@media only screen and (max-width: 1040px){
+	.sense .content-table-block.companies-block .content-table-list-id{
+		width: 15%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-name{
+		width: 55%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-switcher{
+		width: 15%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-editor{
+		width: 15%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-id{
+		width: 14%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-name{
+		width: 55%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-switcher{
+		width: 15%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-editor{
+		width: 14%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.sense .content-table-block.companies-block .content-table-list-top .content-table-list-id{
+		width: 25%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-top .content-table-list-name{
+		width: 35%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-top .content-table-list-switcher{
+		width: 40%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-name{
+		width: 100%;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-id{
+		width: auto;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-editor{
+		width: 100%
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-switcher{
+		width: 90px;
+	}
+
+	.sense .content-table-block.companies-block .content-table-list-elements-box .content-table-list-qr{
+		width: 90px;
+	}
+}

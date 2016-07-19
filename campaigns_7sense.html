@@ -3,18 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>7 Sense</title>
+	<title>7Sense</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/position.css">
+
 	<link rel="stylesheet" href="css/7sense/main.css">
 	<link rel="stylesheet" href="css/7sense/login.css">
-	<link rel="stylesheet" href="css/7sense/components/campaigns-list.css">
-	<link rel="stylesheet" href="css/7sense/components/companies-list.css">
-	<link rel="stylesheet" href="css/7sense/components/marketing-menu.css">
+	<link rel="stylesheet" href="css/7sense/campaign.css">
+	<link rel="stylesheet" href="css/7sense/company.css">
+	<link rel="stylesheet" href="css/7sense/jquery-ui.css">
+	<link rel="stylesheet" href="css/7sense/profile-block.css">
+
+	<link rel="stylesheet" href="css/7sense/components/buttons.css">
+	<link rel="stylesheet" href="css/7sense/components/content-table.css">
+	<link rel="stylesheet" href="css/7sense/components/navigation-menu.css">
+	<link rel="stylesheet" href="css/7sense/components/modal.style.css">
+
+	<link rel="stylesheet" href="css/7sense/modificators/content-table-campaign.css">
+	<link rel="stylesheet" href="css/7sense/modificators/content-table-companies.css">
+	<link rel="stylesheet" href="css/7sense/modificators/content-table-company.css">
+
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
 	<script src="js/sortchildren.min.js"></script>
-	<script src="js/ui-script.js"></script>
 	<script src="js/table-sort.js"></script>
+	<script src="js/ui-script.js"></script>
 </head>
 
 <body class="sense">
@@ -32,9 +46,9 @@
 		</div>
 	</nav>
 	<div class="content">
-		<header class="marketing-header cont">
-			<h3 class="marketing-title">MARKETING CAMPAIGNS</h3>
-			<div class="marketing-pills">
+		<header class="navigation-header cont">
+			<h3 class="navigation-title">MARKETING CAMPAIGNS</h3>
+			<div class="navigation-pills">
 				<div class="companies-link">
 					COMPANIES
 				</div>
@@ -47,227 +61,241 @@
 			</div>
 		</header>
 
-		<div class="companies-block">
+		<div class="content-table-block companies-block">
 		
-			<div class="marketing-search cont">
-				<div class="marketing-search-input-box">
-					<input type="text" placeholder="SEARCH" class="marketing-search-input companies-filter">
+			<div class="navigation-search cont">
+				<div class="navigation-search-input-box">
+					<input type="text" placeholder="SEARCH" class="navigation-search-input companies-filter">
 				</div>
-				<a href="#" class="marketing-search-add">NEW COMPANY</a>
+				<a href="#" class="button-add">NEW COMPANY</a>
 			</div>
-			<div class="companies-list cont">
-				<div class="companies-list-holder">
-					<div class="companies-list-top">
-						<div class="companies-list-id">
+			<div class="content-table-list cont">
+				<div class="content-table-list-holder">
+					<div class="content-table-list-top">
+						<div class="content-table-list-id">
 							ID
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							NAME
 						</div>
 							
-						<div class="companies-list-switcher">
+						<div class="content-table-list-switcher">
 							ON/OFF
 						</div>
 
-						<div class="companies-list-editor">
+						<div class="content-table-list-editor">
 							
 						</div>
 					</div>
 				</div>
-				<div class="companies-list-elements-box">
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+				<div class="content-table-list-elements-box">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC1
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							SUMMER 2016 - Tokio
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
 					</div>
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC1
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							SUMMER 2016 - USA
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
 					</div>
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC16
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							WINTER 2016 - Germany
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
 					</div>
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC12
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							WINTER 2016 - France
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
 					</div>
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC8
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							Event 12352
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
 					</div>
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC2
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							Superevent 32145345
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
 					</div>
-					<div class="companies-list-element enabled">
-						<div class="companies-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC4
 						</div>
 							
-						<div class="companies-list-name">
+						<div class="content-table-list-name">
 							Megaevent 435235
 						</div>
 					
-						<div class="companies-list-switcher" data-content="On">
-							<div class="companies-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="companies-list-editor">
-							<div class="companies-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="companies-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Company</div>
 							</div>
 						</div>
@@ -277,235 +305,245 @@
 			</div>
 		</div>
 
-		<div class="campaigns-block">
+		<div class="content-table-block campaigns-block">
 
-			<div class="marketing-search cont">
-				<div class="marketing-search-input-box">
-					<input type="text" placeholder="SEARCH" class="marketing-search-input campaigns-filter">
+			<div class="navigation-search cont">
+				<div class="navigation-search-input-box">
+					<input type="text" placeholder="SEARCH" class="navigation-search-input campaigns-filter">
 				</div>
-				<a href="#" class="marketing-search-add">NEW CAMPAIGN</a>
+				<a href="#" class="button-add">NEW CAMPAIGN</a>
 			</div>
-			<div class="campaigns-list cont">
-				<div class="campaigns-list-holder">
-					<div class="campaigns-list-top">
-						<div class="campaigns-list-id">
+			<div class="content-table-list cont">
+				<div class="content-table-list-holder">
+					<div class="content-table-list-top">
+						<div class="content-table-list-id">
 							ID
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							NAME
 						</div>
 							
-						<div class="campaigns-list-switcher">
+						<div class="content-table-list-switcher">
 							ON/OFF
 						</div>
 
-						<div class="campaigns-list-qr">
+						<div class="content-table-list-qr">
 							
 						</div>
 
-						<div class="campaigns-list-editor">
+						<div class="content-table-list-editor">
 							
 						</div>
 					</div>
 				</div>
-				<div class="campaigns-list-elements-box">
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+				<div class="content-table-list-elements-box">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC122
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							Megaevent 435235
 						</div>
 					
-						<div class="campaigns-list-switcher" data-content="On">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-qr">
-							<div class="campaigns-list-qr-button">
+						<div class="content-table-list-qr">
+							<div class="content-table-list-qr-button">
 								QR
 								<div class="tooltip">Generate QR code</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-reports">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-reports">
 								<div class="tooltip">Reports</div>
 							</div>
-							<div class="campaigns-list-editor-edit">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC15
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							SUMMER 2016 - Germany
 						</div>
 					
-						<div class="campaigns-list-switcher" data-content="On">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-qr">
-							<div class="campaigns-list-qr-button">
+						<div class="content-table-list-qr">
+							<div class="content-table-list-qr-button">
 								QR
 								<div class="tooltip">Generate QR code</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-reports">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-reports">
 								<div class="tooltip">Reports</div>
 							</div>
-							<div class="campaigns-list-editor-edit">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC13
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							SUMMER 2016 - Italy
 						</div>
 					
-						<div class="campaigns-list-switcher" data-content="On">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-qr">
-							<div class="campaigns-list-qr-button">
+						<div class="content-table-list-qr">
+							<div class="content-table-list-qr-button">
 								QR
 								<div class="tooltip">Generate QR code</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-reports">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-reports">
 								<div class="tooltip">Reports</div>
 							</div>
-							<div class="campaigns-list-editor-edit">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC144
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							Winter 2016 - Tokio
 						</div>
 					
-						<div class="campaigns-list-switcher" data-content="On">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-qr">
-							<div class="campaigns-list-qr-button">
+						<div class="content-table-list-qr">
+							<div class="content-table-list-qr-button">
 								QR
 								<div class="tooltip">Generate QR code</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-reports">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-reports">
 								<div class="tooltip">Reports</div>
 							</div>
-							<div class="campaigns-list-editor-edit">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC15
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							Autumn 2016 - Tokio
 						</div>
 					
-						<div class="campaigns-list-switcher" data-content="On">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-qr">
-							<div class="campaigns-list-qr-button">
+						<div class="content-table-list-qr">
+							<div class="content-table-list-qr-button">
 								QR
 								<div class="tooltip">Generate QR code</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-reports">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-reports">
 								<div class="tooltip">Reports</div>
 							</div>
-							<div class="campaigns-list-editor-edit">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
@@ -515,7 +553,7 @@
 			</div>
 		</div>
 		
-		<div class="campaigns-report">
+		<div class="content-table-report">
 			
 		</div>
 	</div>

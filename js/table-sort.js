@@ -3,7 +3,8 @@ function initFilter(filter_input, filter_table, elementFilter, filterList){
 		var _input;
 		function _onInputEvent(e) {
 			_input = e.target;
-			var tables = document.getElementsByClassName(filter_table);
+			var tables = $(filter_table);
+			console.log(tables);
 			Arr.forEach.call(tables, function(table) {
 				Arr.forEach.call($(table).find(elementFilter), function(tbody) {
 					_filter($(tbody).find(filterList));

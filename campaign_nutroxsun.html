@@ -6,17 +6,26 @@
 	<title>NutroxSun</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/position.css">
+
 	<link rel="stylesheet" href="css/nutroxsun/main.css">
 	<link rel="stylesheet" href="css/nutroxsun/login.css">
-	<link rel="stylesheet" href="css/nutroxsun/components/campaigns-list.css">
-	<link rel="stylesheet" href="css/nutroxsun/components/companies-list.css">
-	<link rel="stylesheet" href="css/nutroxsun/components/marketing-menu.css">
-	<link rel="stylesheet" href="css/nutroxsun/components/company.css">
-	<link rel="stylesheet" href="css/nutroxsun/components/campaign.css">
+	<link rel="stylesheet" href="css/nutroxsun/campaign.css">
+	<link rel="stylesheet" href="css/nutroxsun/company.css">
 	<link rel="stylesheet" href="css/nutroxsun/jquery-ui.css">
+	<link rel="stylesheet" href="css/nutroxsun/profile-block.css">
+
+	<link rel="stylesheet" href="css/nutroxsun/components/buttons.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/content-table.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/navigation-menu.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/modal.style.css">
+
+	<link rel="stylesheet" href="css/nutroxsun/modificators/content-table-campaign.css">
+	<link rel="stylesheet" href="css/nutroxsun/modificators/content-table-companies.css">
+	<link rel="stylesheet" href="css/nutroxsun/modificators/content-table-company.css">
+
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.modal.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
 	<script src="js/sortchildren.min.js"></script>
 	<script src="js/table-sort.js"></script>
 	<script src="js/ui-script.js"></script>
@@ -37,9 +46,9 @@
 		</div>
 	</nav>
 	<div class="content">
-		<header class="marketing-header cont">
-			<h3 class="marketing-title">MARKETING CAMPAIGN</h3>
-			<div class="marketing-pills">
+		<header class="navigation-header cont">
+			<h3 class="navigation-title">MARKETING CAMPAIGN</h3>
+			<div class="navigation-pills">
 				<div class="campaigns-link active">
 					CAMPAIGNS
 				</div>
@@ -49,18 +58,20 @@
 			</div>
 		</header>
 
-		<div class="campaigns-block">
+		<div class="content-table-block campaign-block">
 
 
 			<div class="campaign-search id-campaign cont">
 				<span class="campaign-search-name">ID: BP1</span>
 				<div class="campaign-list-switcher">
-					<div class="campaign-list-switcher-button">
-						<div class="on">
-							ON
-						</div>
-						<div class="off">
-							OFF
+					<div class="button-switcher-box" data-content="On">
+						<div class="button-switcher">
+							<div class="button-switcher-on">
+								ON
+							</div>
+							<div class="button-switcher-off">
+								OFF
+							</div>
 						</div>
 					</div>
 				</div>
@@ -88,214 +99,224 @@
 				</div>
 				<div class="campaign-menu-qa">
 					<img class="campaign-menu-qa-img" src="images/21i22tmzp.png" alt="qr-code">
-					<div class="campaign-menu-qa-download">DOWNLOAD</div>
+					<div class="button-confirm">DOWNLOAD</div>
 				</div>
 				<div class="campaign-menu-pdf">
 					<div class="campaign-menu-pdf-title">
 						generate <br>
 						triggers diagram
 					</div>
-					<div class="campaign-menu-pdf-generate">generate pdf</div>
+					<div class="button-confirm">generate pdf</div>
 				</div>
 			</div>
 
 			<div class="campaign-search cont">
 				<span class="campaign-search-title">List of users</span>
 			
-				<a href="#" class="campaign-search-add">ADD TRIGGER</a>
+				<a href="#" class="button-add">ADD TRIGGER</a>
 			</div>
 
-			<div class="campaigns-list single-campaign cont">
-				<div class="campaigns-list-holder">
-					<div class="campaigns-list-top">
-						<div class="campaigns-list-id">
+			<div class="content-table-list campaign-block cont">
+				<div class="content-table-list-holder">
+					<div class="content-table-list-top">
+						<div class="content-table-list-id">
 							ID
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							TRIGGER
 						</div>
 
-						<div class="campaigns-list-qr priority">
+						<div class="content-table-list-qr priority">
 							PRIORITY
 						</div>
 
-						<div class="campaigns-list-switcher">
+						<div class="content-table-list-switcher">
 							ON/OFF
 						</div>
 
-						<div class="campaigns-list-editor">
+						<div class="content-table-list-editor">
 							
 						</div>
 					</div>
 				</div>
-				<div class="campaigns-list-elements-box">
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+				<div class="content-table-list-elements-box">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC122
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							Megaevent 435235
 						</div>
-						<div class="campaigns-list-qr priority">
+						<div class="content-table-list-qr priority">
 							<input type="text" value="1">
 						</div>
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
 						
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC15
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							SUMMER 2016 - Germany
 						</div>
 					
-						<div class="campaigns-list-qr priority">
+						<div class="content-table-list-qr priority">
 							<input type="text" value="9">
 						</div>
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC13
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							SUMMER 2016 - Italy
 						</div>
 					
-						<div class="campaigns-list-qr priority">
+						<div class="content-table-list-qr priority">
 							<input type="text" value="5">
 						</div>
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC144
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							Winter 2016 - Tokio
 						</div>
 					
-						<div class="campaigns-list-qr priority">
+						<div class="content-table-list-qr priority">
 							<input type="text" value="13">
 						</div>
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
 					</div>
-					<div class="campaigns-list-element enabled">
-						<div class="campaigns-list-id">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-id">
 							BP1-MC15
 						</div>
 							
-						<div class="campaigns-list-name">
+						<div class="content-table-list-name">
 							Autumn 2016 - Tokio
 						</div>
 					
-						<div class="campaigns-list-qr priority">
+						<div class="content-table-list-qr priority">
 							<input type="text" value="6">
 						</div>
-						<div class="campaigns-list-switcher">
-							<div class="campaigns-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="campaigns-list-editor">
-							<div class="campaigns-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="campaigns-list-editor-duplicate">
+							<div class="content-table-list-editor-duplicate">
 								<div class="tooltip">Duplicate Campaign</div>
 							</div>
-							<div class="campaigns-list-editor-delete">
+							<div class="content-table-list-editor-delete">
 								<div class="tooltip">Delete Campaign</div>
 							</div>
 						</div>
@@ -303,9 +324,9 @@
 				</div>
 
 			</div>
-			<div class="company-bottom-menu cont">
-				<a href="#" class="user-company-bottom-menu-cancel">CANCEL</a>
-				<a href="#" class="user-company-bottom-menu-ok">OK</a>
+			<div class="campaign-bottom-menu cont">
+				<a href="#" class="button button-cancel">CANCEL</a>
+				<a href="#" class="button button-ok">OK</a>
 			</div>
 		</div>
 		

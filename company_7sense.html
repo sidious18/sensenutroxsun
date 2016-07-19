@@ -6,16 +6,29 @@
 	<title>Company</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/position.css">
+
 	<link rel="stylesheet" href="css/7sense/main.css">
 	<link rel="stylesheet" href="css/7sense/login.css">
-	<link rel="stylesheet" href="css/7sense/components/company-list.css">
-	<link rel="stylesheet" href="css/7sense/components/companies-list.css">
-	<link rel="stylesheet" href="css/7sense/components/marketing-menu.css">
-	<link rel="stylesheet" href="css/7sense/components/company.css">
+	<link rel="stylesheet" href="css/7sense/campaign.css">
+	<link rel="stylesheet" href="css/7sense/company.css">
+	<link rel="stylesheet" href="css/7sense/jquery-ui.css">
+	<link rel="stylesheet" href="css/7sense/profile-block.css">
+
+	<link rel="stylesheet" href="css/7sense/components/buttons.css">
+	<link rel="stylesheet" href="css/7sense/components/content-table.css">
+	<link rel="stylesheet" href="css/7sense/components/navigation-menu.css">
+	<link rel="stylesheet" href="css/7sense/components/modal.style.css">
+
+	<link rel="stylesheet" href="css/7sense/modificators/content-table-campaign.css">
+	<link rel="stylesheet" href="css/7sense/modificators/content-table-companies.css">
+	<link rel="stylesheet" href="css/7sense/modificators/content-table-company.css">
+
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
 	<script src="js/sortchildren.min.js"></script>
-	<script src="js/ui-script.js"></script>
 	<script src="js/table-sort.js"></script>
+	<script src="js/ui-script.js"></script>
 </head>
 
 <body class="sense">
@@ -33,193 +46,207 @@
 		</div>
 	</nav>
 	<div class="content">
-	<header class="marketing-header main-title cont">
-		<h3 class="marketing-title company-title">COMPANY</h3>
+	<header class="navigation-header main-title cont">
+		<h3 class="navigation-title single-title">COMPANY</h3>
 	</header>
-		<div class="company-block">
+		<div class="content-table-block company-block">
 
-			<div class="user-search  id-search cont">
-				<span class="user-search-name">ID: BP1</span>
-				<div class="user-list-switcher" data-content="On">
-					<div class="user-list-switcher-button">
-						<div class="on">
-							ON
-						</div>
-						<div class="off">
-							OFF
+			<div class="company-search  id-search cont">
+				<span class="company-search-name">ID: BP1</span>
+				<div class="company-list-switcher">
+					<div class="button-switcher-box" data-content="On">
+						<div class="button-switcher">
+							<div class="button-switcher-on">
+								ON
+							</div>
+							<div class="button-switcher-off">
+								OFF
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="user-search name-search cont">
-				<span class="user-search-name">Name</span>
-				<input type="text" class="user-search-input-box" value="Taggart Transcontinental">				
+			<div class="company-search name-search cont">
+				<span class="company-search-name">Name</span>
+				<input type="text" class="company-search-input-box" value="Taggart Transcontinental">				
 			</div>
 
 			
 
-			<div class="user-search cont">
-				<span class="user-search-title">List of users</span>
+			<div class="company-search cont">
+				<span class="company-search-title">List of users</span>
 			
-				<a href="#" class="user-search-add">ADD USER</a>
+				<a href="#" class="button-add">ADD USER</a>
 			</div>
 
-			<div class="company-list cont">
-				<div class="company-list-holder">
-					<div class="company-list-top">
+			<div class="content-table-list cont">
+				<div class="content-table-list-holder">
+					<div class="content-table-list-top">
 							
-						<div class="company-list-name">
+						<div class="content-table-list-name">
 							NAME
 						</div>
 							
-						<div class="company-list-switcher">
+						<div class="content-table-list-switcher">
 							ON/OFF
 						</div>
 
-						<div class="company-list-editor">
+						<div class="content-table-list-editor">
 							
 						</div>
 					</div>
 				</div>
-				<div class="company-list-elements-box">
-					<div class="company-list-element enabled">
-						<div class="company-list-name">
+				<div class="content-table-list-elements-box">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-name">
 							Dagny Taggart
 						</div>					
-						<div class="company-list-switcher" data-content="On">
-							<div class="company-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="company-list-editor">
-							<div class="company-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="company-list-editor-duplicate">
-								<div class="tooltip">Duplicate User</div>
+							<div class="content-table-list-editor-duplicate">
+								<div class="tooltip">Duplicate user</div>
 							</div>
-							<div class="company-list-editor-delete">
-								<div class="tooltip">Delete User</div>
+							<div class="content-table-list-editor-delete">
+								<div class="tooltip">Delete user</div>
 							</div>
 						</div>
 					</div>
-					<div class="company-list-element enabled">
-						<div class="company-list-name">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-name">
 							James Taggart
 						</div>					
-						<div class="company-list-switcher" data-content="On">
-							<div class="company-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="company-list-editor">
-							<div class="company-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="company-list-editor-duplicate">
-								<div class="tooltip">Duplicate User</div>
+							<div class="content-table-list-editor-duplicate">
+								<div class="tooltip">Duplicate user</div>
 							</div>
-							<div class="company-list-editor-delete">
-								<div class="tooltip">Delete User</div>
+							<div class="content-table-list-editor-delete">
+								<div class="tooltip">Delete user</div>
 							</div>
 						</div>
 					</div>
-					<div class="company-list-element enabled">
-						<div class="company-list-name">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-name">
 							Hank Rearden
 						</div>				
-						<div class="company-list-switcher" data-content="On">
-							<div class="company-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="company-list-editor">
-							<div class="company-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="company-list-editor-duplicate">
-								<div class="tooltip">Duplicate User</div>
+							<div class="content-table-list-editor-duplicate">
+								<div class="tooltip">Duplicate user</div>
 							</div>
-							<div class="company-list-editor-delete">
-								<div class="tooltip">Delete User</div>
+							<div class="content-table-list-editor-delete">
+								<div class="tooltip">Delete user</div>
 							</div>
 						</div>
 					</div>
-					<div class="company-list-element enabled">
-						<div class="company-list-name">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-name">
 							Francisco d'Anconia
 						</div>				
-						<div class="company-list-switcher" data-content="On">
-							<div class="company-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="company-list-editor">
-							<div class="company-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="company-list-editor-duplicate">
-								<div class="tooltip">Duplicate User</div>
+							<div class="content-table-list-editor-duplicate">
+								<div class="tooltip">Duplicate user</div>
 							</div>
-							<div class="company-list-editor-delete">
-								<div class="tooltip">Delete User</div>
+							<div class="content-table-list-editor-delete">
+								<div class="tooltip">Delete user</div>
 							</div>
 						</div>
 					</div>
-					<div class="company-list-element enabled">
-						<div class="company-list-name">
+					<div class="content-table-list-element enabled">
+						<div class="content-table-list-name">
 							John Galt
 						</div>					
-						<div class="company-list-switcher" data-content="On">
-							<div class="company-list-switcher-button">
-								<div class="on">
-									ON
-								</div>
-								<div class="off">
-									OFF
+						<div class="content-table-list-switcher">
+							<div class="button-switcher-box" data-content="On">
+								<div class="button-switcher">
+									<div class="button-switcher-on">
+										ON
+									</div>
+									<div class="button-switcher-off">
+										OFF
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="company-list-editor">
-							<div class="company-list-editor-edit">
+						<div class="content-table-list-editor">
+							<div class="content-table-list-editor-edit">
 								<div class="tooltip">Edit</div>
 							</div>
-							<div class="company-list-editor-duplicate">
-								<div class="tooltip">Duplicate User</div>
+							<div class="content-table-list-editor-duplicate">
+								<div class="tooltip">Duplicate user</div>
 							</div>
-							<div class="company-list-editor-delete">
-								<div class="tooltip">Delete User</div>
+							<div class="content-table-list-editor-delete">
+								<div class="tooltip">Delete user</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
+			<footer class="company-footer cont">
+				<a href="#" class="button button-cancel">CANCEL</a>
+				<a href="#" class="button button-ok">OK</a>
+			</footer>
 		</div>
-		<div class="company-bottom-menu cont">
-			<a href="#" class="user-company-bottom-menu-cancel">CANCEL</a>
-			<a href="#" class="user-company-bottom-menu-ok">OK</a>
-		</div>
+		
 		
 	</div>
 	<footer class="main-footer">

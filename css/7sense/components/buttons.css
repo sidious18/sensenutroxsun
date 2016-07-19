@@ -1,0 +1,113 @@
+.sense .button-switcher-box{
+	position: relative;
+}
+
+.sense .button-switcher-box:before {
+	content: attr(data-content);
+	color: #696969;
+	position: absolute;
+	left: 5px;
+	top: 7px;
+	font-size: 14px;
+}
+
+.sense .button-switcher{
+	width: 60%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.sense .button-switcher > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 6px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	transition: 0.1s left linear;
+	font-size: 0px;
+}
+
+.sense .button-switcher .button-switcher-on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .button-switcher .button-switcher-off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .button-switcher .button-switcher-on{
+	background-color:#33b0c4;
+	text-align: left;
+	left: 0px;
+}
+
+.sense .button-switcher .button-switcher-off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.sense .button{
+	cursor: pointer;
+	text-decoration: none;
+	width: 90px;
+	text-align: center;
+	display: inline-block;
+	color: white;
+}
+
+.sense .button-ok{
+	background: #33B0C4;
+	padding: 8px;
+
+}
+
+.sense .button-cancel{
+	background: #000;
+	border:2px solid #000;
+	padding: 6px;
+}
+
+.sense .button-add{
+	background: #33B0C4;
+	padding: 6px 12px 6px 6px;
+	color:white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.sense .button-add:before{
+	content: "+";
+	margin-right: 10px;
+	font-size: 20px;
+	position: relative;
+	top:2px;
+}
+
+.sense .button-confirm{
+	width: 100%;
+	display: inline-block;
+	background: #33B0C4;
+	color: #fff;
+	cursor: pointer;
+	padding:9px 10px 6px;
+}

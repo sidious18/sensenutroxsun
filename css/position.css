@@ -59,19 +59,19 @@
 	margin:auto;
 }
 
-.marketing-header{
+.navigation-header{
 	display: flex;
 	margin:auto;
 	justify-content: space-between;
 }
 
-.marketing-search{
+.navigation-search{
 	display: flex;
 	margin:auto;
 	justify-content: space-between;
 }
 
-.campaigns-list{
+.content-table-list{
 	margin:auto;
 }
 
@@ -83,11 +83,11 @@
 	margin:auto;
 }
 
-.marketing-pills{
+.navigation-pills{
 	display: flex;
 }
 
-.campaigns-list-top, .campaigns-list-element{
+.content-table-list-top, .content-table-list-element{
 	display: flex;
 }
 
@@ -139,7 +139,7 @@
 	margin-left: -8px;
 }
 
-.campaigns-report{
+.content-table-report{
 	display: none;
 }
 

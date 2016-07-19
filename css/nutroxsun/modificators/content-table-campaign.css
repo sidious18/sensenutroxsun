@@ -1,0 +1,177 @@
+.nutroxsun .content-table-block.campaign-block .content-table-list-id{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-name{
+	width: 50%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-qr.priority{
+	width: 11%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-switcher{
+	width: 9%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-id{
+	width: 14%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-editor{
+	width: 14%;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-element.enabled .content-table-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -12px
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-element.enabled .content-table-list-editor-duplicate:hover .tooltip{
+	display: block;
+	left: -61px
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-element.enabled .content-table-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -53px
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-top .content-table-list-qr.priority{
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	background-size: 10px;
+}
+
+.nutroxsun .content-table-block.campaign-block .content-table-list-top .content-table-list-qr.priority:hover{
+	background-color: #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+.nutroxsun .campaign-menu-pdf .button-confirm{
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 1220px){
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-id{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-name{
+		width: 47%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-qr.priority{
+		width: 12%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-switcher{
+		width: 11%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-editor{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-id{
+		width: 14%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-editor{
+		width: 14%;
+	}	
+
+}
+
+@media only screen and (max-width: 1040px){
+	
+	.nutroxsun .content-table-block.campaign-block .content-table-list-id{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-name{
+		width: 39%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-qr.priority{
+		width: 16%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-switcher{
+		width: 13%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-editor{
+		width: 17%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-id{
+		width: 14%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-editor{
+		width: 16%;
+	}	
+
+}
+
+@media only screen and (max-width: 768px){
+	.nutroxsun .content-table-block.campaign-block .content-table-list-top{
+		flex-wrap: wrap;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-top .content-table-list-id{
+		width: 50%;
+		background-position: 18% center;
+		padding: 16px 14px 14px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-top .content-table-list-switcher{
+		width: 50%;
+		background-position: 18% center;
+		padding: 16px 14px 14px;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-top .content-table-list-name{
+		width: 50%;
+		background-position: 18% center;
+		padding: 16px 14px 14px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-top .content-table-list-qr.priority{
+		width: 50%;
+		display: block;
+		align-self: center;
+		padding: 16px 14px 14px;
+		background-color:#fff;
+		background-position: 18% center;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-id{
+		width: auto;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-name{
+		width: 100%;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-qr.priority{
+		width: 60px;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-switcher{
+		width: 70px;
+		text-align: right;
+	}
+
+	.nutroxsun .content-table-block.campaign-block .content-table-list-element .content-table-list-editor{
+		width: 100%;
+	}
+}

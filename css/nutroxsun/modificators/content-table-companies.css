@@ -1,0 +1,110 @@
+.nutroxsun .content-table-block.companies-block .content-table-list-id{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-name{
+	width: 60%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-editor{
+	width: 15%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-id{
+	width: 14%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-name{
+	width: 60%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-switcher{
+	width: 10%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-editor{
+	width: 14%;
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-element.enabled .content-table-list-editor-edit:hover .tooltip{
+	display: block;
+	left: -12px
+}
+
+.nutroxsun .content-table-block.companies-block .content-table-list-element.enabled .content-table-list-editor-delete:hover .tooltip{
+	display: block;
+	left: -50px
+}
+
+@media only screen and (max-width: 1040px){
+	.nutroxsun .content-table-block.companies-block .content-table-list-id{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-name{
+		width: 55%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-switcher{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-editor{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-id{
+		width: 14%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-name{
+		width: 55%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-switcher{
+		width: 15%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-editor{
+		width: 14%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-top .content-table-list-id{
+		width: 25%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-top .content-table-list-name{
+		width: 35%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-top .content-table-list-switcher{
+		width: 40%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-name{
+		width: 100%;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-id{
+		width: auto;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-editor{
+		width: 100%
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-switcher{
+		width: 90px;
+	}
+
+	.nutroxsun .content-table-block.companies-block .content-table-list-elements-box .content-table-list-qr{
+		width: 90px;
+	}
+}
