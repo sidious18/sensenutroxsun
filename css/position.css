@@ -99,6 +99,22 @@
 	display: flex;
 }
 
+.campaign-menu{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.campaign-menu-datepicker-from, .campaign-menu-datepicker-to{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
 .tooltip{
 	position: absolute;
 	top:-40px;

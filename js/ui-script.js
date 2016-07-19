@@ -60,21 +60,32 @@ function initMarketingTabs(){
 function initCampaignsListFunctions(){
 
 	var switcherButton = ".campaigns-list-switcher-button";
+	var listSwitcherButton = ".campaign-list-switcher-button";
 	var campaignElement = ".campaigns-list-element";
 	var enabled = "enabled";
 	var disabled = 'disabled';
 	var idSortButton = ".campaigns-list-top .campaigns-list-id";
 	var nameSortButton = ".campaigns-list-top .campaigns-list-name";
+	var priorityButton = ".campaigns-list-qr.priority";
+
 	var switcherSortButton = ".campaigns-list-top .campaigns-list-switcher";
 	var campaignsListTextFilterID = "$(this).find('.campaigns-list-id').text()";
+
 	var campaignsListTextFilterName = "$(this).find('.campaigns-list-name').text()";
+
+	var campaignsListTextFilterPriority = "$(this).find('.campaigns-list-qr.priority input').val()";
+
+	var campaignsListTextFilterName = "$(this).find('.campaigns-list-name').text()";
+
 	var campaignsListFitlerSwitcher = "$(this).hasClass('enabled')";
+
 	var campaignsListHolder = '.campaigns-list-holder';
 	var campaignsElementBox = '.campaigns-list-elements-box';
 	var sortedByID = true;
 	var sortedByName = true;
 	var sortedByStatus = true;
-
+	var sortedByPriority = true
+	var listSwitcherBool = true;
 
 	$(switcherButton).click(function(){
 		var switcherButtonTrigger = $(this).closest(campaignElement).hasClass(enabled);
@@ -92,6 +103,25 @@ function initCampaignsListFunctions(){
 			$(this).closest(campaignElement).removeClass(disabled);
 			$(this).parent().attr("data-content", "On");
 		}
+	});
+
+	$(listSwitcherButton).click(function(){
+
+		if(listSwitcherBool){
+			$(this).find('.on').css("left","-100%");
+			$(this).find('.off').css("left","0");
+			$(this).closest(campaignElement).addClass(disabled);
+			$(this).closest(campaignElement).removeClass(enabled);
+			$(this).parent().attr("data-content", "Off");
+		}
+		else{
+			$(this).find('.on').css("left","0");
+			$(this).find('.off').css("left","100%");
+			$(this).closest(campaignElement).addClass(enabled);
+			$(this).closest(campaignElement).removeClass(disabled);
+			$(this).parent().attr("data-content", "On");
+		}
+		listSwitcherBool = !listSwitcherBool;
 	});
 
 
@@ -128,6 +158,19 @@ function initCampaignsListFunctions(){
     	sortedByStatus = !sortedByStatus;
         $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByStatus);
     })
+
+    $(priorityButton).click(function(){
+    	if(sortedByPriority){
+    		var	sortByPriority = $.sortFunc([campaignsListTextFilterPriority]);
+    	}
+    	else{
+    		var	sortByPriority = $.sortFunc([campaignsListTextFilterPriority+"::reverse"]);
+    	}
+        $(this).closest(campaignsListHolder).next(campaignsElementBox).sortChildren(sortByPriority);
+        sortedByPriority = !sortedByPriority;
+    });
+
+    $( ".campaign-menu-datepicker-input" ).datepicker();
 }
 
 function initCompaniesListFunctions(){

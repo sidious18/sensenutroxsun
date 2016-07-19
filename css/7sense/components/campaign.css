@@ -1,0 +1,422 @@
+.sense .campaign-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.sense .campaign-name{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+.sense .campaign-name-input{
+	flex-grow: 1;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 5px 8px 3px;
+	font-size:16px;
+}
+
+.sense .campaign-menu{
+	margin:20px auto 25px;
+}
+
+.sense .campaign-name-label{
+	color:#696969;
+	font-size: 16px;
+	padding: 7px 20px 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+
+}
+
+.sense .campaign-menu-datepicker{
+	width: 33.3333%;
+	padding: 5px 25px;
+	border-right: 1px solid #ccc;
+}
+
+.sense .campaign-menu-datepicker-label{
+	width: 80px;
+	text-align: right;
+	padding: 0px 15px;
+	color:#696969;
+	font-weight: bold;
+	min-width: 80px;
+	display: block;
+}
+
+.sense .campaign-menu-datepicker-from, .campaign-menu-datepicker-to{
+	align-items: center;
+	margin-top: 10px;
+}
+
+.sense .campaign-menu-datepicker-input{
+	flex-grow: 1;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(51,176,196,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(51,176,196,1);
+	box-shadow: 0px 0px 5px 0px rgba(51,176,196,1);
+	border:none;
+	border-radius: 2px;
+	color:#33B0C4;
+	padding: 5px 8px;
+	width: 0px;
+}
+
+.sense .campaign-menu-qa{
+	width: 33.3333%;
+	border-right:1px solid #ccc;
+	text-align: center;
+	padding: 0px 5%;
+}
+
+.sense .campaign-menu-qa-img{
+	width: 29%;
+	border:1px solid #ccc;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+.sense .campaign-menu-qa-download{
+	width: 100%;
+	display: inline-block;
+	background: #33B0C4;
+	color: #fff;
+	cursor: pointer;
+	padding:9px 10px 6px;
+}
+
+.sense .campaign-menu-pdf{
+	width: 33.3333%;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding: 0px 5%;
+	position: relative;
+	align-self: flex-end;
+}
+
+.sense .campaign-menu-pdf-title{
+	color: #696969;
+}
+
+.sense .campaign-menu-pdf-generate{
+	width: 100%;
+	display: inline-block;
+	background: #33B0C4;
+	color: #fff;
+	cursor: pointer;
+	padding:9px 10px 6px;
+	margin-top:25px;
+}
+
+.sense .campaign-search-title{
+	color:#696969;
+	font-size: 16px;
+	align-self: center;
+}
+.sense .campaign-header{
+	border-bottom: 2px solid #C54F32;
+}
+
+.sense .campaign-header{
+	margin-top: 40px;
+}
+
+.sense .campaign-search{
+	margin:20px auto 15px;
+	display: flex;
+	justify-content: space-between;
+	border-top:1px solid #ccc;
+	padding-top: 10px;
+}
+
+.sense .campaign-search.id-campaign{
+	border-top:0px;
+}
+
+.sense .campaign-search.name-search{
+	margin-bottom: 70px;
+}
+
+.sense .campaign-search-input-box{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px 8px 5px;
+	width: 100%;
+}
+
+.sense .campaign-search-add{
+	background: #33B0C4;
+	padding: 6px 12px 6px 6px;
+	color:white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.sense .campaign-search-add:before{
+	content: "+";
+	margin-right: 10px;
+	font-size: 20px;
+	position: relative;
+	top:2px;
+}
+
+.sense .campaign-search-name{
+	align-self: center;
+	color:#696969;
+	text-transform: uppercase;
+	margin-right: 5%;
+}
+
+.sense .campaign-list-switcher {
+    width: 50px;
+    position: relative;
+    font-size: 0px;
+}
+
+.sense .campaign-list-switcher:before{
+	content: attr(data-content);
+	color: #696969;
+	position: absolute;
+	left: -25px;
+	top: 7px;
+	font-size: 14px;
+}
+
+.sense .campaign-list-switcher-button{
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.sense .campaign-list-switcher-button > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 7px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	transition: 0.1s left linear;
+}
+
+.sense .campaign-list-switcher-button .on{
+	background-color:#33B0C4;
+	text-align: left;
+	left: 0px;
+}
+
+.sense .campaign-list-switcher-button .on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .campaign-list-switcher-button .off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.sense .campaign-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.sense .campaign-search-title{
+	color:#000;
+	font-size: 16px;
+	align-self: center;
+	font-weight: bold;
+}
+
+.sense .campaigns-list.single-campaign{
+	border-top:3px solid #ccc;
+}
+
+.sense .campaigns-list.single-campaign .campaigns-list-name{
+	width: 49%;
+}
+
+.sense .campaigns-list-top .campaigns-list-qr.priority{
+	background: url(../../../icons/7sense/sense-arrows.png) no-repeat;
+	background-position: 10px center;
+	background-size: 10px;
+}
+
+.sense .campaigns-list-qr.priority{
+	text-align: center;	
+	width: 12%;
+}
+
+.sense .campaigns-list-qr.priority input{
+	width: 100%;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 4px 5px;
+	text-align: center;
+}
+
+
+.sense .campaigns-list-top .campaigns-list-qr.priority{
+	cursor: pointer;	
+}
+
+.sense .campaigns-list-top .campaigns-list-qr.priority:hover{
+	background-color: rgba(50, 191, 211, 0.2);
+	box-shadow: 0 0 0 1px #33B0C4;
+}
+
+@media only screen and (max-width: 1220px){
+	.sense .campaigns-list.single-campaign .campaigns-list-name{
+		width: 44%;
+	}
+}
+
+
+
+@media only screen and (max-width: 1040px){
+	
+	.sense .campaigns-list-qr.priority{
+		text-align: center;	
+		width: 16%;
+	}	
+
+	.sense .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-id{
+		width: 17%;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-editor{
+		width: 19%;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-name{
+		width: 35%;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-id{
+		width: 16%;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-editor{
+		width: 18%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.sense .campaigns-list.single-campaign{
+		border-top:0px;
+	}
+
+	.sense .campaign-menu{
+		flex-wrap: wrap;
+	}
+
+	.sense .campaign-menu-datepicker{
+		width: 100%;
+	}
+
+	.sense .campaign-menu-qa{
+		width: 100%;
+		margin-top:20px;
+	}
+	
+	.sense .campaign-menu-pdf{
+		width: 100%;
+		margin-top:20px;
+	}
+
+	.sense .campaign-menu-qa-download{
+		max-width: 200px;
+		display: block;
+		margin:auto;
+	}
+
+	.sense .campaign-menu-pdf-generate{
+		max-width: 200px;
+		display: block;
+		margin:10px auto 10px;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-id{
+		width: 100px;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-name {
+		width: 100%;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-editor{
+		width: 100%;
+	}
+
+	.sense .campaigns-list-qr.priority{
+		width: auto;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-id {
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+		border-bottom:1px solid #ccc;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-name {
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+		border-bottom:1px solid #ccc;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-switcher {
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+	}
+
+	.sense .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-qr.priority{
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+	}
+
+	.sense .campaigns-list-top, .campaigns-list-element{
+		flex-wrap: wrap;
+	}
+
+	.sense .campaigns-list-top .campaigns-list-qr.priority{
+		display: block;
+		background-color: #fff;
+	}
+
+	.sense .campaigns-list-qr.priority input{
+		width: 60px;
+		margin-right: 10px;
+		border-radius: 0px;
+		border:1px solid #ccc;
+		padding: 4px 5px;
+	}
+}

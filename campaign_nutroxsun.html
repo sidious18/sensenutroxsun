@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NutroxSun</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/position.css">
+	<link rel="stylesheet" href="css/nutroxsun/main.css">
+	<link rel="stylesheet" href="css/nutroxsun/login.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/campaigns-list.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/companies-list.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/marketing-menu.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/company.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/campaign.css">
+	<link rel="stylesheet" href="css/nutroxsun/jquery-ui.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/sortchildren.min.js"></script>
+	<script src="js/table-sort.js"></script>
+	<script src="js/ui-script.js"></script>
+</head>
+
+<body class="nutroxsun">
+	<nav class="main-header">
+		<div class="main-header-box cont">
+			<div class="main-header-logo">
+				
+			</div>
+			<h2 class="main-header-title">
+				Real Time Personalized Contextual Marketing
+			</h2>
+			<div class="main-header-link-box">
+				Logged as: <a href="#" class="main-header-profile">John Smith</a> <a href="#" class="main-header-logout">(Log out)</a>
+			</div>
+		</div>
+	</nav>
+	<div class="content">
+		<header class="marketing-header cont">
+			<h3 class="marketing-title">MARKETING CAMPAIGN</h3>
+			<div class="marketing-pills">
+				<div class="campaigns-link active">
+					CAMPAIGNS
+				</div>
+				<div class="reports-link">
+					REPORTS
+				</div>
+			</div>
+		</header>
+
+		<div class="campaigns-block">
+
+
+			<div class="campaign-search id-campaign cont">
+				<span class="campaign-search-name">ID: BP1</span>
+				<div class="campaign-list-switcher">
+					<div class="campaign-list-switcher-button">
+						<div class="on">
+							ON
+						</div>
+						<div class="off">
+							OFF
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="campaign-name cont">
+				<div class="campaign-name-label">NAME</div>
+				<input type="text" class="campaign-name-input" value="EUROPEAN WOMAN">
+			</div>
+
+			<div class="campaign-menu cont">
+				<div class="campaign-menu-datepicker">
+					<div class="campaign-menu-datepicker-label">
+						APPLY
+					</div>
+					<div class="campaign-menu-datepicker-from">
+						<span class="campaign-menu-datepicker-label">FROM</span> 
+						<input type="text" class="campaign-menu-datepicker-input" value="SELECT DATE">
+					</div>
+					<div class="campaign-menu-datepicker-to">
+						<span class="campaign-menu-datepicker-label">TO</span> 
+						<input type="text"  class="campaign-menu-datepicker-input" value="SELECT DATE">
+					</div>
+				</div>
+				<div class="campaign-menu-qa">
+					<img class="campaign-menu-qa-img" src="images/21i22tmzp.png" alt="qr-code">
+					<div class="campaign-menu-qa-download">DOWNLOAD</div>
+				</div>
+				<div class="campaign-menu-pdf">
+					<div class="campaign-menu-pdf-title">
+						generate <br>
+						triggers diagram
+					</div>
+					<div class="campaign-menu-pdf-generate">generate pdf</div>
+				</div>
+			</div>
+
+			<div class="campaign-search cont">
+				<span class="campaign-search-title">List of users</span>
+			
+				<a href="#" class="campaign-search-add">ADD TRIGGER</a>
+			</div>
+
+			<div class="campaigns-list single-campaign cont">
+				<div class="campaigns-list-holder">
+					<div class="campaigns-list-top">
+						<div class="campaigns-list-id">
+							ID
+						</div>
+							
+						<div class="campaigns-list-name">
+							TRIGGER
+						</div>
+
+						<div class="campaigns-list-qr priority">
+							PRIORITY
+						</div>
+
+						<div class="campaigns-list-switcher">
+							ON/OFF
+						</div>
+
+						<div class="campaigns-list-editor">
+							
+						</div>
+					</div>
+				</div>
+				<div class="campaigns-list-elements-box">
+					<div class="campaigns-list-element enabled">
+						<div class="campaigns-list-id">
+							BP1-MC122
+						</div>
+							
+						<div class="campaigns-list-name">
+							Megaevent 435235
+						</div>
+						<div class="campaigns-list-qr priority">
+							<input type="text" value="1">
+						</div>
+						<div class="campaigns-list-switcher">
+							<div class="campaigns-list-switcher-button">
+								<div class="on">
+									ON
+								</div>
+								<div class="off">
+									OFF
+								</div>
+							</div>
+						</div>
+						
+						<div class="campaigns-list-editor">
+							<div class="campaigns-list-editor-edit">
+								<div class="tooltip">Edit</div>
+							</div>
+							<div class="campaigns-list-editor-duplicate">
+								<div class="tooltip">Duplicate Campaign</div>
+							</div>
+							<div class="campaigns-list-editor-delete">
+								<div class="tooltip">Delete Campaign</div>
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-element enabled">
+						<div class="campaigns-list-id">
+							BP1-MC15
+						</div>
+							
+						<div class="campaigns-list-name">
+							SUMMER 2016 - Germany
+						</div>
+					
+						<div class="campaigns-list-qr priority">
+							<input type="text" value="9">
+						</div>
+						<div class="campaigns-list-switcher">
+							<div class="campaigns-list-switcher-button">
+								<div class="on">
+									ON
+								</div>
+								<div class="off">
+									OFF
+								</div>
+							</div>
+						</div>
+						<div class="campaigns-list-editor">
+							<div class="campaigns-list-editor-edit">
+								<div class="tooltip">Edit</div>
+							</div>
+							<div class="campaigns-list-editor-duplicate">
+								<div class="tooltip">Duplicate Campaign</div>
+							</div>
+							<div class="campaigns-list-editor-delete">
+								<div class="tooltip">Delete Campaign</div>
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-element enabled">
+						<div class="campaigns-list-id">
+							BP1-MC13
+						</div>
+							
+						<div class="campaigns-list-name">
+							SUMMER 2016 - Italy
+						</div>
+					
+						<div class="campaigns-list-qr priority">
+							<input type="text" value="5">
+						</div>
+						<div class="campaigns-list-switcher">
+							<div class="campaigns-list-switcher-button">
+								<div class="on">
+									ON
+								</div>
+								<div class="off">
+									OFF
+								</div>
+							</div>
+						</div>
+						<div class="campaigns-list-editor">
+							<div class="campaigns-list-editor-edit">
+								<div class="tooltip">Edit</div>
+							</div>
+							<div class="campaigns-list-editor-duplicate">
+								<div class="tooltip">Duplicate Campaign</div>
+							</div>
+							<div class="campaigns-list-editor-delete">
+								<div class="tooltip">Delete Campaign</div>
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-element enabled">
+						<div class="campaigns-list-id">
+							BP1-MC144
+						</div>
+							
+						<div class="campaigns-list-name">
+							Winter 2016 - Tokio
+						</div>
+					
+						<div class="campaigns-list-qr priority">
+							<input type="text" value="13">
+						</div>
+						<div class="campaigns-list-switcher">
+							<div class="campaigns-list-switcher-button">
+								<div class="on">
+									ON
+								</div>
+								<div class="off">
+									OFF
+								</div>
+							</div>
+						</div>
+						<div class="campaigns-list-editor">
+							<div class="campaigns-list-editor-edit">
+								<div class="tooltip">Edit</div>
+							</div>
+							<div class="campaigns-list-editor-duplicate">
+								<div class="tooltip">Duplicate Campaign</div>
+							</div>
+							<div class="campaigns-list-editor-delete">
+								<div class="tooltip">Delete Campaign</div>
+							</div>
+						</div>
+					</div>
+					<div class="campaigns-list-element enabled">
+						<div class="campaigns-list-id">
+							BP1-MC15
+						</div>
+							
+						<div class="campaigns-list-name">
+							Autumn 2016 - Tokio
+						</div>
+					
+						<div class="campaigns-list-qr priority">
+							<input type="text" value="6">
+						</div>
+						<div class="campaigns-list-switcher">
+							<div class="campaigns-list-switcher-button">
+								<div class="on">
+									ON
+								</div>
+								<div class="off">
+									OFF
+								</div>
+							</div>
+						</div>
+						<div class="campaigns-list-editor">
+							<div class="campaigns-list-editor-edit">
+								<div class="tooltip">Edit</div>
+							</div>
+							<div class="campaigns-list-editor-duplicate">
+								<div class="tooltip">Duplicate Campaign</div>
+							</div>
+							<div class="campaigns-list-editor-delete">
+								<div class="tooltip">Delete Campaign</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="company-bottom-menu cont">
+				<a href="#" class="user-company-bottom-menu-cancel">CANCEL</a>
+				<a href="#" class="user-company-bottom-menu-ok">OK</a>
+			</div>
+		</div>
+		
+		<div class="campaigns-report">
+			
+		</div>
+
+	</div>
+	<footer class="main-footer">
+		
+	</footer>
+</body>
+</html>

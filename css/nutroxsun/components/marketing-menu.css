@@ -76,11 +76,6 @@
 }
 
 @media only screen and (max-width: 768px){
-
-	.nutroxsun .marketing-header{
-		max-width: 600px;
-	}
-
 	.nutroxsun .marketing-header.single-title{
 		max-width: inherit;
 	}

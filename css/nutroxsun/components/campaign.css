@@ -1,0 +1,425 @@
+.nutroxsun .campaign-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.nutroxsun .campaign-name{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+.nutroxsun .campaign-name-input{
+	flex-grow: 1;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 5px 8px 3px;
+	font-size:16px;
+}
+
+.nutroxsun .campaign-menu{
+	margin:20px auto 25px;
+}
+
+.nutroxsun .campaign-name-label{
+	color:#696969;
+	font-size: 16px;
+	padding: 7px 20px 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+	box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
+
+}
+
+.nutroxsun .campaign-menu-datepicker{
+	width: 33.3333%;
+	padding: 5px 25px;
+	border-right: 1px solid #ccc;
+}
+
+.nutroxsun .campaign-menu-datepicker-label{
+	width: 80px;
+	text-align: right;
+	padding: 0px 15px;
+	color:#696969;
+	font-weight: bold;
+	min-width: 80px;
+	display: block;
+}
+
+.nutroxsun .campaign-menu-datepicker-from, .campaign-menu-datepicker-to{
+	align-items: center;
+	margin-top: 10px;
+}
+
+.nutroxsun .campaign-menu-datepicker-input{
+	flex-grow: 1;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(192,76,48,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(192,76,48,1);
+	box-shadow: 0px 0px 5px 0px rgba(192,76,48,1);
+	border:none;
+	border-radius: 2px;
+	color:#C04C30;
+	padding: 5px 8px;
+	width: 0px;
+}
+
+.nutroxsun .campaign-menu-qa{
+	width: 33.3333%;
+	border-right:1px solid #ccc;
+	text-align: center;
+	padding: 0px 5%;
+}
+
+.nutroxsun .campaign-menu-qa-img{
+	width: 29%;
+	border:1px solid #ccc;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+.nutroxsun .campaign-menu-qa-download{
+	width: 100%;
+	display: inline-block;
+	background: rgba(252,190,98,1);
+	background: -moz-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,190,98,1)), color-stop(100%, rgba(247,146,30,1)));
+	background: -webkit-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: -o-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: -ms-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: linear-gradient(to bottom, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcbe62', endColorstr='#f7921e', GradientType=0 );
+	color: #fff;
+	cursor: pointer;
+	padding:9px 10px 6px;
+}
+
+.nutroxsun .campaign-menu-pdf{
+	width: 33.3333%;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding: 0px 5%;
+	position: relative;
+	align-self: flex-end;
+}
+
+.nutroxsun .campaign-menu-pdf-title{
+	color: #696969;
+}
+
+.nutroxsun .campaign-menu-pdf-generate{
+	width: 100%;
+	display: inline-block;
+	background: rgba(252,190,98,1);
+	background: -moz-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,190,98,1)), color-stop(100%, rgba(247,146,30,1)));
+	background: -webkit-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: -o-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: -ms-linear-gradient(top, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	background: linear-gradient(to bottom, rgba(252,190,98,1) 0%, rgba(247,146,30,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcbe62', endColorstr='#f7921e', GradientType=0 );
+	color: #fff;
+	cursor: pointer;
+	padding:9px 10px 6px;
+	margin-top:25px;
+}
+
+.nutroxsun .campaign-search-title{
+	color:#696969;
+	font-size: 16px;
+	align-self: center;
+}
+.nutroxsun .campaign-header{
+	border-bottom: 2px solid #C54F32;
+}
+
+.nutroxsun .campaign-header{
+	margin-top: 40px;
+}
+
+.nutroxsun .campaign-search{
+	margin:20px auto 15px;
+	display: flex;
+	justify-content: space-between;
+	border-top:1px solid #ccc;
+	padding-top: 10px;
+}
+
+.nutroxsun .campaign-search.id-campaign{
+	border-top:0px;
+}
+
+.nutroxsun .campaign-search.name-search{
+	margin-bottom: 70px;
+}
+
+.nutroxsun .campaign-search-input-box{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 6px;
+	padding:5px 8px 5px;
+	width: 100%;
+}
+
+.nutroxsun .campaign-search-add{
+	background: #C04C30;
+	padding: 6px 12px 6px 6px;
+	color:white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.nutroxsun .campaign-search-add:before{
+	content: "+";
+	margin-right: 10px;
+	font-size: 20px;
+	position: relative;
+	top:2px;
+}
+
+.nutroxsun .campaign-search-name{
+	align-self: center;
+	color:#696969;
+	text-transform: uppercase;
+	margin-right: 5%;
+}
+
+.nutroxsun .campaign-list-switcher {
+    width: 70px;
+}
+
+.nutroxsun .campaign-list-switcher-button{
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 25px;
+	cursor: pointer;
+}
+
+.nutroxsun .campaign-list-switcher-button > div{
+	border-radius: 10px;
+	height: 25px;
+	padding: 7px;
+	position: absolute;
+	width: 100%;
+	top:0px;
+	color: #fff;
+	transition: 0.1s left linear;
+}
+
+.nutroxsun .campaign-list-switcher-button .on{
+	background-color:#F7931E;
+	text-align: left;
+	left: 0px;
+}
+
+.nutroxsun .campaign-list-switcher-button .on:after{
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.nutroxsun .campaign-list-switcher-button .off:after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.nutroxsun .campaign-list-switcher-button .off{
+	left:100%;
+	text-align: right;
+	background: #DBD4CF;
+}
+
+.nutroxsun .campaign-search-title{
+	color:#000;
+	font-size: 16px;
+	align-self: center;
+	font-weight: bold;
+}
+
+.nutroxsun .campaigns-list.single-campaign{
+	border-top:3px solid #ccc;
+}
+
+.nutroxsun .campaigns-list.single-campaign .campaigns-list-name{
+	width: 49%;
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-qr.priority{
+	background: url(../../../icons/nutroxsun/nutroxsun-arrows.png) no-repeat;
+	background-position: 10px center;
+	background-size: 10px;
+}
+
+.nutroxsun .campaigns-list-qr.priority{
+	text-align: center;	
+	width: 12%;
+}
+
+.nutroxsun .campaigns-list-qr.priority input{
+	width: 100%;
+	border-radius: 0px;
+	border:1px solid #ccc;
+	padding: 4px 5px;
+	text-align: center;
+}
+
+
+.nutroxsun .campaigns-list-top .campaigns-list-qr.priority{
+	cursor: pointer;	
+}
+
+.nutroxsun .campaigns-list-top .campaigns-list-qr.priority:hover{
+	background-color:  #F5DEB3;
+	box-shadow: 0 0 0 1px #FF8C00;
+}
+
+@media only screen and (max-width: 1220px){
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-name{
+		width: 44%;
+	}
+}
+
+
+
+@media only screen and (max-width: 1040px){
+	
+	.nutroxsun .campaigns-list-qr.priority{
+		text-align: center;	
+		width: 16%;
+	}	
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-id{
+		width: 17%;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-editor{
+		width: 19%;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-name{
+		width: 35%;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-id{
+		width: 16%;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-editor{
+		width: 18%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+
+	.nutroxsun .campaigns-list.single-campaign{
+		border-top:0px;
+	}
+
+	.nutroxsun .campaign-menu{
+		flex-wrap: wrap;
+	}
+
+	.nutroxsun .campaign-menu-datepicker{
+		width: 100%;
+	}
+
+	.nutroxsun .campaign-menu-qa{
+		width: 100%;
+		margin-top:20px;
+	}
+	
+	.nutroxsun .campaign-menu-pdf{
+		width: 100%;
+		margin-top:20px;
+	}
+
+	.nutroxsun .campaign-menu-qa-download{
+		max-width: 200px;
+		display: block;
+		margin:auto;
+	}
+
+	.nutroxsun .campaign-menu-pdf-generate{
+		max-width: 200px;
+		display: block;
+		margin:10px auto 10px;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-id{
+		width: 100px;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-name {
+		width: 100%;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-editor{
+		width: 100%;
+	}
+
+	.nutroxsun .campaigns-list-qr.priority{
+		width: auto;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-id {
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+		border-bottom:1px solid #ccc;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-name {
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+		border-bottom:1px solid #ccc;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-switcher {
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+	}
+
+	.nutroxsun .campaigns-list.single-campaign .campaigns-list-top .campaigns-list-qr.priority{
+		width: 50%;
+		padding: 16px 14px 14px;
+		background-position: 10% center;
+	}
+
+	.nutroxsun .campaigns-list-top, .campaigns-list-element{
+		flex-wrap: wrap;
+	}
+
+	.nutroxsun .campaigns-list-top .campaigns-list-qr.priority{
+		display: block;
+		background-color: #fff;
+	}
+
+	.nutroxsun .campaigns-list-qr.priority input{
+		width: 60px;
+		margin-right: 10px;
+		border-radius: 0px;
+		border:1px solid #ccc;
+		padding: 4px 5px;
+	}
+}
