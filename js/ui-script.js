@@ -66,11 +66,15 @@ function initContentFilters(){
 	var disabled = 'disabled';
 	var idSortButton = ".content-table-list-top .content-table-list-id";
 	var nameSortButton = ".content-table-list-top .content-table-list-name";
-	var priorityButton = ".content-table-list-qr.priority";
+	var priorityButton = ".content-table-list-top .content-table-list-qr.priority";
 	var switcherSortButton = ".content-table-list-top .content-table-list-switcher";
 	var contentTableListTextFilterID = "$(this).find('.content-table-list-id').text()";
 	var contentTableListTextFilterName = "$(this).find('.content-table-list-name').text()";
-	var contentTableListTextFilterPriority = "$(this).find('.content-table-list-qr.priority input').val()";
+
+	var priorityInputs = $(".content-table-block.campaign-block .content-table-list-element .content-table-list-qr.priority input");
+
+	var priorityInputsSelector = ".content-table-block.campaign-block .content-table-list-element .content-table-list-qr.priority input";
+
 	var contentTableListTextFilterName = "$(this).find('.content-table-list-name').text()";
 	var contentTableListFitlerSwitcher = "$(this).hasClass('enabled')";
 	var contentTableListHolder = '.content-table-list-holder';
@@ -89,6 +93,7 @@ function initContentFilters(){
 			$(this).find('.button-switcher-off').css("left","0");
 			$(this).closest(contentTableElement).addClass(disabled);
 			$(this).closest(contentTableElement).removeClass(enabled);
+			$(this).closest(contentTableElement).find(priorityInputs).attr('disabled',true);
 			$(this).parent().attr("data-content", "Off");
 			$(this).addClass("button-disabled");
 		}
@@ -97,11 +102,11 @@ function initContentFilters(){
 			$(this).find('.button-switcher-off').css("left","100%");
 			$(this).closest(contentTableElement).addClass(enabled);
 			$(this).closest(contentTableElement).removeClass(disabled);
+			$(this).closest(contentTableElement).find(priorityInputs).attr('disabled',false);
 			$(this).parent().attr("data-content", "On");
 			$(this).removeClass("button-disabled");
 		}
 	});
-
 
 	$(idSortButton).click(function(){
     	if(sortedByID){
@@ -138,17 +143,39 @@ function initContentFilters(){
     })
 
     $(priorityButton).click(function(){
-    	if(sortedByPriority){
-    		var	sortByPriority = $.sortFunc([contentTableListTextFilterPriority]);
-    	}
-    	else{
-    		var	sortByPriority = $.sortFunc([contentTableListTextFilterPriority+"::reverse"]);
-    	}
-        $(this).closest(contentTableListHolder).next(contentTableElementBox).sortChildren(sortByPriority);
-        sortedByPriority = !sortedByPriority;
+		var sortedList = [];
+
+		priorityInputs.sort(function(a,b){
+			var an = $(a).val(),
+				bn = $(b).val();
+
+			return an - bn
+
+		});
+
+		for(i=0; i < priorityInputs.length; i++){
+			sortedList.push(priorityInputs.eq(i).closest(contentTableElement));
+		}
+		$(contentTableElementBox).html("");
+
+		if(sortedByPriority){
+			$(contentTableElementBox).append(sortedList);
+		}
+		else{
+			$(contentTableElementBox).append(sortedList.reverse());	
+		}
+
+		sortedByPriority = !sortedByPriority;
     });
 
-    $( ".campaign-menu-datepicker-input" ).datepicker();
+    for(i=0; i<priorityInputs.length; i++){
+    	priorityInputs[i].oninput = function(){
+    		var lastSymbol = this.value.substr(this.value.length - 1);
+    		if(isNaN(lastSymbol)){
+    			this.value = this.value.slice(0, -1);   		}
+    	};
+    }
+
 }
 
 $(document).ready(function(){
