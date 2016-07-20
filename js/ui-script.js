@@ -79,6 +79,9 @@ function initContentFilters(){
 	var contentTableListFitlerSwitcher = "$(this).hasClass('enabled')";
 	var contentTableListHolder = '.content-table-list-holder';
 	var contentTableElementBox = '.content-table-list-elements-box';
+
+	var campaignDatepicker = '.campaign-menu-datepicker-input';
+
 	var sortedByID = true;
 	var sortedByName = true;
 	var sortedByStatus = true;
@@ -175,6 +178,8 @@ function initContentFilters(){
     			this.value = this.value.slice(0, -1);   		}
     	};
     }
+
+    $(campaignDatepicker).datepicker();
 
 }
 
