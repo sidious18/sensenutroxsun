@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NutroxSun</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/position.css">
+
+	<link rel="stylesheet" href="css/nutroxsun/main.css">
+	<link rel="stylesheet" href="css/nutroxsun/login.css">
+	<link rel="stylesheet" href="css/nutroxsun/campaign.css">
+	<link rel="stylesheet" href="css/nutroxsun/company.css">
+	<link rel="stylesheet" href="css/nutroxsun/jquery-ui.css">
+	<link rel="stylesheet" href="css/nutroxsun/profile-block.css">
+	<link rel="stylesheet" href="css/nutroxsun/report.css">
+
+	<link rel="stylesheet" href="css/nutroxsun/components/buttons.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/content-table.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/navigation-menu.css">
+	<link rel="stylesheet" href="css/nutroxsun/components/modal.style.css">
+
+	<link rel="stylesheet" href="css/nutroxsun/modificators/content-table-campaign.css">
+	<link rel="stylesheet" href="css/nutroxsun/modificators/content-table-companies.css">
+	<link rel="stylesheet" href="css/nutroxsun/modificators/content-table-company.css">
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
+	<script src="js/sortchildren.min.js"></script>
+	<script src="js/table-sort.js"></script>
+	<script src="js/ui-script.js"></script>
+</head>
+
+<body class="nutroxsun">
+	<nav class="main-header">
+		<div class="main-header-box cont">
+			<div class="main-header-logo">
+				
+			</div>
+			<h2 class="main-header-title">
+				Real Time Personalized Contextual Marketing
+			</h2>
+			<div class="main-header-link-box">
+				Logged as: <a href="#" class="main-header-profile">John Smith</a> <a href="#" class="main-header-logout">(Log out)</a>
+			</div>
+		</div>
+	</nav>
+	<div class="content">
+
+		<div class="report-header cont">
+			<div class="report-header-title">
+				<div class="report-header-id">
+					ID: T1
+				</div>
+			</div>
+			<div class="report-header-priority">
+				<span class="report-header-priority-title">PRIORITY:</span>
+				<input class="report-header-priority-input" type="text" number-filter>
+			</div>
+			<div class="report-header-button">
+				<div class="button-switcher-box" data-content="On">
+					<div class="button-switcher">
+						<div class="button-switcher-on">
+							ON
+						</div>
+						<div class="button-switcher-off">
+							OFF
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="report-content cont">
+			<div class="report-content-link">
+				<div class="report-content-link-title">
+					Landing page
+				</div>
+				<div class="report-content-link-address">
+					<a href="#">http://www.langingpages.montoloeder.com/pages/5252.html</a>
+				</div>
+			</div>
+			<div class="report-content-box phone">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="device-checkbox">
+					<label for="device-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						Device
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<input type="checkbox" class="big-switcher" id="android">
+					<label for="android" class="report-content-box-inputs-label">
+						ANDROID
+					</label>
+					<input type="checkbox" class="big-switcher" id="ios">
+					<label for="ios" class="report-content-box-inputs-label">
+						IOS
+					</label>
+					<input type="checkbox" class="big-switcher" id="other">
+					<label for="other" class="report-content-box-inputs-label">
+						OTHER
+					</label>
+				</div>
+			</div>
+			<div class="report-content-box temperature">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="temperature-checkbox">
+					<label for="temperature-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						Temperature
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+				</div>
+			</div>
+			<div class="report-content-box uv-index">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="uv-index-checkbox">
+					<label for="uv-index-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						uv-index
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text" type="text">
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text" type="text">
+				</div>
+			</div>
+			<div class="report-content-box air-quality">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="air-quality-checkbox">
+					<label for="air-quality-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						air-quality <br>
+						index ( aqi )
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text" type="text">
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text" type="text">
+				</div>
+			</div>
+			<div class="report-content-box date">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="date-checkbox">
+					<label for="date-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						date
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text date-picker" type="text">
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text date-picker" type="text">
+				</div>
+			</div>
+			<div class="report-content-box hour">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="hour-checkbox">
+					<label for="hour-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						hour
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text hour-picker" type="text">
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text hour-picker" type="text">
+				</div>
+			</div>
+			<div class="report-content-box language">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="language-checkbox">
+					<label for="language-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						language
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-language-text">
+						You can select <br> several languages
+					</div>
+					<select size="3" multiple name="language[]" class="report-content-box-inputs-language-select">
+					    <option value="english">English</option>
+					    <option selected value="french">French</option>
+					    <option value="german">German</option>
+					    <option value="russian">Russian</option>
+					    <option value="spanish">Spanish</option>
+					</select>
+				</div>
+			</div>
+			<div class="report-content-box gps">
+				<input type="checkbox" id="gps-checkbox">
+				<label for="gps-checkbox" class="report-content-box-desc-label">NOT</label>
+				<div class="report-content-box-coordinates">
+					<div class="report-content-box-coordinates-title">
+					gps location
+					</div>
+					<input class="report-content-box-coordinates-text x-coord" type="text" value="40" >
+					<input class="report-content-box-coordinates-text y-coord" type="text" value="40" >
+					<div class="report-content-box-coordinates-label ratio">
+						ratio
+					</div>
+					<input class="report-content-box-coordinates-ratio" type="text" number-filter value="2">
+					<div class="report-content-box-coordinates-label">
+						km
+					</div>
+				</div>
+				<div class="report-map-box">
+					<div id="report-map">
+					</div>
+				</div>
+			</div>
+			<div class="report-content-box country">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="country-checkbox">
+					<label for="country-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						country
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-country-text">
+						You can select <br> several languages
+					</div>
+					<select size="3" multiple name="countres[]" class="report-content-box-inputs-country-select">
+					    <option value="english">South Africa</option>
+					    <option selected value="french">Spain</option>
+					    <option value="german">Germany</option>
+					    <option value="russian">Taiwan</option>
+					    <option value="spanish">Sweden</option>
+					</select>
+				</div>
+			</div>			
+		</div>
+		<footer class="report-footer cont">
+			<input type="reset" class="button button-cancel" value="CANCEL">
+			<input type="submit" class="button button-ok" value="OK">
+		</footer>
+	</div>
+	<footer class="main-footer">
+		
+	</footer>
+</body>
+</html>

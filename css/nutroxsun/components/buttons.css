@@ -65,6 +65,8 @@
 .nutroxsun .button-ok{
 	background: #C04C30;
 	padding: 8px;
+	outline: none;
+	border:0px;
 
 }
 
@@ -104,4 +106,24 @@
 	color: #fff;
 	cursor: pointer;
 	padding:9px 10px 6px;
+}
+
+.nutroxsun .big-switcher{
+	display: none;
+}
+
+.nutroxsun .big-switcher + label{
+	display: block;
+	text-align: center;
+	padding: 19px 5px 15px;
+	outline: 1px solid #ccc;
+	cursor: pointer;
+	color:#696969;
+	transition: all 0.1s linear;
+}
+
+.nutroxsun .big-switcher:checked + label{
+	outline: 0px;
+	background-color:#EABF91;
+	color:#000;
 }

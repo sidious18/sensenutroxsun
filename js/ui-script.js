@@ -75,12 +75,17 @@ function initContentFilters(){
 
 	var priorityInputsSelector = ".content-table-block.campaign-block .content-table-list-element .content-table-list-qr.priority input";
 
+	var numberFilter = "[number-filter]";
+	
+
 	var contentTableListTextFilterName = "$(this).find('.content-table-list-name').text()";
 	var contentTableListFitlerSwitcher = "$(this).hasClass('enabled')";
 	var contentTableListHolder = '.content-table-list-holder';
 	var contentTableElementBox = '.content-table-list-elements-box';
 
 	var campaignDatepicker = '.campaign-menu-datepicker-input';
+	var datePicker = ".date-picker";
+	var hourPicker = ".hour-picker";
 
 	var sortedByID = true;
 	var sortedByName = true;
@@ -171,15 +176,168 @@ function initContentFilters(){
 		sortedByPriority = !sortedByPriority;
     });
 
-    for(i=0; i<priorityInputs.length; i++){
-    	priorityInputs[i].oninput = function(){
-    		var lastSymbol = this.value.substr(this.value.length - 1);
-    		if(isNaN(lastSymbol)){
-    			this.value = this.value.slice(0, -1);   		}
-    	};
-    }
+    $(numberFilter).bind("keydown",function(e){
+    	var inputedSymbol = String.fromCharCode(e.keyCode); 
+    	var trigger = /^[0-9]+$/.test(inputedSymbol);
+
+    	//check ctrl + number
+
+    	for(i = 48; i <= 57; i++){
+    		if(e.shiftKey && e.keyCode == i){
+    			return false
+    		}
+    	}
+
+    	//check numpad
+
+    	for(i = 96; i <= 105; i++){
+    		if(e.keyCode == i){
+    			return true
+    		}
+    	}
+
+    	if((e.keyCode != 46) && (e.keyCode != 17) && (e.keyCode != 18) && (e.keyCode != 27) && (e.keyCode != 9) &&
+    		(e.keyCode != 37) && (e.keyCode != 39) && (e.keyCode != 20) && (e.keyCode != 13)  && (e.keyCode != 8) && (!e.ctrlKey)){
+	    	if(!trigger) {
+	    		e.preventDefault();
+	    	}
+
+	    }
+    });
 
     $(campaignDatepicker).datepicker();
+    $(datePicker).datepicker();
+
+    $(hourPicker).blur(function(){
+    	var checkValue = parseInt($(this).val());
+
+    	if($(this).val() < 0 || $(this).val() > 24 || isNaN(checkValue)){
+    		$(this).val(12);
+    	}
+    });
+
+}
+
+
+function mapEvents(){
+
+	var xCoordInput = ".report-content-box-coordinates-text.x-coord";
+	var yCoordInput = ".report-content-box-coordinates-text.y-coord";
+	var ratioInput = ".report-content-box-coordinates-ratio";
+	var xCoordBool = true;
+	var yCoordBool = true;
+	var ratioBool = true;
+	var xCoord = parseInt($(xCoordInput).val());
+	var yCoord = parseInt($(yCoordInput).val());
+	var ratio = parseInt($(ratioInput).val());
+	var marker;
+	var myMarker;
+	var map;
+
+	function initMap(){
+		var myLatLng = {lat: xCoord, lng: yCoord};
+		var mapProp = {
+		    center:myLatLng,
+		    zoom:12,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP,
+		    scrollwheel:false,
+			disableDefaultUI:false
+		};
+		map=new google.maps.Map(document.getElementById("report-map"),mapProp);
+		marker = new google.maps.Marker({
+		    position: myLatLng,
+		    map: map,
+		});
+		myMarker = new google.maps.Circle({
+			center:myLatLng,
+			radius:ratio*1000,
+			strokeColor:"#F7931E",
+			strokeOpacity:0.8,
+			strokeWeight:2,
+			fillColor:"#F7931E",
+			fillOpacity:0.2
+		});
+		myMarker.setMap(map);
+	}
+
+	initMap();
+
+	function checkCoordDiapason(coordInput, min, max){
+		if( isNaN($(coordInput).val()) || $(coordInput).val() < min ||  $(coordInput).val() > max || $(coordInput).val() == ""){
+    		$(coordInput).val("Not valid coordinate");
+    		return false
+    	}
+    	return true
+	}
+
+	function renderMarker(){
+		if(xCoordBool && yCoordBool){
+    		marker.setMap(null);
+    		myMarker.setMap(null);
+
+    		console.log(xCoord);
+    		console.log(yCoord);
+
+    		marker = new google.maps.Marker({
+			    position: {lat:yCoord, lng: xCoord},
+			    map: map
+			});
+
+			myMarker = new google.maps.Circle({
+				center:{lat: yCoord, lng: xCoord},
+				radius:ratio*1000,
+				strokeColor:"#F7931E",
+				strokeOpacity:0.8,
+				strokeWeight:2,
+				fillColor:"#F7931E",
+				fillOpacity:0.2
+			});
+
+			myMarker.setMap(map);
+
+    		map.setCenter({lat: yCoord, lng: xCoord});
+    	}
+	}
+
+	$(xCoordInput).on('keypress blur', function(e) {
+		if(e.keyCode == 13 || e.type == "blur"){
+		    if(checkCoordDiapason(this,-180,180)){
+	    		xCoordBool = true;
+	    		xCoord = parseInt($(this).val());
+	    		renderMarker();
+	    	}
+	    	else{
+	    		xCoordBool = false;
+	    	}
+    	}
+	});
+
+	$(yCoordInput).on('keypress blur', function(e) {
+		if(e.keyCode == 13 || e.type == "blur"){
+	    	if(checkCoordDiapason(this,-85,85)){
+	    		yCoordBool = true;
+	    		yCoord = parseInt($(this).val());
+	    		renderMarker();
+	    	}else{
+	    		yCoordBool = false;
+	    	}
+
+    	}
+    })
+
+    $(ratioInput).on('keypress blur', function(e) {
+    	if(e.keyCode == 13 || e.type == "blur"){
+	    	if( isNaN($(this).val())){
+ 		   		$(this).val(2);
+   		 	}
+   		 	if( $(this).val() > 5 || $(this).val()==""){
+    			$(this).val(2);
+    		}
+    		ratio = parseInt($(this).val());
+    		renderMarker();
+    	}
+    });
+
 
 }
 
@@ -199,5 +357,7 @@ $(document).ready(function(){
 		  fadeDuration: 300
 		});
 	});
+
+	mapEvents();
 
 });
