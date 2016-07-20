@@ -16,6 +16,7 @@ body.nutroxsun{
 	box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.10);
 	z-index: 2;
 	position: relative;
+	background: #fff;
 }
 
 .nutroxsun .main-header-logo{
