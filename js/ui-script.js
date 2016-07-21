@@ -227,15 +227,15 @@ function mapEvents(){
 	var xCoordBool = true;
 	var yCoordBool = true;
 	var ratioBool = true;
-	var xCoord = parseInt($(xCoordInput).val());
-	var yCoord = parseInt($(yCoordInput).val());
+	var xCoord = parseFloat($(xCoordInput).val());
+	var yCoord = parseFloat($(yCoordInput).val());
 	var ratio = parseInt($(ratioInput).val());
 	var marker;
 	var myMarker;
 	var map;
 
 	function initMap(){
-		var myLatLng = {lat: xCoord, lng: yCoord};
+		var myLatLng = {lat:yCoord, lng: xCoord};
 		var mapProp = {
 		    center:myLatLng,
 		    zoom:12,
@@ -284,7 +284,7 @@ function mapEvents(){
 			});
 
 			myMarker = new google.maps.Circle({
-				center:{lat: yCoord, lng: xCoord},
+				center:{lat:yCoord, lng: xCoord},
 				radius:ratio*1000,
 				strokeColor:"#F7931E",
 				strokeOpacity:0.8,
@@ -295,15 +295,15 @@ function mapEvents(){
 
 			myMarker.setMap(map);
 
-    		map.setCenter({lat: yCoord, lng: xCoord});
+    		map.setCenter({lat:yCoord, lng: xCoord});
     	}
 	}
 
 	$(xCoordInput).on('keypress blur', function(e) {
 		if(e.keyCode == 13 || e.type == "blur"){
-		    if(checkCoordDiapason(this,-180,180)){
+		    if(checkCoordDiapason(this,-85,85)){
 	    		xCoordBool = true;
-	    		xCoord = parseInt($(this).val());
+	    		xCoord = parseFloat($(this).val());
 	    		renderMarker();
 	    	}
 	    	else{
@@ -314,9 +314,9 @@ function mapEvents(){
 
 	$(yCoordInput).on('keypress blur', function(e) {
 		if(e.keyCode == 13 || e.type == "blur"){
-	    	if(checkCoordDiapason(this,-85,85)){
+	    	if(checkCoordDiapason(this,-180,180)){
 	    		yCoordBool = true;
-	    		yCoord = parseInt($(this).val());
+	    		yCoord = parseFloat($(this).val());
 	    		renderMarker();
 	    	}else{
 	    		yCoordBool = false;
