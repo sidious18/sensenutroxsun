@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/nutroxsun/company.css">
 	<link rel="stylesheet" href="css/nutroxsun/jquery-ui.css">
 	<link rel="stylesheet" href="css/nutroxsun/profile-block.css">
-	<link rel="stylesheet" href="css/nutroxsun/report.css">
+	<link rel="stylesheet" href="css/nutroxsun/trigger.css">
 
 	<link rel="stylesheet" href="css/nutroxsun/components/buttons.css">
 	<link rel="stylesheet" href="css/nutroxsun/components/content-table.css">
@@ -80,7 +80,7 @@
 					Landing page
 				</div>
 				<div class="report-content-link-address">
-					<a href="#">http://www.langingpages.montoloeder.com/pages/5252.html</a>
+					<input type="text" value="http://www.langingpages.montoloeder.com/pages/5252.html">
 				</div>
 			</div>
 			<div class="report-content-box phone">
@@ -120,11 +120,11 @@
 					<div class="report-content-box-inputs-pointer">
 						FROM
 					</div>
-					<input class="report-content-box-inputs-text" type="text" number-filter>
+					<input class="report-content-box-inputs-text" type="text">
 					<div class="report-content-box-inputs-pointer">
 						TO
 					</div>
-					<input class="report-content-box-inputs-text" type="text" number-filter>
+					<input class="report-content-box-inputs-text" type="text">
 				</div>
 			</div>
 			<div class="report-content-box uv-index">
@@ -140,11 +140,11 @@
 					<div class="report-content-box-inputs-pointer">
 						FROM
 					</div>
-					<input class="report-content-box-inputs-text" type="text">
+					<input class="report-content-box-inputs-text" type="text" number-filter>
 					<div class="report-content-box-inputs-pointer">
 						TO
 					</div>
-					<input class="report-content-box-inputs-text" type="text">
+					<input class="report-content-box-inputs-text" type="text" number-filter>
 				</div>
 			</div>
 			<div class="report-content-box air-quality">
@@ -161,11 +161,71 @@
 					<div class="report-content-box-inputs-pointer">
 						FROM
 					</div>
-					<input class="report-content-box-inputs-text" type="text">
+					<input class="report-content-box-inputs-text" type="text" number-filter>
 					<div class="report-content-box-inputs-pointer">
 						TO
 					</div>
-					<input class="report-content-box-inputs-text" type="text">
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+				</div>
+			</div>
+			<div class="report-content-box altitude">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="air-altitude-checkbox">
+					<label for="air-altitude-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						altitude
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+				</div>
+			</div>
+			<div class="report-content-box air-humidity">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="air-humidity-checkbox">
+					<label for="air-humidity-checkbox" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						relative humidity
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+				</div>
+			</div>
+			<div class="report-content-box wind">
+				<div class="report-content-box-desc">
+					<input type="checkbox" id="wind">
+					<label for="wind" class="report-content-box-desc-label">NOT</label>
+					<div class="report-content-box-desc-icon"></div>
+					<div class="report-content-box-desc-text">
+						wind speed
+					</div>
+				</div>
+				<div class="report-content-box-inputs">
+					<div class="report-content-box-inputs-pointer">
+						FROM
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
+					<div class="report-content-box-inputs-pointer">
+						TO
+					</div>
+					<input class="report-content-box-inputs-text" type="text" number-filter>
 				</div>
 			</div>
 			<div class="report-content-box date">
@@ -223,7 +283,7 @@
 					</div>
 					<select size="3" multiple name="language[]" class="report-content-box-inputs-language-select">
 					    <option value="english">English</option>
-					    <option selected value="french">French</option>
+					    <option value="french">French</option>
 					    <option value="german">German</option>
 					    <option value="russian">Russian</option>
 					    <option value="spanish">Spanish</option>
@@ -237,8 +297,8 @@
 					<div class="report-content-box-coordinates-title">
 					gps location
 					</div>
-					<input class="report-content-box-coordinates-text y-coord" type="text" value="40" >
-					<input class="report-content-box-coordinates-text x-coord" type="text" value="40" >
+					<input class="report-content-box-coordinates-text y-coord" placeholder="Enter latitude (e. g. 40.324)" type="text" value="40" >
+					<input class="report-content-box-coordinates-text x-coord" placeholder="Enter longitude (e. g. 40.324)" type="text" value="40" >
 					<div class="report-content-box-coordinates-label ratio">
 						ratio
 					</div>
@@ -267,7 +327,7 @@
 					</div>
 					<select size="3" multiple name="countres[]" class="report-content-box-inputs-country-select">
 					    <option value="english">South Africa</option>
-					    <option selected value="french">Spain</option>
+					    <option value="french">Spain</option>
 					    <option value="german">Germany</option>
 					    <option value="russian">Taiwan</option>
 					    <option value="spanish">Sweden</option>

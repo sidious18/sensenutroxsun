@@ -86,6 +86,13 @@ function initContentFilters(){
 	var campaignDatepicker = '.campaign-menu-datepicker-input';
 	var datePicker = ".date-picker";
 	var hourPicker = ".hour-picker";
+	var temperatureInput = ".report-content-box.temperature ";
+
+	var airQualityInput = ".report-content-box.air-quality .report-content-box-inputs-text";
+
+	var airHumidityInput = ".report-content-box.air-humidity .report-content-box-inputs-text";
+
+	var temperatureInput = ".report-content-box.temperature .report-content-box-inputs-text";
 
 	var sortedByID = true;
 	var sortedByName = true;
@@ -208,13 +215,64 @@ function initContentFilters(){
     $(campaignDatepicker).datepicker();
     $(datePicker).datepicker();
 
-    $(hourPicker).blur(function(){
+    $(hourPicker).on('blur keydown', function(e){
+    	if(e.keyCode == 13 || e.type == "blur"){
+	    	var removedDots = $(this).val().replace(':','');
+	    	if(isNaN(removedDots) || removedDots == ""){
+	    		$(this).val(12+":"+30);
+	    		return
+	    	}
+	    	var hour = $(this).val().split(":")[0];
+	    	var minute = $(this).val().split(":")[1];
+	    	if(hour.charAt(0) == 0){
+	    		hour = hour.substr(1);
+	    	}
+	    	if(minute != undefined){
+		    	if(minute.charAt(0) == 0){
+		    		minute = minute.substr(1);
+		    	}
+
+	    	}
+	    	if(hour < 0 || hour >= 24){
+	    		hour = 12;
+	    	}
+	    	if(hour >= 0 && hour <= 9){
+	    		hour = "0"+hour;
+	    	}
+	    	if(minute <= 0 || minute > 59 || minute=== undefined){
+	    		minute = 0;
+	    	}
+	    	if(minute >= 0 && minute <= 9){
+	    		minute = "0"+minute;
+	    	}
+	    	$(this).val(hour+":"+minute);
+	    }
+    	
+    });
+
+    $(airQualityInput).blur(function(){
+    	if($(this).val() < 0 || $(this).val() > 500){
+    		$(this).val(150);
+    	}
+    })
+
+    $(airHumidityInput).blur(function(){
+    	if($(this).val() < 0 || $(this).val() > 100){
+    		$(this).val(40);
+    	}
+    })
+
+    $(temperatureInput).blur(function(){
     	var checkValue = parseInt($(this).val());
 
-    	if($(this).val() < 0 || $(this).val() > 24 || isNaN(checkValue)){
-    		$(this).val(12);
+    	if(isNaN(checkValue)){
+    		$(this).val(20);
+    		return
     	}
-    });
+
+    	$(this).val(checkValue);
+
+    })
 
 }
 
@@ -236,6 +294,13 @@ function mapEvents(){
 
 	function initMap(){
 		var myLatLng = {lat:yCoord, lng: xCoord};
+
+		if(!xCoord){
+			myLatLng.lng = -0.124465;
+		}
+		if(!yCoord){
+			myLatLng.lat = 51.500702;
+		}		
 		var mapProp = {
 		    center:myLatLng,
 		    zoom:12,
@@ -243,27 +308,34 @@ function mapEvents(){
 		    scrollwheel:false,
 			disableDefaultUI:false
 		};
+
 		map=new google.maps.Map(document.getElementById("report-map"),mapProp);
-		marker = new google.maps.Marker({
-		    position: myLatLng,
-		    map: map,
-		});
-		myMarker = new google.maps.Circle({
-			center:myLatLng,
-			radius:ratio*1000,
-			strokeColor:"#F7931E",
-			strokeOpacity:0.8,
-			strokeWeight:2,
-			fillColor:"#F7931E",
-			fillOpacity:0.2
-		});
-		myMarker.setMap(map);
+		
+			marker = new google.maps.Marker({
+			    position: myLatLng,
+			    map: map,
+			});
+			myMarker = new google.maps.Circle({
+				center:myLatLng,
+				radius:ratio*1000,
+				strokeColor:"#F7931E",
+				strokeOpacity:0.8,
+				strokeWeight:2,
+				fillColor:"#F7931E",
+				fillOpacity:0.2
+			});
+		if(xCoord && yCoord){
+			myMarker.setMap(map);
+		}
+		else{
+			marker.setMap(null);
+		}
 	}
 
 	initMap();
 
 	function checkCoordDiapason(coordInput, min, max){
-		if( isNaN($(coordInput).val()) || $(coordInput).val() < min ||  $(coordInput).val() > max || $(coordInput).val() == ""){
+		if( isNaN($(coordInput).val()) || $(coordInput).val() < min ||  $(coordInput).val() > max){
     		$(coordInput).val("Not valid coordinate");
     		return false
     	}
@@ -271,12 +343,9 @@ function mapEvents(){
 	}
 
 	function renderMarker(){
-		if(xCoordBool && yCoordBool){
+		if(xCoordBool && yCoordBool && $(xCoordInput).val() != "" && $(yCoordInput).val() != ""){
     		marker.setMap(null);
     		myMarker.setMap(null);
-
-    		console.log(xCoord);
-    		console.log(yCoord);
 
     		marker = new google.maps.Marker({
 			    position: {lat:yCoord, lng: xCoord},
@@ -330,8 +399,8 @@ function mapEvents(){
 	    	if( isNaN($(this).val())){
  		   		$(this).val(2);
    		 	}
-   		 	if( $(this).val() > 5 || $(this).val()==""){
-    			$(this).val(2);
+   		 	if( $(this).val() > 10000000 || $(this).val()==""){
+    			$(this).val(4);
     		}
     		ratio = parseInt($(this).val());
     		renderMarker();

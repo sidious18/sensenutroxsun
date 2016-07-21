@@ -75,19 +75,17 @@
 }
 
 .nutroxsun .report-content-link-address{
-	padding: 13px 11px 8px;
+	padding: 10px 11px 8px;
 	outline:2px solid #ccc;
 	flex-grow: 1;
 }
 
-.nutroxsun .report-content-link-address a{
+.nutroxsun .report-content-link-address input{
 	color:#000;
 	font-size: 15px;
 	text-decoration: none;
-}
-
-.nutroxsun .report-content-link-address a:hover{
-	text-decoration: underline;
+	width: 100%;
+	border:0px;
 }
 
 .nutroxsun .report-content-box{
@@ -175,6 +173,24 @@
 	background-position: center;
 }
 
+.nutroxsun .report-content-box.altitude .report-content-box-desc-icon{
+	background-image: url(../../icons/nutroxsun/altitude-icon.png);
+	background-size: 36px;
+	background-position: center;
+}
+
+.nutroxsun .report-content-box.air-humidity .report-content-box-desc-icon{
+	background-image: url(../../icons/nutroxsun/humidity-icon.png);
+	background-size: 36px;
+	background-position: center;
+}
+
+.nutroxsun .report-content-box.wind .report-content-box-desc-icon{
+	background-image: url(../../icons/nutroxsun/wind-icon.png);
+	background-size: 28px;
+	background-position: center;
+}
+
 .nutroxsun .report-content-box.country .report-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/country-icon.png);
 	background-size: 36px;
@@ -235,17 +251,18 @@
 }
 
 .nutroxsun .report-content-box-coordinates{
-	flex-grow: 1;
-}
-
-.nutroxsun .report-content-box-coordinates{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 	padding-left: 56px;
+	background-image: url(../../icons/nutroxsun/gps-icon.png); 
+	background-repeat: no-repeat;
+	background-size: 36px;
+	background-position: 3px 6px;
 }
 
 .nutroxsun .report-content-box-coordinates-title{
@@ -340,7 +357,7 @@
 	}
 
 	.nutroxsun .report-header-priority-input{
-		width: 100px;
+		width: 70px;
 	}
 
 	.nutroxsun .report-content{
@@ -357,7 +374,7 @@
 		margin-top:5px;
 	}
 
-	.nutroxsun .report-content-link-address a{
+	.nutroxsun .report-content-link-address input{
 		word-break: break-all;
 		display: inline-block;
 	}
@@ -415,6 +432,7 @@
 	.nutroxsun .report-content-box-coordinates{
 		margin-top:-28px;
 		padding-left: 0px;
+		background-position: 3px 0px;
 	}
 
 	.nutroxsun #gps-checkbox{
@@ -425,6 +443,8 @@
 
 	.nutroxsun .report-content-box-coordinates-title{
 		margin: 10px 0px 15px;
+		padding-left: 50px;
+		padding-bottom: 25px;
 	}
 
 	.nutroxsun .report-content-box-coordinates-text{
