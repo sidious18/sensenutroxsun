@@ -460,6 +460,7 @@
 
 	.nutroxsun .report-content-box-coordinates-ratio{
 		flex-grow: 1;
+		text-align: left;
 	}
 
 	.nutroxsun .report-map-box{

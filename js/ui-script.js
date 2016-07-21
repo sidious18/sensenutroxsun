@@ -288,9 +288,11 @@ function mapEvents(){
 	var xCoord = parseFloat($(xCoordInput).val());
 	var yCoord = parseFloat($(yCoordInput).val());
 	var ratio = parseInt($(ratioInput).val());
+	var mapColor = $(".button-switcher .button-switcher-on").css("background-color");
 	var marker;
 	var myMarker;
 	var map;
+
 
 	function initMap(){
 		var myLatLng = {lat:yCoord, lng: xCoord};
@@ -318,10 +320,10 @@ function mapEvents(){
 			myMarker = new google.maps.Circle({
 				center:myLatLng,
 				radius:ratio*1000,
-				strokeColor:"#F7931E",
+				strokeColor:mapColor,
 				strokeOpacity:0.8,
 				strokeWeight:2,
-				fillColor:"#F7931E",
+				fillColor:mapColor,
 				fillOpacity:0.2
 			});
 		if(xCoord && yCoord){
@@ -355,10 +357,10 @@ function mapEvents(){
 			myMarker = new google.maps.Circle({
 				center:{lat:yCoord, lng: xCoord},
 				radius:ratio*1000,
-				strokeColor:"#F7931E",
+				strokeColor:mapColor,
 				strokeOpacity:0.8,
 				strokeWeight:2,
-				fillColor:"#F7931E",
+				fillColor:mapColor,
 				fillOpacity:0.2
 			});
 

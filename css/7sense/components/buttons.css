@@ -78,6 +78,7 @@
 .sense .button-ok{
 	background: #33B0C4;
 	padding: 8px;
+	border:0px;
 
 }
 
@@ -110,4 +111,23 @@
 	color: #fff;
 	cursor: pointer;
 	padding:9px 10px 6px;
+}
+
+.sense .big-switcher{
+	display: none;
+}
+
+.sense .big-switcher + label{
+	display: block;
+	text-align: center;
+	padding: 19px 5px 15px;
+	outline: 1px solid #33B0C4;
+	cursor: pointer;
+	color:#696969;
+	transition: all 0.1s linear;
+}
+
+.sense .big-switcher:checked + label{
+	background-color:#33B0C4;
+	color:#fff;
 }
