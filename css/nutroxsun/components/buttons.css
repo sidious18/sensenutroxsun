@@ -127,3 +127,13 @@
 	background-color:#EABF91;
 	color:#000;
 }
+
+.nutroxsun .date-picker{
+	border:1px solid #ccc;
+	border-radius: 0px;
+	padding:6px 8px;
+}
+
+.nutroxsun .standart-selector{
+	padding:2px 0px;
+}

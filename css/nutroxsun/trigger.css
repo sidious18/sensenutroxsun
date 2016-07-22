@@ -1,4 +1,4 @@
-.nutroxsun .report-header{
+.nutroxsun .trigger-header{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -8,11 +8,11 @@
 	align-items: center;
 }
 
-.nutroxsun .report-header-title{
+.nutroxsun .trigger-header-title{
 	flex-grow: 1;
 }
 
-.nutroxsun .report-header-id{
+.nutroxsun .trigger-header-id{
 	position: relative;
 	top: 1px;
 	font-size: 20px;
@@ -31,12 +31,12 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcddbd', endColorstr='#ffffff', GradientType=0 );	
 }
 
-.nutroxsun .report-header-priority-title{
+.nutroxsun .trigger-header-priority-title{
 	color:#696969;
 	margin-right: 10px;
 }
 
-.nutroxsun .report-header-priority-input{
+.nutroxsun .trigger-header-priority-input{
 	width: 60px;
 	border-radius: 0px;
 	border:1px solid #ccc;
@@ -44,19 +44,19 @@
 	text-align: center;
 }
 
-.nutroxsun .report-header-button{
+.nutroxsun .trigger-header-button{
 	width: 80px;
 	text-align: right;
 	padding-top: 4px;
 }
 
-.nutroxsun .report-content{
+.nutroxsun .trigger-content{
 	border:1px solid #EABF91;
 	background: #fff;
 	padding: 1%;
 }
 
-.nutroxsun .report-content-link{
+.nutroxsun .trigger-content-link{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -65,7 +65,7 @@
 	margin-bottom: 20px;
 }
 
-.nutroxsun .report-content-link-title{
+.nutroxsun .trigger-content-link-title{
 	padding:13px 10px 4px;
 	font-size: 16px;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(105,105,105,1);
@@ -74,13 +74,13 @@
 	text-transform: uppercase;
 }
 
-.nutroxsun .report-content-link-address{
+.nutroxsun .trigger-content-link-address{
 	padding: 10px 11px 8px;
 	outline:2px solid #ccc;
 	flex-grow: 1;
 }
 
-.nutroxsun .report-content-link-address input{
+.nutroxsun .trigger-content-link-address input{
 	color:#000;
 	font-size: 15px;
 	text-decoration: none;
@@ -88,7 +88,7 @@
 	border:0px;
 }
 
-.nutroxsun .report-content-box{
+.nutroxsun .trigger-content-box{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -101,7 +101,7 @@
 	margin-bottom: 15px;
 }
 
-.nutroxsun .report-content-box-desc{
+.nutroxsun .trigger-content-box-desc{
 	width: 40%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -111,7 +111,7 @@
 	align-items: center;
 }
 
-.nutroxsun .report-content-box-inputs{
+.nutroxsun .trigger-content-box-inputs{
 	width: 60%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -122,12 +122,12 @@
 	align-items: center;
 }
 
-.nutroxsun .report-content-box-desc-label{
+.nutroxsun .trigger-content-box-desc-label{
 	width: 80px;
 	color:#696969;
 }
 
-.nutroxsun .report-content-box .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box .trigger-content-box-desc-icon{
 	background-repeat: no-repeat;
 	width: 36px;
 	min-width: 36px;
@@ -135,69 +135,69 @@
 	background-position: center;
 }
 
-.nutroxsun .report-content-box.phone .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.phone .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/mobile-icon.png);
 	background-size: 36px;
 }
 
-.nutroxsun .report-content-box.temperature .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.temperature .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/temperature-icon.png);
 	background-size: 20px;
 }
 
-.nutroxsun .report-content-box.uv-index .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.uv-index .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/uv-index-icon.png);
 	background-size: 40px;
 }
 
-.nutroxsun .report-content-box.air-quality .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.air-quality .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/air-quality-icon.png);
 	background-size: 36px;
 	background-position: 0px 0px;
 }
 
-.nutroxsun .report-content-box.date .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.date .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/date-icon.png);
 	background-size: 36px;
 }
 
-.nutroxsun .report-content-box.hour .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.hour .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/hour-icon.png);
 	background-size: 36px;
 	background-position: 0px 3px;
 }
 
-.nutroxsun .report-content-box.language .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.language .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/language-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.nutroxsun .report-content-box.altitude .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.altitude .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/altitude-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.nutroxsun .report-content-box.air-humidity .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.air-humidity .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/humidity-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.nutroxsun .report-content-box.wind .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.wind .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/wind-icon.png);
 	background-size: 28px;
 	background-position: center;
 }
 
-.nutroxsun .report-content-box.country .report-content-box-desc-icon{
+.nutroxsun .trigger-content-box.country .trigger-content-box-desc-icon{
 	background-image: url(../../icons/nutroxsun/country-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.nutroxsun .report-content-box-desc-text{
+.nutroxsun .trigger-content-box-desc-text{
 	font-size: 16px;
 	color:#696969;
 	text-transform: uppercase;
@@ -205,11 +205,11 @@
 	padding-left: 20px;
 }
 
-.nutroxsun .report-content-box-inputs-label{
+.nutroxsun .trigger-content-box-inputs-label{
 	width: 32%;
 }
 
-.nutroxsun .report-content-box-inputs-text{
+.nutroxsun .trigger-content-box-inputs-text{
 	width: 0px;
 	flex-grow: 1;
 	font-size: 16px;
@@ -219,29 +219,29 @@
 	height: 34px;
 }
 
-.nutroxsun .report-content-box-inputs-text.date-picker, .nutroxsun .report-content-box-inputs-text.hour-picker{
+.nutroxsun .trigger-content-box-inputs-text.date-picker, .nutroxsun .trigger-content-box-inputs-text.hour-picker{
 	border:1px solid #F47B4E;
 }
 
-.nutroxsun .report-content-box-inputs-pointer{
+.nutroxsun .trigger-content-box-inputs-pointer{
 	align-self: center;
 	padding: 0px 15px;
 }
 
-.nutroxsun .report-content-box-inputs-language-text, .nutroxsun .report-content-box-inputs-country-text{
+.nutroxsun .trigger-content-box-inputs-language-text, .nutroxsun .trigger-content-box-inputs-country-text{
 	width: 50%;
 	align-self: center;
 	color:#696969;
 	font-size: 16px;
 }
 
-.nutroxsun .report-content-box-inputs-language-select, .nutroxsun .report-content-box-inputs-country-select{
+.nutroxsun .trigger-content-box-inputs-language-select, .nutroxsun .trigger-content-box-inputs-country-select{
 	font-size: 14px;
 	width: 50%;
 	height: 96px;
 	padding: 5px;
 }
-.nutroxsun .report-content-box.gps{
+.nutroxsun .trigger-content-box.gps{
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
@@ -250,7 +250,7 @@
 	margin-top:-2px;
 }
 
-.nutroxsun .report-content-box-coordinates{
+.nutroxsun .trigger-content-box-coordinates{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -265,14 +265,14 @@
 	background-position: 3px 6px;
 }
 
-.nutroxsun .report-content-box-coordinates-title{
+.nutroxsun .trigger-content-box-coordinates-title{
 	width: 100%;
 	text-transform: uppercase;
 	color:#696969;
 	margin-bottom: 10px;
 }
 
-.nutroxsun .report-content-box-coordinates-text{
+.nutroxsun .trigger-content-box-coordinates-text{
 	width: 0px;
 	flex-grow: 1;
 	border-radius: 0px;
@@ -283,7 +283,7 @@
 	height: 34px;
 }
 
-.nutroxsun .report-content-box-coordinates-ratio{
+.nutroxsun .trigger-content-box-coordinates-ratio{
 	width: 80px;
 	border-radius: 0px;
 	border:1px solid #ccc;
@@ -293,13 +293,13 @@
 	text-align: center;
 }
 
-.nutroxsun .report-content-box-coordinates-label{
+.nutroxsun .trigger-content-box-coordinates-label{
 	padding: 12px 10px 0px;
 	color:#696969;
 	text-transform: uppercase;
 }
 
-.nutroxsun .report-map-box{
+.nutroxsun .trigger-map-box{
 	width: 100%;
 	height: 320px;
 	border-top:2px solid #ccc;
@@ -308,36 +308,36 @@
 	padding-bottom: 20px
 }
 
-.nutroxsun #report-map{
+.nutroxsun #trigger-map{
 	width: 100%;
 	height: 280px;
 }
 
-.nutroxsun .report-footer{
+.nutroxsun .trigger-footer{
 	margin-top:30px;
 	text-align: right;
 }
 
 @media only screen and (max-width: 768px){
-	.nutroxsun .report-content{
+	.nutroxsun .trigger-content{
 		padding:5px 10px;
 	}
 
-	.nutroxsun .report-header{
+	.nutroxsun .trigger-header{
 		flex-wrap: wrap;
 	}
 
-	.nutroxsun .report-header-title{
+	.nutroxsun .trigger-header-title{
 		flex-grow: 1;
 		width: 100%;
 	}
 
-	.nutroxsun .report-header-id{
+	.nutroxsun .trigger-header-id{
 		width: 100%;
 		position: static;
 	}
 
-	.nutroxsun .report-header-priority{
+	.nutroxsun .trigger-header-priority{
 		flex-grow:1;
 		border-left: 1px solid #EABF91;
 		min-height: 40px;
@@ -346,7 +346,7 @@
 		padding-top: 8px;
 	}
 
-	.nutroxsun .report-header-button{
+	.nutroxsun .trigger-header-button{
 		min-height: 40px;
 		margin-top:0px;
 		padding-top: 0px;
@@ -356,80 +356,80 @@
 		padding-top: 8px;
 	}
 
-	.nutroxsun .report-header-priority-input{
+	.nutroxsun .trigger-header-priority-input{
 		width: 70px;
 	}
 
-	.nutroxsun .report-content{
+	.nutroxsun .trigger-content{
 		border-top:0px;
 	}
 
-	.nutroxsun .report-content-link{
+	.nutroxsun .trigger-content-link{
 		flex-wrap: wrap;
 	}
 
-	.nutroxsun .report-content-link-title{
+	.nutroxsun .trigger-content-link-title{
 		width: 100%;
 		padding: 7px 5px 4px;
 		margin-top:5px;
 	}
 
-	.nutroxsun .report-content-link-address input{
+	.nutroxsun .trigger-content-link-address input{
 		word-break: break-all;
 		display: inline-block;
 	}
 
-	.nutroxsun .report-content-box{
+	.nutroxsun .trigger-content-box{
 		flex-wrap: wrap;
 	}
 
-	.nutroxsun .report-content-box-desc{
+	.nutroxsun .trigger-content-box-desc{
 		width: 100%;
 		margin-bottom: 10px;
 		display: flex;
 	}
 
-	.nutroxsun .report-content-box .report-content-box-desc-icon{
+	.nutroxsun .trigger-content-box .trigger-content-box-desc-icon{
 		order: 1;
 	}
 
-	.nutroxsun .report-content-box-desc-text{
+	.nutroxsun .trigger-content-box-desc-text{
 		order: 2;
 		flex-grow: 1;
 		padding-left: 10px;
 	}
 
-	.nutroxsun .report-content-box-desc input{
+	.nutroxsun .trigger-content-box-desc input{
 		order:3;
 	}
 
-	.nutroxsun .report-content-box-desc-label{
+	.nutroxsun .trigger-content-box-desc-label{
 		width: 32px;
 		order:4;
 	}
 
-	.nutroxsun .report-content-box-inputs{
+	.nutroxsun .trigger-content-box-inputs{
 		width: 100%;
 		flex-wrap: wrap;
 	}
 
-	.nutroxsun .report-content-box-inputs-pointer{
+	.nutroxsun .trigger-content-box-inputs-pointer{
 		width: 100%;
 		padding:0px;
 		margin: 8px 0px 5px;
 	}
 
-	.nutroxsun .report-content-box.gps .report-content-box-desc-label{
+	.nutroxsun .trigger-content-box.gps .trigger-content-box-desc-label{
 		order: 0;
 		z-index: 1;
 		margin-top: 18px;
 	}
 
-	.nutroxsun .report-content-box.gps{
+	.nutroxsun .trigger-content-box.gps{
 		justify-content: flex-end;
 	}
 
-	.nutroxsun .report-content-box-coordinates{
+	.nutroxsun .trigger-content-box-coordinates{
 		margin-top:-28px;
 		padding-left: 0px;
 		background-position: 3px 0px;
@@ -441,29 +441,29 @@
 		margin-top: 15px;
 	}
 
-	.nutroxsun .report-content-box-coordinates-title{
+	.nutroxsun .trigger-content-box-coordinates-title{
 		margin: 10px 0px 15px;
 		padding-left: 50px;
 		padding-bottom: 25px;
 	}
 
-	.nutroxsun .report-content-box-coordinates-text{
+	.nutroxsun .trigger-content-box-coordinates-text{
 		width: 100%;
 		margin-bottom: 5px;
 	}
 
-	.nutroxsun .report-content-box-coordinates-label.ratio{
+	.nutroxsun .trigger-content-box-coordinates-label.ratio{
 		padding-left: 0px;
 		width: 100%;
 		margin-bottom: 5px;
 	}
 
-	.nutroxsun .report-content-box-coordinates-ratio{
+	.nutroxsun .trigger-content-box-coordinates-ratio{
 		flex-grow: 1;
 		text-align: left;
 	}
 
-	.nutroxsun .report-map-box{
+	.nutroxsun .trigger-map-box{
 		border-top:0px;
 	}
 

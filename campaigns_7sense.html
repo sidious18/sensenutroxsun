@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="css/7sense/company.css">
 	<link rel="stylesheet" href="css/7sense/jquery-ui.css">
 	<link rel="stylesheet" href="css/7sense/profile-block.css">
+	<link rel="stylesheet" href="css/7sense/report.css">
+	<link rel="stylesheet" href="css/7sense/trigger.css">
 
 	<link rel="stylesheet" href="css/7sense/components/buttons.css">
 	<link rel="stylesheet" href="css/7sense/components/content-table.css">
@@ -23,12 +25,18 @@
 	<link rel="stylesheet" href="css/7sense/modificators/content-table-companies.css">
 	<link rel="stylesheet" href="css/7sense/modificators/content-table-company.css">
 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzJXDH2aFvMNvwFl9NDqIoWnUhX-ZEz_I"
+  type="text/javascript"></script>
+  	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.modal.min.js"></script>
 	<script src="js/sortchildren.min.js"></script>
 	<script src="js/table-sort.js"></script>
 	<script src="js/ui-script.js"></script>
+	
 </head>
 
 <body class="sense">
@@ -52,10 +60,10 @@
 				<div class="companies-link">
 					COMPANIES
 				</div>
-				<div class="campaigns-link active">
+				<div class="campaigns-link">
 					CAMPAIGNS
 				</div>
-				<div class="reports-link">
+				<div class="reports-link active">
 					REPORTS
 				</div>
 			</div>
@@ -553,8 +561,534 @@
 			</div>
 		</div>
 		
-		<div class="content-table-report">
-			
+		<div class="content-table-report cont">
+			<div class="header-report">
+				<div class="header-report-name">
+					<select class="standart-selector">
+						<option value="BP1-MC5">BP1-MC5 - european woman</option>
+						<option value="BP1-MC6">BP1-MC6 - european woman</option>
+						<option value="BP1-MC7">BP1-MC7 - european woman</option>
+						<option value="BP1-MC8">BP1-MC8 - european woman</option>
+						<option value="BP1-MC9">BP1-MC9 - european woman</option>
+					</select>
+				</div>
+				<div class="header-report-date">
+					<div class="header-report-date-box">
+						<span class="header-report-date-label">From</span>
+						<input class="date-picker" type="text">
+					</div>
+					<div class="header-report-date-box">
+						<span class="header-report-date-label">To</span>
+						<input class="date-picker" type="text">
+					</div>
+					<div class="header-report-date-import">
+						<select class="standart-selector">
+							<option value="export-report">export-report</option>
+							<option value="import-report">import-report</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="report-dashbord">
+				<div class="report-dashbord-header">
+					<h4 class="report-dashbord-header-title">
+						2000 <br>
+						Total Views
+					</h4>
+					<select class="standart-selector">
+						<option value="export-report">export-report</option>
+						<option value="import-report">import-report</option>
+					</select>
+				</div>
+				
+				<div id="report-chart"></div>
+				<div id="report-slider"></div>
+			</div>
+			<div class="report-content">
+				<div class="report-box trigger">
+					<h3 class="report-box-title">Triggers</h3>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							
+						</div>
+						<div class="report-box-field main">
+							id
+						</div>
+						<div class="report-box-field view">
+							views
+						</div>
+						<div  class="report-box-field percent">
+							%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							bp1-mc5-t1
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							bp1-mc5-t1
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							bp1-mc5-t1
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							bp1-mc5-t1
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							bp1-mc5-t1
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							bp1-mc5-t1
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+				</div>
+
+				<div class="report-box language">
+					<h3 class="report-box-title">Languages</h3>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							
+						</div>
+						<div class="report-box-field main">
+							languages
+						</div>
+						<div class="report-box-field view">
+							views
+						</div>
+						<div  class="report-box-field percent">
+							%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							spanish
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							french
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							russian
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							english
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							german
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							italian
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="report-box">
+				<h3 class="report-box-title">Landing Pages</h3>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						
+					</div>
+					<div class="report-box-field main">
+						url
+					</div>
+					<div class="report-box-field view">
+						views
+					</div>
+					<div  class="report-box-field percent">
+						%
+					</div>
+				</div>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						1
+					</div>
+					<div class="report-box-field url">
+						http:/www.monteloeder.com/landingpages/bp1-mc5-t1
+					</div>
+					<div class="report-box-field view">
+						800
+					</div>
+					<div  class="report-box-field percent">
+						40%
+					</div>
+				</div>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						1
+					</div>
+					<div class="report-box-field url">
+						http:/www.monteloeder.com/landingpages/bp1-mc5-t1
+					</div>
+					<div class="report-box-field view">
+						800
+					</div>
+					<div  class="report-box-field percent">
+						40%
+					</div>
+				</div>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						1
+					</div>
+					<div class="report-box-field url">
+						http:/www.monteloeder.com/landingpages/bp1-mc5-t1
+					</div>
+					<div class="report-box-field view">
+					800
+					</div>
+					<div  class="report-box-field percent">
+						40%
+					</div>
+				</div>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						1
+					</div>
+					<div class="report-box-field url">
+						http:/www.monteloeder.com/landingpages/bp1-mc5-t1
+					</div>
+					<div class="report-box-field view">
+						800
+					</div>
+					<div  class="report-box-field percent">
+						40%
+					</div>
+				</div>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						1
+					</div>
+					<div class="report-box-field url">
+						http:/www.monteloeder.com/landingpages/bp1-mc5-t1
+					</div>
+					<div class="report-box-field view">
+						800
+					</div>
+					<div  class="report-box-field percent">
+						40%
+					</div>
+				</div>
+				<div class="report-box-cont">
+					<div class="report-box-field num">
+						1
+					</div>
+					<div class="report-box-field url">
+						http:/www.monteloeder.com/landingpages/bp1-mc5-t1
+					</div>
+					<div class="report-box-field view">
+						800
+					</div>
+					<div  class="report-box-field percent">
+						40%
+					</div>
+				</div>
+			</div>
+
+			<div class="report-content countries">
+				<div class="report-box trigger">
+					<h3 class="report-box-title">Devices</h3>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							
+						</div>
+						<div class="report-box-field main">
+							device
+						</div>
+						<div class="report-box-field view">
+							views
+						</div>
+						<div  class="report-box-field percent">
+							%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field device">
+							Android
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							2
+						</div>
+						<div class="report-box-field device">
+							IOS
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							3
+						</div>
+						<div class="report-box-field device">
+							Windows Mobile
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							4
+						</div>
+						<div class="report-box-field device">
+							Other
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+				</div>
+
+				<div class="report-box language">
+					<h3 class="report-box-title">Languages</h3>
+					<div id="regions_div"></div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							
+						</div>
+						<div class="report-box-field main">
+							country
+						</div>
+						<div class="report-box-field view">
+							views
+						</div>
+						<div  class="report-box-field percent">
+							%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							spanish
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							french
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							russian
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							english
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							german
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+					<div class="report-box-cont">
+						<div class="report-box-field num">
+							1
+						</div>
+						<div class="report-box-field main">
+							italian
+						</div>
+						<div class="report-box-field view">
+							800
+						</div>
+						<div  class="report-box-field percent">
+							40%
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer class="main-footer">

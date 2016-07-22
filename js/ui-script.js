@@ -26,7 +26,7 @@ function initMarketingTabs(){
 	var marketingActiveTab = "active";
 	var companiesBlock = '.companies-block';
 	var campaignsBlock = ".campaigns-block";
-	var campaignsReport = ".campaigns-report";
+	var campaignsReport = ".content-table-report";
 	var marketingTitle = ".navigation-title";
 
 	$(campaignsLink).click(function(){
@@ -86,13 +86,13 @@ function initContentFilters(){
 	var campaignDatepicker = '.campaign-menu-datepicker-input';
 	var datePicker = ".date-picker";
 	var hourPicker = ".hour-picker";
-	var temperatureInput = ".report-content-box.temperature ";
+	var temperatureInput = ".trigger-content-box.temperature ";
 
-	var airQualityInput = ".report-content-box.air-quality .report-content-box-inputs-text";
+	var airQualityInput = ".trigger-content-box.air-quality .trigger-content-box-inputs-text";
 
-	var airHumidityInput = ".report-content-box.air-humidity .report-content-box-inputs-text";
+	var airHumidityInput = ".trigger-content-box.air-humidity .trigger-content-box-inputs-text";
 
-	var temperatureInput = ".report-content-box.temperature .report-content-box-inputs-text";
+	var temperatureInput = ".trigger-content-box.temperature .trigger-content-box-inputs-text";
 
 	var sortedByID = true;
 	var sortedByName = true;
@@ -279,9 +279,9 @@ function initContentFilters(){
 
 function mapEvents(){
 
-	var xCoordInput = ".report-content-box-coordinates-text.x-coord";
-	var yCoordInput = ".report-content-box-coordinates-text.y-coord";
-	var ratioInput = ".report-content-box-coordinates-ratio";
+	var xCoordInput = ".trigger-content-box-coordinates-text.x-coord";
+	var yCoordInput = ".trigger-content-box-coordinates-text.y-coord";
+	var ratioInput = ".trigger-content-box-coordinates-ratio";
 	var xCoordBool = true;
 	var yCoordBool = true;
 	var ratioBool = true;
@@ -311,7 +311,7 @@ function mapEvents(){
 			disableDefaultUI:false
 		};
 
-		map=new google.maps.Map(document.getElementById("report-map"),mapProp);
+		map=new google.maps.Map(document.getElementById("trigger-map"),mapProp);
 		
 			marker = new google.maps.Marker({
 			    position: myLatLng,
@@ -411,6 +411,131 @@ function mapEvents(){
 
 
 }
+
+
+ google.charts.load('current', {packages:['corechart', 'table', 'gauge', 'controls']});
+  google.charts.setOnLoadCallback(drawChartRangeFilter);
+
+  function drawChartRangeFilter() {
+
+  	
+  	var mainColor = $('.reports-link').css('color');
+
+    var dashboard = new google.visualization.Dashboard(
+        document.getElementById('report-dashbord'));
+
+    var control = new google.visualization.ControlWrapper({
+      'controlType': 'ChartRangeFilter',
+      'containerId': 'report-slider',
+      'options': {
+      	
+        // Filter by the date axis.
+        'filterColumnIndex': 0,
+        'ui': {
+          'chartType': 'LineChart',
+          'chartOptions': {
+          	'series': {
+	            '0': { 'color': mainColor },
+	      	},
+            'chartArea': {'width': '96%' ,'height':'100%'},
+            'hAxis': {'baselineColor': '#696969'}
+          },
+          // Display a single series that shows the closing value of the stock.
+          // Thus, this view has two columns: the date (axis) and the stock value (line series).
+          // 1 day in milliseconds = 24 * 60 * 60 * 1000 = 86,400,000
+        }
+      }
+      // Initial range: 2012-02-09 to 2012-03-20.
+      //'state': {'range': {'start': new Date(2012, 1, 9), 'end': new Date(2012, 2, 20)}}
+    });
+
+    var chart = new google.visualization.ChartWrapper({
+      'chartType': 'AreaChart',
+      'containerId': 'report-chart',
+      'options': {
+        // Use the same chart area width as the control for axis alignment.
+        'series': {
+            '0': { 'color': mainColor },
+      	},
+
+        'chartArea': {'height': '80%', 'width': '93%','left':'5%'},
+        'hAxis': {'slantedText': false},
+        'legend': {'position': 'none'},
+        'pointSize': '3',
+
+
+      },
+      
+    });
+
+
+    var data = new google.visualization.DataTable();
+    
+    data.addColumn('date', 'Date');
+    data.addColumn('number');
+
+
+
+    //data.addRow([new Date(2012, 0 , 15), 15]);
+    //data.addRow([new Date(2012, 1 , 15), 13]);
+    //data.addRow([new Date(2012, 2 , 15), 16]);
+    //data.addRow([new Date(2013, 3 , 15), 22]);
+    //data.addRow([new Date(2013, 4 , 15), 25]);
+    //data.addRow([new Date(2016, 1 , 15), 30]);
+    //data.addRow([new Date(2016, 7 , 15), 12]);
+    //data.addRow([new Date(2017, 3 , 15), 9]);
+    //data.addRow([new Date(2017, 8 , 15), 11]);
+    //data.addRow([new Date(2017, 9 , 15), 19]);
+
+    var data = new google.visualization.DataTable();
+	    data.addColumn('date', 'Date');
+	    data.addColumn('number');
+
+    // Create random stock values, just like it works in reality.
+    var open, close = 300;
+    var low, high;
+    for (var day = 1; day < 121; ++day) {
+      var change = (Math.sin(day / 2.5 + Math.PI) + Math.sin(day / 3) - Math.cos(day * 0.7)) * 150;
+      change = change >= 0 ? change + 10 : change - 10;
+      open = close;
+      close = Math.max(50, open + change);
+      low = Math.min(open, close) - (Math.cos(day * 1.7) + 1) * 15;
+      low = Math.max(0, low);
+      high = Math.max(open, close) + (Math.cos(day * 1.3) + 1) * 15;
+      var date = new Date(2012, 0 ,day);
+      data.addRow([date, Math.round(low)]);
+    }
+
+    dashboard.bind(control, chart);
+    dashboard.draw(data);
+  }
+
+  google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+      	var mainColor = $('.reports-link').css('color');
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Views'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {
+        	colorAxis: {colors: [mainColor]},
+        	legend:"none",
+
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
 
 $(document).ready(function(){
 

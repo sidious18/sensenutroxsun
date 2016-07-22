@@ -1,0 +1,243 @@
+.nutroxsun #report-dashbord{
+	width:100%; 
+	margin:auto;
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.nutroxsun #report-chart{
+	width:100%; 
+	height:200px;
+}
+
+.nutroxsun #report-slider{
+	width:100%; 
+	height:50px; 
+	margin-top:20px;
+}
+
+.nutroxsun #regions_div{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.nutroxsun .header-report{
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nutroxsun .header-report select{
+	text-transform: uppercase;
+}
+
+.nutroxsun .header-report-date{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.nutroxsun .header-report-selector{
+	width: 150px;
+}
+
+.nutroxsun .header-report-date-selector{
+	width: 200px;
+}
+
+.nutroxsun .header-report-date-import{
+	width: 100%;
+	text-align: right;
+}
+
+.nutroxsun .header-report-date-label{
+	padding-left: 15px;
+	padding-right: 10px;
+	text-transform: uppercase;
+}
+
+.nutroxsun .header-report-date-box{
+	margin-bottom: 10px;
+}
+
+.nutroxsun #report-dashbord{
+	padding:2% 1%;
+}
+
+.nutroxsun .report-dashbord-header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0px 2% 0 1%;
+	margin-bottom: 5px;
+}
+
+.nutroxsun .report-dashbord-header select{
+	text-transform: uppercase;
+}
+
+.nutroxsun .report-dashbord-header-title{
+	color:#C54F32;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.nutroxsun .report-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.nutroxsun .report-content.countries{
+	display: block;
+	overflow: hidden;
+}
+
+.nutroxsun .report-content.countries>div{
+	float:left;
+}
+
+.nutroxsun .report-box{
+	padding:15px 2%;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	border-radius: 5px;
+	margin-top:10px;
+}
+
+.nutroxsun .report-box.trigger{
+	width:49.5%;
+	margin-right: 0.5%;
+}
+
+.nutroxsun .report-box.language{
+	width:49.5%;
+	margin-left: 0.5%;
+}
+
+.nutroxsun .report-box-title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom:20px;
+}
+
+.nutroxsun .report-box-cont{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.nutroxsun .report-box-field{
+	color:#696969;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 8px;
+	padding-bottom: 4px;
+}
+
+.nutroxsun .report-box-field.main{
+	flex-grow: 1;
+}
+
+.nutroxsun .report-box-field.url{
+	text-transform: none;
+	flex-grow: 1;
+}
+
+.nutroxsun .report-box-field.device{
+	text-transform: none;
+	flex-grow: 1;
+}
+
+.nutroxsun .report-box-field.num{
+	width: 50px;
+	padding-left: 5px;
+}
+
+.nutroxsun .report-box-field.view{
+	width: 80px;
+}
+
+.nutroxsun .report-box-field.percent{
+	width: 50px;
+	padding-right: 5px;
+}
+
+@media only screen and (max-width: 768px){
+	.nutroxsun .header-report{
+		flex-wrap: wrap;
+	}
+
+	.nutroxsun .header-report-name{
+		width: 100%;
+	}
+
+	.nutroxsun .header-report select{
+		width: 100%;
+	}
+
+	.nutroxsun .header-report-date{
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.nutroxsun .header-report-date-box{
+		width: 100%;
+		margin-top:8px;
+		margin-bottom: 0px;
+	}
+
+	.nutroxsun .header-report-date-box input{
+		width: 100%;
+		margin-top:5px;
+	}
+
+	.nutroxsun .header-report-date-label{
+		padding-left: 0px;
+		width: 50px;
+		display: inline-block;
+	}
+
+	.nutroxsun .header-report-date-import{
+		text-align: left;
+		margin-top:5px;
+	}
+
+	.nutroxsun .report-dashbord-header{
+		justify-content: space-between;
+	}
+
+	.nutroxsun .report-content{
+		flex-wrap: wrap;
+	}
+
+	.nutroxsun .report-box.trigger{
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.nutroxsun .report-box.language{
+		width: 100%;
+		margin-left: 0px;
+	}
+}

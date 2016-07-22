@@ -140,6 +140,10 @@
 }
 
 .content-table-report{
+	display: block;
+}
+
+.campaigns-block{
 	display: none;
 }
 

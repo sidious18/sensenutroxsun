@@ -131,3 +131,13 @@
 	background-color:#33B0C4;
 	color:#fff;
 }
+
+.sense .date-picker{
+	border:1px solid #ccc;
+	border-radius: 0px;
+	padding:6px 8px;
+}
+
+.sense .standart-selector{
+	padding:2px 0px;
+}

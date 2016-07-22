@@ -1,0 +1,243 @@
+.sense #report-dashbord{
+	width:100%; 
+	margin:auto;
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.sense #report-chart{
+	width:100%; 
+	height:200px;
+}
+
+.sense #report-slider{
+	width:100%; 
+	height:50px; 
+	margin-top:20px;
+}
+
+.sense #regions_div{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.sense .header-report{
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sense .header-report select{
+	text-transform: uppercase;
+}
+
+.sense .header-report-date{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.sense .header-report-selector{
+	width: 150px;
+}
+
+.sense .header-report-date-selector{
+	width: 200px;
+}
+
+.sense .header-report-date-import{
+	width: 100%;
+	text-align: right;
+}
+
+.sense .header-report-date-label{
+	padding-left: 15px;
+	padding-right: 10px;
+	text-transform: uppercase;
+}
+
+.sense .header-report-date-box{
+	margin-bottom: 10px;
+}
+
+.sense #report-dashbord{
+	padding:2% 1%;
+}
+
+.sense .report-dashbord-header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0px 2% 0 1%;
+	margin-bottom: 5px;
+}
+
+.sense .report-dashbord-header select{
+	text-transform: uppercase;
+}
+
+.sense .report-dashbord-header-title{
+	color:#33B0C4;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.sense .report-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.sense .report-content.countries{
+	display: block;
+	overflow: hidden;
+}
+
+.sense .report-content.countries>div{
+	float:left;
+}
+
+.sense .report-box{
+	padding:15px 2%;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	border-radius: 5px;
+	margin-top:10px;
+}
+
+.sense .report-box.trigger{
+	width:49.5%;
+	margin-right: 0.5%;
+}
+
+.sense .report-box.language{
+	width:49.5%;
+	margin-left: 0.5%;
+}
+
+.sense .report-box-title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom:20px;
+}
+
+.sense .report-box-cont{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.sense .report-box-field{
+	color:#696969;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 8px;
+	padding-bottom: 4px;
+}
+
+.sense .report-box-field.main{
+	flex-grow: 1;
+}
+
+.sense .report-box-field.url{
+	text-transform: none;
+	flex-grow: 1;
+}
+
+.sense .report-box-field.device{
+	text-transform: none;
+	flex-grow: 1;
+}
+
+.sense .report-box-field.num{
+	width: 50px;
+	padding-left: 5px;
+}
+
+.sense .report-box-field.view{
+	width: 80px;
+}
+
+.sense .report-box-field.percent{
+	width: 50px;
+	padding-right: 5px;
+}
+
+@media only screen and (max-width: 768px){
+	.sense .header-report{
+		flex-wrap: wrap;
+	}
+
+	.sense .header-report-name{
+		width: 100%;
+	}
+
+	.sense .header-report select{
+		width: 100%;
+	}
+
+	.sense .header-report-date{
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.sense .header-report-date-box{
+		width: 100%;
+		margin-top:8px;
+		margin-bottom: 0px;
+	}
+
+	.sense .header-report-date-box input{
+		width: 100%;
+		margin-top:5px;
+	}
+
+	.sense .header-report-date-label{
+		padding-left: 0px;
+		width: 50px;
+		display: inline-block;
+	}
+
+	.sense .header-report-date-import{
+		text-align: left;
+		margin-top:5px;
+	}
+
+	.sense .report-dashbord-header{
+		justify-content: space-between;
+	}
+
+	.sense .report-content{
+		flex-wrap: wrap;
+	}
+
+	.sense .report-box.trigger{
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.sense .report-box.language{
+		width: 100%;
+		margin-left: 0px;
+	}
+}

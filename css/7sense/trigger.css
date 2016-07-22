@@ -1,4 +1,4 @@
-.sense .report-header{
+.sense .trigger-header{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -11,11 +11,11 @@
 	padding-right: 1%;
 }
 
-.sense .report-header-title{
+.sense .trigger-header-title{
 	flex-grow: 1;
 }
 
-.sense .report-header-id{
+.sense .trigger-header-id{
 	font-size: 20px;
 	font-weight: bold;
 	padding: 13px 15px 8px;
@@ -26,12 +26,12 @@
 	color: #fff;	
 }
 
-.sense .report-header-priority-title{
+.sense .trigger-header-priority-title{
 	color:#696969;
 	margin-right: 10px;
 }
 
-.sense .report-header-priority-input{
+.sense .trigger-header-priority-input{
 	width: 60px;
 	border-radius: 0px;
 	border:1px solid #ccc;
@@ -39,19 +39,19 @@
 	text-align: center;
 }
 
-.sense .report-header-button{
+.sense .trigger-header-button{
 	width: 80px;
 	text-align: right;
 	padding-top: 4px;
 }
 
-.sense .report-content{
+.sense .trigger-content{
 	border:1px solid #30BFD4;
 	background: #fff;
 	padding: 1%;
 }
 
-.sense .report-content-link{
+.sense .trigger-content-link{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -60,21 +60,21 @@
 	margin-bottom: 20px;
 }
 
-.sense .report-content-link-title{
+.sense .trigger-content-link-title{
 	padding: 16px 14px 10px;
 	font-size: 16px;
 	border:1px solid #ccc;
 	text-transform: uppercase;
 }
 
-.sense .report-content-link-address{
+.sense .trigger-content-link-address{
 	padding: 12px 11px 10px;
 	border:1px solid #ccc;
 	border-left: 0px;
 	flex-grow: 1;
 }
 
-.sense .report-content-link-address input{
+.sense .trigger-content-link-address input{
 	color:#000;
 	font-size: 15px;
 	text-decoration: none;
@@ -82,7 +82,7 @@
 	border:0px;
 }
 
-.sense .report-content-box{
+.sense .trigger-content-box{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -94,12 +94,12 @@
 	background-color: rgba(50, 191, 211, 0.1)
 }
 
-.sense .report-content-box:last-child{
+.sense .trigger-content-box:last-child{
 	border-bottom: 1px solid #30BFD4;
 }
 
 
-.sense .report-content-box-desc{
+.sense .trigger-content-box-desc{
 	width: 40%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -109,7 +109,7 @@
 	align-items: center;
 }
 
-.sense .report-content-box-inputs{
+.sense .trigger-content-box-inputs{
 	width: 60%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -120,12 +120,12 @@
 	align-items: center;
 }
 
-.sense .report-content-box-desc-label{
+.sense .trigger-content-box-desc-label{
 	width: 80px;
 	color:#696969;
 }
 
-.sense .report-content-box .report-content-box-desc-icon{
+.sense .trigger-content-box .trigger-content-box-desc-icon{
 	background-repeat: no-repeat;
 	width: 36px;
 	min-width: 36px;
@@ -133,69 +133,69 @@
 	background-position: center;
 }
 
-.sense .report-content-box.phone .report-content-box-desc-icon{
+.sense .trigger-content-box.phone .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/mobile-icon.png);
 	background-size: 36px;
 }
 
-.sense .report-content-box.temperature .report-content-box-desc-icon{
+.sense .trigger-content-box.temperature .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/temperature-icon.png);
 	background-size: 20px;
 }
 
-.sense .report-content-box.uv-index .report-content-box-desc-icon{
+.sense .trigger-content-box.uv-index .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/uv-index-icon.png);
 	background-size: 40px;
 }
 
-.sense .report-content-box.air-quality .report-content-box-desc-icon{
+.sense .trigger-content-box.air-quality .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/air-quality-icon.png);
 	background-size: 36px;
 	background-position: 0px 0px;
 }
 
-.sense .report-content-box.date .report-content-box-desc-icon{
+.sense .trigger-content-box.date .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/date-icon.png);
 	background-size: 36px;
 }
 
-.sense .report-content-box.hour .report-content-box-desc-icon{
+.sense .trigger-content-box.hour .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/hour-icon.png);
 	background-size: 36px;
 	background-position: 0px 3px;
 }
 
-.sense .report-content-box.language .report-content-box-desc-icon{
+.sense .trigger-content-box.language .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/language-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.sense .report-content-box.altitude .report-content-box-desc-icon{
+.sense .trigger-content-box.altitude .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/altitude-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.sense .report-content-box.air-humidity .report-content-box-desc-icon{
+.sense .trigger-content-box.air-humidity .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/humidity-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.sense .report-content-box.wind .report-content-box-desc-icon{
+.sense .trigger-content-box.wind .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/wind-icon.png);
 	background-size: 28px;
 	background-position: center;
 }
 
-.sense .report-content-box.country .report-content-box-desc-icon{
+.sense .trigger-content-box.country .trigger-content-box-desc-icon{
 	background-image: url(../../icons/7sense/country-icon.png);
 	background-size: 36px;
 	background-position: center;
 }
 
-.sense .report-content-box-desc-text{
+.sense .trigger-content-box-desc-text{
 	font-size: 16px;
 	color:#696969;
 	text-transform: uppercase;
@@ -203,11 +203,11 @@
 	padding-left: 20px;
 }
 
-.sense .report-content-box-inputs-label{
+.sense .trigger-content-box-inputs-label{
 	width: 32%;
 }
 
-.sense .report-content-box-inputs-text{
+.sense .trigger-content-box-inputs-text{
 	width: 0px;
 	flex-grow: 1;
 	font-size: 16px;
@@ -217,29 +217,29 @@
 	height: 34px;
 }
 
-.sense .report-content-box-inputs-text.date-picker, .sense .report-content-box-inputs-text.hour-picker{
+.sense .trigger-content-box-inputs-text.date-picker, .sense .trigger-content-box-inputs-text.hour-picker{
 	border:1px solid #30BFD4;
 }
 
-.sense .report-content-box-inputs-pointer{
+.sense .trigger-content-box-inputs-pointer{
 	align-self: center;
 	padding: 0px 15px;
 }
 
-.sense .report-content-box-inputs-language-text, .sense .report-content-box-inputs-country-text{
+.sense .trigger-content-box-inputs-language-text, .sense .trigger-content-box-inputs-country-text{
 	width: 50%;
 	align-self: center;
 	color:#696969;
 	font-size: 16px;
 }
 
-.sense .report-content-box-inputs-language-select, .sense .report-content-box-inputs-country-select{
+.sense .trigger-content-box-inputs-language-select, .sense .trigger-content-box-inputs-country-select{
 	font-size: 14px;
 	width: 50%;
 	height: 96px;
 	padding: 5px;
 }
-.sense .report-content-box.gps{
+.sense .trigger-content-box.gps{
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
@@ -248,7 +248,7 @@
 	margin-top:-2px;
 }
 
-.sense .report-content-box-coordinates{
+.sense .trigger-content-box-coordinates{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -263,14 +263,14 @@
 	background-position: 3px 6px;
 }
 
-.sense .report-content-box-coordinates-title{
+.sense .trigger-content-box-coordinates-title{
 	width: 100%;
 	text-transform: uppercase;
 	color:#696969;
 	margin-bottom: 10px;
 }
 
-.sense .report-content-box-coordinates-text{
+.sense .trigger-content-box-coordinates-text{
 	width: 0px;
 	flex-grow: 1;
 	border-radius: 0px;
@@ -281,7 +281,7 @@
 	height: 34px;
 }
 
-.sense .report-content-box-coordinates-ratio{
+.sense .trigger-content-box-coordinates-ratio{
 	width: 80px;
 	border-radius: 0px;
 	border:1px solid #ccc;
@@ -291,13 +291,13 @@
 	text-align: center;
 }
 
-.sense .report-content-box-coordinates-label{
+.sense .trigger-content-box-coordinates-label{
 	padding: 12px 10px 0px;
 	color:#696969;
 	text-transform: uppercase;
 }
 
-.sense .report-map-box{
+.sense .trigger-map-box{
 	width: 100%;
 	height: 320px;
 	border-top:2px solid #ccc;
@@ -306,37 +306,37 @@
 	padding-bottom: 20px
 }
 
-.sense #report-map{
+.sense #trigger-map{
 	width: 100%;
 	height: 280px;
 }
 
-.sense .report-footer{
+.sense .trigger-footer{
 	margin-top:30px;
 	text-align: right;
 }
 
 @media only screen and (max-width: 768px){
-	.sense .report-content{
+	.sense .trigger-content{
 		padding:5px 10px;
 	}
 
-	.sense .report-header{
+	.sense .trigger-header{
 		flex-wrap: wrap;
 		padding-right: 0px;
 	}
 
-	.sense .report-header-title{
+	.sense .trigger-header-title{
 		flex-grow: 1;
 		width: 100%;
 	}
 
-	.sense .report-header-id{
+	.sense .trigger-header-id{
 		width: 100%;
 		position: static;
 	}
 
-	.sense .report-header-priority{
+	.sense .trigger-header-priority{
 		flex-grow:1;
 		min-height: 40px;
 		background-color: #fff;
@@ -344,7 +344,7 @@
 		padding-top: 8px;
 	}
 
-	.sense .report-header-button{
+	.sense .trigger-header-button{
 		min-height: 40px;
 		margin-top:0px;
 		padding-top: 0px;
@@ -353,84 +353,84 @@
 		padding-top: 8px;
 	}
 
-	.sense .report-header-priority-input{
+	.sense .trigger-header-priority-input{
 		width: 70px;
 	}
 
-	.sense .report-content{
+	.sense .trigger-content{
 		border-top:0px;
 	}
 
-	.sense .report-content-link{
+	.sense .trigger-content-link{
 		flex-wrap: wrap;
 	}
 
-	.sense .report-content-link-title{
+	.sense .trigger-content-link-title{
 		width: 100%;
 		padding: 7px 5px 4px;
 		margin-top:5px;
 	}
 
-	.sense .report-content-link-address{
+	.sense .trigger-content-link-address{
 		border-left: 1px solid #ccc;
 	}
 
-	.sense .report-content-link-address input{
+	.sense .trigger-content-link-address input{
 		word-break: break-all;
 		display: inline-block;
 	}
 
-	.sense .report-content-box{
+	.sense .trigger-content-box{
 		flex-wrap: wrap;
 	}
 
-	.sense .report-content-box-desc{
+	.sense .trigger-content-box-desc{
 		width: 100%;
 		margin-bottom: 10px;
 		display: flex;
 	}
 
-	.sense .report-content-box .report-content-box-desc-icon{
+	.sense .trigger-content-box .trigger-content-box-desc-icon{
 		order: 1;
 	}
 
-	.sense .report-content-box-desc-text{
+	.sense .trigger-content-box-desc-text{
 		order: 2;
 		flex-grow: 1;
 		padding-left: 10px;
 	}
 
-	.sense .report-content-box-desc input{
+	.sense .trigger-content-box-desc input{
 		order:3;
 	}
 
-	.sense .report-content-box-desc-label{
+	.sense .trigger-content-box-desc-label{
 		width: 32px;
 		order:4;
 	}
 
-	.sense .report-content-box-inputs{
+	.sense .trigger-content-box-inputs{
 		width: 100%;
 		flex-wrap: wrap;
 	}
 
-	.sense .report-content-box-inputs-pointer{
+	.sense .trigger-content-box-inputs-pointer{
 		width: 100%;
 		padding:0px;
 		margin: 8px 0px 5px;
 	}
 
-	.sense .report-content-box.gps .report-content-box-desc-label{
+	.sense .trigger-content-box.gps .trigger-content-box-desc-label{
 		order: 0;
 		z-index: 1;
 		margin-top: 18px;
 	}
 
-	.sense .report-content-box.gps{
+	.sense .trigger-content-box.gps{
 		justify-content: flex-end;
 	}
 
-	.sense .report-content-box-coordinates{
+	.sense .trigger-content-box-coordinates{
 		margin-top:-28px;
 		padding-left: 0px;
 		background-position: 3px 0px;
@@ -442,29 +442,29 @@
 		margin-top: 15px;
 	}
 
-	.sense .report-content-box-coordinates-title{
+	.sense .trigger-content-box-coordinates-title{
 		margin: 10px 0px 15px;
 		padding-left: 50px;
 		padding-bottom: 25px;
 	}
 
-	.sense .report-content-box-coordinates-text{
+	.sense .trigger-content-box-coordinates-text{
 		width: 100%;
 		margin-bottom: 5px;
 	}
 
-	.sense .report-content-box-coordinates-label.ratio{
+	.sense .trigger-content-box-coordinates-label.ratio{
 		padding-left: 0px;
 		width: 100%;
 		margin-bottom: 5px;
 	}
 
-	.sense .report-content-box-coordinates-ratio{
+	.sense .trigger-content-box-coordinates-ratio{
 		flex-grow: 1;
 		text-align: left;
 	}
 
-	.sense .report-map-box{
+	.sense .trigger-map-box{
 		border-top:0px;
 	}
 
