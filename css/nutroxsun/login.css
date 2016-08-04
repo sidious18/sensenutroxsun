@@ -1,6 +1,6 @@
 .nutroxsun .login-page{
 	background: url(../../images/nutroxsun/nutroxsun-login-background.png) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 }
 

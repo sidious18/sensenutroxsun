@@ -582,10 +582,9 @@
 						<input class="date-picker" type="text">
 					</div>
 					<div class="header-report-date-import">
-						<select class="standart-selector">
-							<option value="export-report">export-report</option>
-							<option value="import-report">import-report</option>
-						</select>
+						<div class="header-report-date-import button-ok">
+							export-report
+						</div>
 					</div>
 				</div>
 			</div>
@@ -596,8 +595,12 @@
 						Total Views
 					</h4>
 					<select class="standart-selector">
-						<option value="export-report">export-report</option>
-						<option value="import-report">import-report</option>
+						<option value="export-report" disabled>export-report</option>
+						<option value="export-daily">Daily</option>
+						<option value="export-weekly" selected>Weekly</option>
+						<option value="export-mothly">Monthly</option>
+						<option value="export-querterly">Quarterly</option>
+						<option value="export-yearly">Yearly</option>
 					</select>
 				</div>
 				

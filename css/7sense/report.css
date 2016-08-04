@@ -58,7 +58,11 @@
 
 .sense .header-report-date-import{
 	width: 100%;
-	text-align: right;
+	text-align: center;
+	text-transform: uppercase;
+	color:#fff;
+	cursor: pointer;
+	max-width: 245px;
 }
 
 .sense .header-report-date-label{
@@ -219,8 +223,9 @@
 	}
 
 	.sense .header-report-date-import{
-		text-align: left;
-		margin-top:5px;
+		margin-top:10px;
+		max-width: 100%;
+		text-align: center;
 	}
 
 	.sense .report-dashbord-header{

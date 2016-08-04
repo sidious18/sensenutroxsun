@@ -58,7 +58,12 @@
 
 .nutroxsun .header-report-date-import{
 	width: 100%;
-	text-align: right;
+	text-align: center;
+	text-transform: uppercase;
+	color:#fff;
+	cursor: pointer;
+	max-width: 245px;
+
 }
 
 .nutroxsun .header-report-date-label{
@@ -219,8 +224,9 @@
 	}
 
 	.nutroxsun .header-report-date-import{
-		text-align: left;
-		margin-top:5px;
+		margin-top:10px;
+		max-width: 100%;
+		text-align: center;
 	}
 
 	.nutroxsun .report-dashbord-header{

@@ -421,8 +421,7 @@ function mapEvents(){
   	
   	var mainColor = $('.reports-link').css('color');
 
-    var dashboard = new google.visualization.Dashboard(
-        document.getElementById('report-dashbord'));
+    
 
     var control = new google.visualization.ControlWrapper({
       'controlType': 'ChartRangeFilter',
@@ -505,10 +504,21 @@ function mapEvents(){
       var date = new Date(2012, 0 ,day);
       data.addRow([date, Math.round(low)]);
     }
+    
+    resizeChart(control, chart, data);
+    $(window).resize(function(){
+    	resizeChart(control, chart, data);
+    })
 
+  }
+
+  function resizeChart(control,chart,data){
+  	var dashboard = new google.visualization.Dashboard(document.getElementById('report-dashbord'));
     dashboard.bind(control, chart);
     dashboard.draw(data);
   }
+
+
 
   google.charts.setOnLoadCallback(drawRegionsMap);
 
@@ -531,11 +541,21 @@ function mapEvents(){
         	legend:"none",
 
         };
-
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-        chart.draw(data, options);
+        resizeMap(data, options);
+        $(window).resize(function(){
+	       resizeMap(data, options);
+	   })
+        
       }
+
+      function resizeMap (data, options) {
+	      var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+          chart.draw(data, options);
+	   }
+    
+
+	   
+
 
 $(document).ready(function(){
 
